@@ -22,13 +22,13 @@
     "prepack": "check-for-leaks",
     "prepush": "check-for-leaks"
   },
-  "repository": "",
+  "repository": "https://github.com/guillainbisimwa/electron-hpnk",
   "keywords": [
     "Electron",
     "API",
     "hpnk"
   ],
-  "author": "GitHub",
+  "author": "Guy",
   "license": "MIT",
   "devDependencies": {
     "@octokit/rest": "^16.3.2",

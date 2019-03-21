@@ -25,9 +25,9 @@ function handleSectionTrigger (event) {
   //settings.set('activeSectionButtonId', buttonId)
 }
 
-function activateDefaultSection () {
-  document.getElementById('button-windows').click()
-}
+// function activateDefaultSection () {
+//   document.getElementById('button-windows').click()
+// }
 
 function showMainContent () {
   document.querySelector('.js-nav').classList.add('is-shown')
@@ -65,12 +65,12 @@ function displayAbout () {
 }
 
 // Default to the view that was active the last time the app was open
-//const sectionId = settings.get('activeSectionButtonId')
+const sectionId = settings.get('activeSectionButtonId')
 if (sectionId) {
   showMainContent()
   const section = document.getElementById(sectionId)
   if (section) section.click()
 } else {
-  activateDefaultSection()
+  //activateDefaultSection()
   displayAbout()
 }

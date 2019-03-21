@@ -174,3 +174,6 @@
 .inactive_btn {
   background: none;
 }
+#about-modal {
+  display: block;
+}
