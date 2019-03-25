@@ -18125,7 +18125,7 @@ Copyright (c) 2015 Daniel Eden
 
 /*          Changes for small display      */
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .form-group textarea {
     padding-top: 15px;
   }
