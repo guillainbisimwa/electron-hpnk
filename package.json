@@ -49,6 +49,8 @@
     "standard": "^8.2.0"
   },
   "dependencies": {
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
     "electron": "^4.0.1",
     "electron-log": "^2.2.14",
     "electron-settings": "^3.0.7",
@@ -56,6 +58,8 @@
     "electron-squirrel-startup": "^1.0.0",
     "glob": "^7.1.0",
     "highlight.js": "^9.3.0",
+    "jquery": "^3.3.1",
+    "material-design-iconic-font": "^2.2.0",
     "update-electron-app": "^1.1.1"
   },
   "standard": {
