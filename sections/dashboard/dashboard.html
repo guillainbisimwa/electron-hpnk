@@ -1,5 +1,5 @@
 <template class="task-template">
-  <section id="dashboard-section" class="section js-section u-category-dashboard">
+  <section id="dashboard-section" class="section js-section u-category-dashboard is-shown">
     <div class="main-panel1">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -14,17 +14,17 @@
               <span class="navbar-toggler-icon icon-bar"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end">
-              <form class="navbar-form">
+              <div class="navbar-form">
                 <div class="input-group no-border">
                   <input type="text" value="" class="form-control" placeholder="Search...">
-                  <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                  <button class="btn btn-white btn-round btn-just-icon">
                       <i class="fa fa-search fa-lg"></i>
                     <div class="ripple-container"></div>
                   </button>
                 </div>
-              </form>
-              <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
-            
+              </div>
+              <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> 
+              <span class="sr-only">Refreshing...</span>
             </div>
           </div>
         </nav>
@@ -38,7 +38,7 @@
                     <div class="card-icon">
                       <i class="fa fa-medkit fa-lg"></i>
                     </div>
-                    <p class="card-category">Medicament disponibles</p>
+                    <p class="card-category">médicaments disponibles</p>
                     <h3 class="card-title">1200
                     </h3>
                   </div>
@@ -56,7 +56,7 @@
                     <div class="card-icon">
                         <i class="fa fa-plus-square fa-lg"></i>
                     </div>
-                    <p class="card-category">Medicament entres</p>
+                    <p class="card-category">médicaments entres</p>
                     <h3 class="card-title">50</h3>
                   </div>
                   <div class="card-footer">
@@ -72,7 +72,7 @@
                     <div class="card-icon">
                         <i class="fa fa-minus-square fa-lg"></i>
                     </div>
-                    <p class="card-category">Medicament sortie</p>
+                    <p class="card-category">médicaments sorties</p>
                     <h3 class="card-title">75</h3>
                   </div>
                   <div class="card-footer">
@@ -88,12 +88,12 @@
                     <div class="card-icon">
                         <i class="fa fa-info-circle fa-lg"></i>
                     </div>
-                    <p class="card-category">Approche peromtion</p>
+                    <p class="card-category">Approche péremptions</p>
                     <h3 class="card-title">45</h3>
                   </div>
                   <div class="card-footer">
                     <div class="stats">
-                      Seront expires apres 30 jours.
+                      Seront expirés après 30 jours.
                     </div>
                   </div>
                 </div>
@@ -106,15 +106,15 @@
                   <div class="card-header card-header-tabs card-header-primary">
                     <div class="nav-tabs-navigation">
                       <div class="nav-tabs-wrapper">
-                        <span class="nav-tabs-title">Mesdicaments:</span>
+                        <span class="nav-tabs-title">médicaments :</span>
                         <span class="nav-link1" >
                             <button type="button" id="button-rapport1" class="nav-btn-tab inactive_btn">
-                              <i class="point fa fa-line-chart fa-lg"></i> <em>plus consomes</em>
+                              <i class="point fa fa-line-chart fa-lg"></i> <em>plus consomés</em>
                             </button>
                           </span>
                           <span class="nav-link1" >
                             <button type="button" id="button-rapport2" class="nav-btn-tab">
-                              <i class="point fa fa-line-chart fa-lg"></i> <em>Moins consomes</em>
+                              <i class="point fa fa-line-chart fa-lg"></i> <em>Moins consomés</em>
                             </button>
                           </span>
                       </div>
@@ -124,14 +124,14 @@
                     <table class="table table-hover ">
                       <thead class="text-warning">
                         <th>ID</th>
-                        <th>Designation</th>
+                        <th>Désignation</th>
                         <th>Forme</th>
-                        <th>Quantite</th>
+                        <th>Quantité</th>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>Paracetamol</td>
+                          <td>Paracétamol</td>
                           <td>Comprmes</td>
                           <td>20</td>
                         </tr>
@@ -187,7 +187,7 @@
                         </tr>
                         <tr>
                           <td>4</td>
-                          <td>Depot pharmacietique du Congo</td>
+                          <td>Dépôt pharmaceutique du Congo</td>
                         </tr>
                       </tbody>
                     </table>
@@ -202,21 +202,19 @@
             <nav class="float-left">
               <ul>
                 <li>
-                  <a href="#">
-                    Facebook HPNK
-                  </a>
+                 
+                    Facebook HPNK / 
+                 
                 </li>
                 <li>
-                  <a href="#">
+                
                     Twitter HPNK
-                  </a>
+              
                 </li>
               </ul>
             </nav>
             <div class="copyright float-right">
-              &copy;
-              2019, made with  <i class="fa fa-heart fa-lg"></i> by
-              <a href="#">HPNK IT</a> for a better world.
+              &copy; 2019, HPNK IT
             </div>
           </div>
         </footer>
