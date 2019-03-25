@@ -51,7 +51,7 @@ describe('demo app', function () {
   it('checks hardcoded path for userData is correct', function () {
     return app.client.execute(() => {
       console.log(require('electron').remote.app.getPath('userData'))
-      return require('electron').remote.app.getPath('userData1')
+      return require('electron').remote.app.getPath('userData')
     }).then((result) => {
       return result.value
     }).should.eventually.equal(setup.getUserDataPath())
@@ -82,28 +82,17 @@ describe('demo app', function () {
       .auditSectionAccessibility('rapport')
       .auditSectionAccessibility('aide')
       .auditSectionAccessibility('apropos')
-      .auditSectionAccessibility('menus')
-      .auditSectionAccessibility('shortcuts')
-      .auditSectionAccessibility('ex-links-file-manager')
-      .auditSectionAccessibility('notifications')
-      .auditSectionAccessibility('dialogs')
-      .auditSectionAccessibility('tray')
-      .auditSectionAccessibility('ipc')
-      .auditSectionAccessibility('app-sys-information')
-      .auditSectionAccessibility('clipboard')
-      .auditSectionAccessibility('protocol')
-      .auditSectionAccessibility('desktop-capturer')
   })
 
   describe('when clicking on a section from the nav bar', function () {
     it('it shows the selected section in the main area', function () {
       return app.client.dismissAboutPage()
-        .selectSection('windows')
-        .isExisting('button.is-selected[data-section="windows"]').should.eventually.be.true
+        .selectSection('dashboard')
+        .isExisting('button.is-selected[data-section="dashboard"]').should.eventually.be.true
         .isVisible('#menus-section').should.eventually.be.false
         .selectSection('menus')
-        .isVisible('#windows-section').should.eventually.be.false
-        .isExisting('button.is-selected[data-section="windows"]').should.eventually.be.false
+        .isVisible('#dashboard-section').should.eventually.be.false
+        .isExisting('button.is-selected[data-section="dashboard"]').should.eventually.be.false
         .isExisting('button.is-selected[data-section="menus"]').should.eventually.be.true
     })
   })
@@ -115,7 +104,7 @@ describe('demo app', function () {
 
       return app.client.dismissAboutPage()
         .collapseDemos()
-        .selectSection('windows')
+        .selectSection('dashboard')
         .click('.js-container-target')
         .waitForVisible('.demo-box')
         .isVisible('.demo-box').should.eventually.deep.equal(onlyFirstVisible)
@@ -127,11 +116,11 @@ describe('demo app', function () {
       let onlyFirstVisible = Array(30).fill(false)
       onlyFirstVisible[0] = true
 
-      return app.client.waitForVisible('#windows-section')
+      return app.client.waitForVisible('#dashboard-section')
         .then(restartApp)
         .then(function () {
-          return app.client.waitForVisible('#windows-section')
-            .isVisible('#windows-section').should.eventually.be.true
+          return app.client.waitForVisible('#dashboard-section')
+            .isVisible('#dashboard-section').should.eventually.be.true
             .isVisible('.demo-box').should.eventually.deep.equal(onlyFirstVisible)
         })
     })

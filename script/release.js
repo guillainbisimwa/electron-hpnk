@@ -39,14 +39,14 @@ function prepareAssets () {
   const outPath = path.join(__dirname, '..', 'out')
 
   const zipAssets = [{
-    name: 'electron-api-demos-mac.zip',
-    path: path.join(outPath, 'Electron API Demos-darwin-x64', 'Electron API Demos.app')
+    name: 'electron-hpnk-mac.zip',
+    path: path.join(outPath, 'Pharmacie hpnk-darwin-x64', 'Pharmacie hpnk.app')
   }, {
-    name: 'electron-api-demos-windows.zip',
-    path: path.join(outPath, 'Electron API Demos-win32-ia32')
+    name: 'electron-hpnk-windows.zip',
+    path: path.join(outPath, 'Pharmacie hpnk-win32-ia32')
   }, {
-    name: 'electron-api-demos-linux.zip',
-    path: path.join(outPath, 'Electron API Demos-linux-x64')
+    name: 'electron-hpnk-linux.zip',
+    path: path.join(outPath, 'Pharmacie hpnk-linux-x64')
   }]
 
   return Promise.all(zipAssets.map(zipAsset)).then((zipAssets) => {
@@ -57,8 +57,8 @@ function prepareAssets () {
       name: 'ElectronAPIDemosSetup.exe',
       path: path.join(outPath, 'windows-installer', 'ElectronAPIDemosSetup.exe')
     }, {
-      name: `electron-api-demos-${version}-full.nupkg`,
-      path: path.join(outPath, 'windows-installer', `electron-api-demos-${version}-full.nupkg`)
+      name: `electron-hpnk-${version}-full.nupkg`,
+      path: path.join(outPath, 'windows-installer', `electron-hpnk-${version}-full.nupkg`)
     }])
   })
 }
@@ -88,8 +88,8 @@ function zipAsset (asset) {
 
 async function getOrCreateRelease () {
   const { data: releases } = await github.repos.listReleases({
-    owner: 'electron',
-    repo: 'electron-api-demos',
+    owner: 'guillainbisimwa',
+    repo: 'electron-hpnk',
     per_page: 100,
     page: 1
   })
@@ -101,8 +101,8 @@ async function getOrCreateRelease () {
 
   console.log('Creating new draft release')
   const { data: release } = await github.repos.createRelease({
-    owner: 'electron',
-    repo: 'electron-api-demos',
+    owner: 'guillainbisimwa',
+    repo: 'electron-hpnk',
     tag_name: `v${version}`,
     target_commitish: 'master',
     name: version,
@@ -157,8 +157,8 @@ function uploadAsset (release, asset) {
 function publishRelease (release) {
   console.log('Publishing release')
   return github.repos.updateRelease({
-    owner: 'electron',
-    repo: 'electron-api-demos',
+    owner: 'guillainbisimwa',
+    repo: 'electron-hpnk',
     release_id: release.id,
     draft: false
   })

@@ -1,8 +1,8 @@
 {
-  "name": "electron-api-hpnk",
-  "productName": "Electron API Hpnk",
+  "name": "pharmacie-hpnk",
+  "productName": "Pharmacie HPNK",
   "version": "2.0.2",
-  "description": "Electron interactive API hpnk",
+  "description": "Electron interactive API Pharmacie HPNK",
   "main": "main.js",
   "bin": "cli.js",
   "scripts": {
@@ -13,9 +13,9 @@
     "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=out --icon=assets/app-icon/mac/app.icns --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist",
     "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/app-icon/win/app.ico",
     "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out",
-    "package:sign-exe": "signcode './out/Electron API Hpnk-win32-ia32/Electron API Hpnk.exe' --cert ~/electron-api-hpnk.p12 --prompt --name 'Electron API Hpnk' --url 'http://electron.atom.io'",
+    "package:sign-exe": "signcode './out/Pharmacie HPNK-win32-ia32/pharmacie-hpnk.exe' --cert ~/pharmacie-hpnk.p12 --prompt --name 'Pharmacie HPNK' --url 'http://electron.atom.io'",
     "package:installer": "node ./script/installer.js",
-    "package:sign-installer": "signcode './out/windows-installer/ElectronAPIDemosSetup.exe' --cert ~/electron-api-hpnk.p12 --prompt --name 'Electron API Hpnk' --url 'http://electron.atom.io'",
+    "package:sign-installer": "signcode './out/windows-installer/pharmacie-hpnk.exe' --cert ~/pharmacie-hpnk.p12 --prompt --name 'Pharmacie HPNK' --url 'http://electron.atom.io'",
     "xpackage:mas": "./script/mas.sh",
     "windows-store": "node ./script/windows-store.js",
     "release": "node ./script/release.js",
@@ -25,10 +25,10 @@
   "repository": "https://github.com/guillainbisimwa/electron-hpnk",
   "keywords": [
     "Electron",
-    "API",
+    "pharmacie",
     "hpnk"
   ],
-  "author": "Guy",
+  "author": "Guillain BISIMWA",
   "license": "MIT",
   "devDependencies": {
     "@octokit/rest": "^16.3.2",
@@ -36,8 +36,9 @@
     "chai-as-promised": "^6.0.0",
     "check-for-leaks": "^1.2.0",
     "devtron": "^1.3.0",
-    "electron-packager": "^12.1.0",
-    "electron-winstaller": "^2.2.0",
+    "electron-packager": "^12.2.0",
+    "electron-winstaller": "^2.7.0",
+    "electron-wix-msi": "^2.1.1",
     "husky": "^0.14.3",
     "mocha": "^5.2.0",
     "npm-run-all": "^4.0.2",
@@ -52,6 +53,7 @@
     "electron-log": "^2.2.14",
     "electron-settings": "^3.0.7",
     "electron-shortcut-normalizer": "^1.0.0",
+    "electron-squirrel-startup": "^1.0.0",
     "glob": "^7.1.0",
     "highlight.js": "^9.3.0",
     "update-electron-app": "^1.1.1"

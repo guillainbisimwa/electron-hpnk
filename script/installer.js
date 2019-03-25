@@ -1,11 +1,7 @@
-#!/usr/bin/env node
-
 const createWindowsInstaller = require('electron-winstaller').createWindowsInstaller
 const path = require('path')
-const rimraf = require('rimraf')
 
-deleteOutputFolder()
-  .then(getInstallerConfig)
+getInstallerConfig()
   .then(createWindowsInstaller)
   .catch((error) => {
     console.error(error.message || error)
@@ -13,26 +9,18 @@ deleteOutputFolder()
   })
 
 function getInstallerConfig () {
-  const rootPath = path.join(__dirname, '..')
+  console.log('creating windows installer')
+  const rootPath = path.join('./')
   const outPath = path.join(rootPath, 'out')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'Electron API Demos-win32-ia32'),
-    exe: 'Electron API Demos.exe',
-    iconUrl: 'https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico',
-    loadingGif: path.join(rootPath, 'assets', 'img', 'loading.gif'),
+    appDirectory: path.join(outPath, 'Pharmacie HPNK-win32-ia32/'),
+    authors: 'Guillain BISIMWA',
     noMsi: true,
+    loadingGif: path.join(rootPath, 'assets', 'img', 'loag.gif'),
     outputDirectory: path.join(outPath, 'windows-installer'),
-    setupExe: 'ElectronAPIDemosSetup.exe',
-    setupIcon: path.join(rootPath, 'assets', 'app-icon', 'win', 'app.ico'),
-    skipUpdateIcon: true
-  })
-}
-
-function deleteOutputFolder () {
-  return new Promise((resolve, reject) => {
-    rimraf(path.join(__dirname, '..', 'out', 'windows-installer'), (error) => {
-      error ? reject(error) : resolve()
-    })
+    exe: 'Pharmacie hpnk.exe',
+    setupExe: 'PharmaciehpnkInstaller.exe',
+    setupIcon: path.join(rootPath, 'assets', 'app-icon', 'win', 'app.ico')
   })
 }
