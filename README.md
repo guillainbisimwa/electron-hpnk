@@ -1,6 +1,6 @@
-# Electron-hpnk
+# <img src="https://github.com/guillainbisimwa/electron-hpnk/blob/master/assets/img/hpnk2.png" width="60px" align="center" alt="Electron API Demos icon"> Electron-hpnk
 
-Ceci est une application de bureau développée avec <a href="http://electronjs.org">Electron</a>. Cette application fonctionne sur les systèmes d'exploitation Windows, MacOS et Linux.
+Ceci est une application Desktop développée avec <a href="http://electronjs.org">Electron</a>. Cette application fonctionne sur les systèmes d'exploitation Windows, MacOS et Linux.
 
 ---
 
