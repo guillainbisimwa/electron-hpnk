@@ -1,10 +1,10 @@
-# <img src="https://github.com/guillainbisimwa/electron-hpnk/blob/master/assets/img/hpnk2.png" width="60px" align="center" alt="Electron API Demos icon"> Electron-hpnk
+# <img src="https://github.com/guillainbisimwa/electron-hpnk/blob/master/assets/img/hpnk2.png" width="60px" align="center" alt="hpnk"> Electron-hpnk
 
 Ceci est une application Desktop développée avec <a href="http://electronjs.org">Electron</a>. Cette application fonctionne sur les systèmes d'exploitation Windows, MacOS et Linux.
 
 ---
 
-## Lancer
+## Lancer l'application
 
 Vous aurez besoin de <a href="https://nodejs.org">Node.js</a> installé sur votre ordinateur pour pouvoir créer cette application.
 

@@ -13,7 +13,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0;
-  background-color: hsl(0,0%,98%);
+  background-color: #eeeeee;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
