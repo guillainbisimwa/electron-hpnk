@@ -1,0 +1,42 @@
+.btnbottom {
+    position: fixed;
+    right: 45px;
+    scroll-behavior: smooth;
+    bottom: 0%;
+}
+.btnb{
+    position: fixed;
+    right: 55px;
+    bottom: 20px;
+}
+.sidebar {
+   position: relative !important;
+}
+/*199111*/
+@media (max-width: 991px) {
+    .sidebar::before, .off-canvas-sidebar nav .navbar-collapse::before {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: auto !important;
+        position: absolute;
+        background-color:transparent !important;
+        display: block;
+        content: "";
+        z-index: 1;
+    }
+}
+.nav-config {
+    width: 100%;
+    background: transparent !important;
+    z-index: 999;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    border: transparent;
+}
+.nav-config .nav-item {
+    width: fit-content;
+    float: left;
+    margin: 10px;
+}
