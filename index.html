@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nav-open">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="node_modules/material-dashboard/assets/css/material-dashboard.css">
+  <!-- <link rel="stylesheet" href="assets/css/app_2.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/material-dashboard2.css"> -->
+
+
 
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/nativize.css">
@@ -10,12 +15,11 @@
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/section.css">
   <link rel="stylesheet" href="assets/css/demo.css">
-
-  <!-- <link rel="stylesheet" href="path/to/material-design-iconic-font/css/material-design-iconic-font.min.css"> -->
- 
-
+  <link rel="stylesheet" href="assets/css/main.css">
 
   <link rel="stylesheet" href="assets/css/font-awesome.css">
+
+  <!-- 
   <link rel="stylesheet" href="assets/css/material-dashboard2.css">
 
   <link rel="stylesheet" href="assets/css/datatables/css/jquery.dataTables.min.css">
@@ -23,9 +27,7 @@
 
   <link rel="stylesheet" href="assets/css/app_2.min.css">
 
-
-  <link rel="stylesheet" href="assets/demo/demo.css">
-
+  <link rel="stylesheet" href="assets/demo/demo.css"> -->
 
   <link rel="import" href="sections/about.html">
   <link rel="import" href="sections/dashboard/dashboard.html">
@@ -98,8 +100,13 @@
   </nav>
 
   <main class="content js-content"></main>
-
+  <!-- <script src="node_modules/material-dashboard/assets/js/core/jquery.min.js"></script> -->
   <script>
+    //var $ = require( 'jquery' );
+    //window.$ = window.jQuery = require('node_modules/material-dashboard/assets/js/core/jquery.min.js');
+    global.jQuery   = require('jquery');
+    global.$        = global.jQuery;
+
     require('./assets/imports')
     require('./assets/ex-links')
     require('./assets/nav')
@@ -107,6 +114,18 @@
     require('./assets/code-blocks')
     require('./assets/normalize-shortcuts')
   </script>
+  <script src="node_modules/material-dashboard/assets/js/core/popper.min.js"></script>
+  <script src="node_modules/material-dashboard/assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="assets/js/bootstrap-selectpicker.js"></script>
+
+  <script src="node_modules/material-dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="node_modules/material-dashboard/assets/js/plugins/chartist.min.js"></script>
+  <script src="node_modules/material-dashboard/assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="node_modules/material-dashboard/assets/js/material-dashboard.js"></script>
+
+
+
+
 </body>
 </html>
 <!-- 

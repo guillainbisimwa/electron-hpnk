@@ -1,5 +1,5 @@
 <template class="task-template">
-  <section id="config-section" class="section js-section u-category-dashboard">
+  <section id="config-section" class="section js-section u-category-config">
     <div class="main-panel1">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -7,12 +7,12 @@
             <div class="navbar-wrapper">
               <a class="navbar-brand" href="#">CONFIGURATION - LOGICIEL DE GESTION DE STOCK PHARMACIE</a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="navbar-toggler-icon icon-bar"></span>
               <span class="navbar-toggler-icon icon-bar"></span>
               <span class="navbar-toggler-icon icon-bar"></span>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse justify-content-end">
               <div class="navbar-form">
                 <div class="input-group no-border">
@@ -24,156 +24,166 @@
                 </div>
               </div>
               <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
-            
             </div>
           </div>
         </nav>
         <!-- End Navbar -->
         <div class="content_guy">
           <div class="container-fluid">
-            
-            <div class="col-lg-12 col-md-12">
-                <div class="card">
-                  <div class="card-header card-header-tabs card-header-primary">
-                    <div class="nav-tabs-navigation">
-                      <div class="nav-tabs-wrapper">
-                        <span class="nav-tabs-title">Configurations:</span>
-                        <span class="nav-link1" >
-                          <button type="button" id="button-rapport1" class="nav-btn-tab inactive_btn1">
-                            <i class="point fa fa-line-chart fa-lg"></i> <em>Médicaments</em>
-                          </button>
-                        </span>
-                        <span class="nav-link1" >
-                          <button type="button" id="button-rapport2" class="nav-btn-tab">
-                            <i class="point fa fa-line-chart fa-lg"></i> <em>Fournisseurs</em>
-                          </button>
-                        </span>
-                        <span class="nav-link1" >
-                          <button type="button" id="button-rapport3" class="nav-btn-tab">
-                            <i class="point fa fa-line-chart fa-lg"></i> <em>Abonnés</em>
-                          </button>
-                        </span>
-                        <span class="nav-link1" >
-                          <button type="button" id="button-rapport4" class="nav-btn-tab">
-                            <i class="point fa fa-line-chart fa-lg"></i> <em>Service</em>
-                          </button>
-                        </span>
-                      </div>
+            <div class="row">
+              <div class="card card-nav-tabs">
+                <div class="card-header card-header-primary">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs nav-config" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#medicaments" data-toggle="tab">
+                            Médicaments
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#formes" data-toggle="tab">
+                            Formes
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#categories" data-toggle="tab">
+                          Catégories
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                  <div class="card-body table-responsive">
-                    <table class="table table-hover tab_left dataTable" id="tabconf">
-                      <thead class="text-warning">
-                        <th>ID</th>
-                        <th>Designation</th>
-                        <th>Forme</th>
-                        <th>Quantité</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Paracétamol</td>
-                          <td>Comprmes</td>
-                          <td>20</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Aspirine</td>
-                          <td>Comprmes</td>
-                          <td>18</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Quinine</td>
-                          <td>injectable</td>
-                          <td>11</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Sodium</td>
-                          <td>injectable</td>
-                          <td>09</td>
-                        </tr>
-                        <tr>
+                  </div> 
+                </div>
+                <div class="card-body ">
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active" id="medicaments">
+                      <table class="table table-hover tab_left dataTable" id="tabconf">
+                        <thead class="text-warning">
+                          <th>ID</th>
+                          <th>Désignation du médicament</th>
+                          <th>Forme (unitaire)</th>
+                          <th>Catégorie</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Paracétamol</td>
+                            <td>Comprimés</td>
+                            <td>Médicaments</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Injection diabétique</td>
+                            <td>Injection</td>
+                            <td>Médicaments</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Paracétamol</td>
+                            <td>Comprimés</td>
+                            <td>Médicaments</td>
+                          </tr>
+                          <tr>
                             <td>4</td>
-                            <td>Paracétamol inj</td>
-                            <td>Comprmes</td>
-                            <td>20</td>
+                            <td>Paracétamol</td>
+                            <td>Comprimés</td>
+                            <td>Médicaments</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Paracétamol</td>
+                            <td>Comprimés</td>
+                            <td>Médicaments</td>
                           </tr>
                           <tr>
                             <td>6</td>
-                            <td>Napttal</td>
-                            <td>Comprmes</td>
-                            <td>18</td>
+                            <td>Paracétamol</td>
+                            <td>Comprimés</td>
+                            <td>Médicaments</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
+                          <option disabled selected>Single Option</option>
+                          <option value="2">Foobar</option>
+                          <option value="3">Is great</option>
+                          <option value="4">Is bum</option>
+                          <option value="5">Is wow</option>
+                          <option value="6">boom</option>
+                        </select>
+                      <button class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
+                          <i class="fa fa-plus"></i>
+                        <div class="ripple-container"></div>
+                      </button>
+                    </div>
+
+                    <div class="tab-pane" id="formes">
+                      <table class="table table-hover tab_left dataTable" id="tabconf">
+                        <thead class="text-warning">
+                          <th>ID</th>
+                          <th>Forme</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Comprimés</td>
                           </tr>
                           <tr>
-                            <td>7</td>
-                            <td>Quinine inj</td>
-                            <td>injectable</td>
-                            <td>11</td>
+                            <td>2</td>
+                            <td>Injection</td>
                           </tr>
                           <tr>
-                            <td>8</td>
-                            <td>Sodium oral</td>
-                            <td>injectable</td>
-                            <td>09</td>
+                            <td>3</td>
+                            <td>Poudre</td>
                           </tr>
                           <tr>
-                              <td>9</td>
-                              <td>Paracétamol</td>
-                              <td>Comprmes</td>
-                              <td>20</td>
+                            <td>4</td>
+                            <td>Pommade</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button class="btn btn-lg btn-round btn-rose btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
+                          <i class="fa fa-plus"></i>
+                        <div class="ripple-container"></div>
+                      </button>
+                    </div>
+
+                    <div class="tab-pane" id="categories">
+                      <table class="table table-hover tab_left dataTable" id="tabconf">
+                          <thead class="text-warning">
+                            <th>ID</th>
+                            <th>Catégories</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Médicaments</td>
                             </tr>
                             <tr>
-                              <td>10</td>
-                              <td>Aspirine</td>
-                              <td>Comprmes</td>
-                              <td>18</td>
+                              <td>2</td>
+                              <td>Consommables médicaux</td>
                             </tr>
                             <tr>
-                              <td>11</td>
-                              <td>Quinine</td>
-                              <td>injectable</td>
-                              <td>11</td>
+                              <td>3</td>
+                              <td>Intrants labo</td>
                             </tr>
                             <tr>
-                              <td>12</td>
-                              <td>Sodium</td>
-                              <td>injectable</td>
-                              <td>09</td>
+                              <td>4</td>
+                              <td>Intrants imagerie</td>
                             </tr>
-                            <tr>
-                                <td>13</td>
-                                <td>Paracétamol</td>
-                                <td>Comprmes</td>
-                                <td>20</td>
-                              </tr>
-                              <tr>
-                                <td>14</td>
-                                <td>Aspirine</td>
-                                <td>Comprmes</td>
-                                <td>18</td>
-                              </tr>
-                              <tr>
-                                <td>15</td>
-                                <td>Quinine</td>
-                                <td>injectable</td>
-                                <td>11</td>
-                              </tr>
-                              <tr>
-                                <td>16</td>
-                                <td>Sodium</td>
-                                <td>injectable</td>
-                                <td>09</td>
-                              </tr>
-                      </tbody>
-                    </table>
-                    <button class="btn btn-float btn-danger m-btn waves-effect waves-circle waves-float" data-toggle="modal" href="#modalAjouterParoiss"><i class="zmdi zmdi-plus"></i></button>
+                          </tbody>
+                        </table>
+                        <button class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddCatModal">
+                            <i class="fa fa-plus"></i>
+                          <div class="ripple-container"></div>
+                        </button>
+                    </div>
 
                   </div>
-                  
                 </div>
               </div>
+            </div>
             
           </div>
 
@@ -196,12 +206,170 @@
             </div>
           </footer>
       </div>
-      <script>
-        var $ = require( 'jquery' );
-        require( 'datatables.net' )( window, $ );
-        var myTable;
+      <!-- <button class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
+        <i class="fa fa-plus"></i>
+      <div class="ripple-container"></div></button> -->
 
-        myTable = $('#tabconf').DataTable();
+     
+      <script>
+        // var $ = require( 'jquery' );
+        //window.$ = window.jQuery = require('assets/js/jquery.min.js');
+        // require( 'datatables.net' )( window, $ );
+        // var myTable;
+        // myTable = $('#tabconf').DataTable();
+        // $.getScript( "assets/js/bootstrap-material-design.min.js", function( data, textStatus, jqxhr ) {
+        //   // console.log( data ); // Data returned
+        //   // console.log( textStatus ); // Success
+        //   // console.log( jqxhr.status ); // 200
+        //   // console.log( "Load was performed." );
+        // });
+
       </script>
   </section>
+  <!-- Modal add medicaments -->
+  <div class="modal fade" id="AddMedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Ajouter un médicament</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="design_med" class="bmd-label-floating">Désignation du médicament</label>
+              <input type="text" class="form-control" id="design_med">
+            </div>
+            <div class="col-md-6">
+                <h4 class="title">Customisable Select</h4>
+                <div class="row">
+                  <div class="col-lg-5 col-md-6 col-sm-3">
+                    <select class="selectpicker form-contro" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
+                      <option disabled selected>Single Option</option>
+                      <option value="2">Foobar</option>
+                      <option value="3">Is great</option>
+                      <option value="4">Is bum</option>
+                      <option value="5">Is wow</option>
+                      <option value="6">boom</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-3">
+                    <select class="selectpicker" data-style="select-with-transition" multiple title="Choose City" data-size="7">
+                      <option disabled> Multiple Options</option>
+                      <option value="2">Paris </option>
+                      <option value="3">Bucharest</option>
+                      <option value="4">Rome</option>
+                      <option value="5">New York</option>
+                      <option value="6">Miami </option>
+                      <option value="7">Piatra Neamt</option>
+                      <option value="8">Paris </option>
+                      <option value="9">Bucharest</option>
+                      <option value="10">Rome</option>
+                      <option value="11">New York</option>
+                      <option value="12">Miami </option>
+                      <option value="13">Piatra Neamt</option>
+                      <option value="14">Paris </option>
+                      <option value="15">Bucharest</option>
+                      <option value="16">Rome</option>
+                      <option value="17">New York</option>
+                      <option value="18">Miami </option>
+                      <option value="19">Piatra Neamt</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-lg-5 col-md-6 col-sm-3">
+                <select class="selectpicker" data-style="select-with-transition" multiple title="Choose City" data-size="7">
+                  <option disabled> Multiple Options</option>
+                  <option value="2">Paris </option>
+                  <option value="3">Bucharest</option>
+                  <option value="4">Rome</option>
+                  <option value="5">New York</option>
+                  <option value="6">Miami </option>
+                  <option value="7">Piatra Neamt</option>
+                  <option value="8">Paris </option>
+                  <option value="9">Bucharest</option>
+                  <option value="10">Rome</option>
+                  <option value="11">New York</option>
+                  <option value="12">Miami </option>
+                  <option value="13">Piatra Neamt</option>
+                  <option value="14">Paris </option>
+                  <option value="15">Bucharest</option>
+                  <option value="16">Rome</option>
+                  <option value="17">New York</option>
+                  <option value="18">Miami </option>
+                  <option value="19">Piatra Neamt</option>
+                </select>
+              </div>
+           
+            <div class="form-group">
+              <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
+                <option disabled selected>Single Option</option>
+                <option value="2">Foobar</option>
+                <option value="3">Is great</option>
+                <option value="4">Is bum</option>
+                <option value="5">Is wow</option>
+                <option value="6">boom</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              <span class="btn-label">
+                <i class="fa fa-save"></i>
+              </span>
+              Enregistrer
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal add Formes -->
+    <div class="modal fade" id="AddFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Ajouter une forme</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="exampleEmail" class="bmd-label-floating">Email Address</label>
+              <input type="email" class="form-control" id="exampleEmail">
+            </div>
+            <div class="form-group">
+              <label for="examplePass" class="bmd-label-floating">Password</label>
+              <input type="password" class="form-control" id="examplePass">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal add Catégorie -->
+    <div class="modal fade" id="AddCatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Ajouter une Catégorie</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              Modal mody hpnk
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </template>

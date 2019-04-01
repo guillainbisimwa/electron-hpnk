@@ -1,12 +1,16 @@
 require('update-electron-app')({
   logger: require('electron-log')
 })
+const Company =  require('./config/Company')
 
 const path = require('path')
 const glob = require('glob')
 const {app, BrowserWindow} = require('electron')
 
 const debug = /--debug/.test(process.argv[2])
+
+const db = require("./config/db.js");
+console.log("Here my " + db)
 
 if (process.mas) app.setName('Pharmacie HPNK')
 
@@ -16,6 +20,8 @@ function initialize () {
   makeSingleInstance()
 
   loadDemos()
+
+  init_db()
 
   function createWindow () {
     const windowOptions = {
@@ -89,6 +95,13 @@ function loadDemos () {
   return
   // const files = glob.sync(path.join(__dirname, 'main-process/**/*.js'))
   // files.forEach((file) => { require(file) })
+}
+function init_db(){
+//  let test = new Company("GuyL")
+
+//   console.log("Nom = "+ test.name)
+//   console.log(Company)
+  return
 }
 
 initialize()
