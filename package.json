@@ -55,6 +55,7 @@
     "electron": "^4.0.1",
     "electron-log": "^2.2.14",
     "electron-rebuild": "^1.8.4",
+    "electron-root-path": "^1.0.9",
     "electron-settings": "^3.0.7",
     "electron-shortcut-normalizer": "^1.0.0",
     "electron-squirrel-startup": "^1.0.0",
