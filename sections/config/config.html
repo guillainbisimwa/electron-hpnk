@@ -104,14 +104,6 @@
                           </tr>
                         </tbody>
                       </table>
-                      <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
-                          <option disabled selected>Single Option</option>
-                          <option value="2">Foobar</option>
-                          <option value="3">Is great</option>
-                          <option value="4">Is bum</option>
-                          <option value="5">Is wow</option>
-                          <option value="6">boom</option>
-                        </select>
                       <button class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
                           <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
@@ -237,83 +229,31 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-              <label for="design_med" class="bmd-label-floating">Désignation du médicament</label>
-              <input type="text" class="form-control" id="design_med">
-            </div>
-            <div class="col-md-6">
-                <h4 class="title">Customisable Select</h4>
-                <div class="row">
-                  <div class="col-lg-5 col-md-6 col-sm-3">
-                    <select class="selectpicker form-contro" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
-                      <option disabled selected>Single Option</option>
-                      <option value="2">Foobar</option>
-                      <option value="3">Is great</option>
-                      <option value="4">Is bum</option>
-                      <option value="5">Is wow</option>
-                      <option value="6">boom</option>
-                    </select>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-3">
-                    <select class="selectpicker" data-style="select-with-transition" multiple title="Choose City" data-size="7">
-                      <option disabled> Multiple Options</option>
-                      <option value="2">Paris </option>
-                      <option value="3">Bucharest</option>
-                      <option value="4">Rome</option>
-                      <option value="5">New York</option>
-                      <option value="6">Miami </option>
-                      <option value="7">Piatra Neamt</option>
-                      <option value="8">Paris </option>
-                      <option value="9">Bucharest</option>
-                      <option value="10">Rome</option>
-                      <option value="11">New York</option>
-                      <option value="12">Miami </option>
-                      <option value="13">Piatra Neamt</option>
-                      <option value="14">Paris </option>
-                      <option value="15">Bucharest</option>
-                      <option value="16">Rome</option>
-                      <option value="17">New York</option>
-                      <option value="18">Miami </option>
-                      <option value="19">Piatra Neamt</option>
-                    </select>
-                  </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="design_med" class="bmd-label-floating">Désignation du médicament</label>
+                  <input type="text" class="form-control" id="design_med">
                 </div>
               </div>
-
-            <div class="col-lg-5 col-md-6 col-sm-3">
-                <select class="selectpicker" data-style="select-with-transition" multiple title="Choose City" data-size="7">
-                  <option disabled> Multiple Options</option>
-                  <option value="2">Paris </option>
-                  <option value="3">Bucharest</option>
-                  <option value="4">Rome</option>
-                  <option value="5">New York</option>
-                  <option value="6">Miami </option>
-                  <option value="7">Piatra Neamt</option>
-                  <option value="8">Paris </option>
-                  <option value="9">Bucharest</option>
-                  <option value="10">Rome</option>
-                  <option value="11">New York</option>
-                  <option value="12">Miami </option>
-                  <option value="13">Piatra Neamt</option>
-                  <option value="14">Paris </option>
-                  <option value="15">Bucharest</option>
-                  <option value="16">Rome</option>
-                  <option value="17">New York</option>
-                  <option value="18">Miami </option>
-                  <option value="19">Piatra Neamt</option>
-                </select>
-              </div>
-           
-            <div class="form-group">
-              <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
-                <option disabled selected>Single Option</option>
-                <option value="2">Foobar</option>
-                <option value="3">Is great</option>
-                <option value="4">Is bum</option>
-                <option value="5">Is wow</option>
-                <option value="6">boom</option>
-              </select>
             </div>
+            
+            <select class="selectpicker col-sm-12" data-style="btn btn-default">
+              <option disabled selected>Choisissez une forme</option>
+              <option value="1">Forme 1</option>
+              <option value="2">Forme 2</option>
+              <option value="3">Forme 3</option>
+              <option value="4">Forme 4</option>
+              <option value="5">Forme 5</option>
+            </select>
+            <select class="selectpicker col-sm-12" data-style="btn btn-default">
+              <option disabled selected>Choisissez une Catégorie</option>
+              <option value="1">cat 1</option>
+              <option value="2">cat 2</option>
+              <option value="3">cat 3</option>
+              <option value="4">cat 4</option>
+              <option value="5">cat 5</option>
+            </select>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">
@@ -339,15 +279,17 @@
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label for="exampleEmail" class="bmd-label-floating">Email Address</label>
-              <input type="email" class="form-control" id="exampleEmail">
-            </div>
-            <div class="form-group">
-              <label for="examplePass" class="bmd-label-floating">Password</label>
-              <input type="password" class="form-control" id="examplePass">
+              <label for="design_forme" class="bmd-label-floating">Forme du médicament</label>
+              <input type="text" class="form-control" id="design_forme">
             </div>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              <span class="btn-label">
+                <i class="fa fa-save"></i>
+              </span>
+              Enregistrer
+            </button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
           </div>
         </div>
@@ -364,9 +306,18 @@
               </button>
             </div>
             <div class="modal-body">
-              Modal mody hpnk
+              <div class="form-group">
+                <label for="design_cat" class="bmd-label-floating">Catégorie du médicament</label>
+                <input type="text" class="form-control" id="design_cat">
+              </div>
             </div>
             <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                <span class="btn-label">
+                  <i class="fa fa-save"></i>
+                </span>
+                Enregistrer
+              </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
           </div>
