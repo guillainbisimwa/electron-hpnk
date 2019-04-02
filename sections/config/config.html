@@ -198,23 +198,81 @@
             </div>
           </footer>
       </div>
-      <!-- <button class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
-        <i class="fa fa-plus"></i>
-      <div class="ripple-container"></div></button> -->
-
-     
       <script>
-        // var $ = require( 'jquery' );
-        //window.$ = window.jQuery = require('assets/js/jquery.min.js');
-        // require( 'datatables.net' )( window, $ );
-        // var myTable;
-        // myTable = $('#tabconf').DataTable();
-        // $.getScript( "assets/js/bootstrap-material-design.min.js", function( data, textStatus, jqxhr ) {
-        //   // console.log( data ); // Data returned
-        //   // console.log( textStatus ); // Success
-        //   // console.log( jqxhr.status ); // 200
-        //   // console.log( "Load was performed." );
-        // });
+        //Connection to DB
+        var connect = require('camo').connect;
+        var database;
+        //var uri = 'nedb://memory';
+        var uri = 'nedb://'+rootPath+'/data/.db';
+
+        connect(uri).then(function(db) {
+          database = db;
+        });
+
+        // Import ES6 way
+        //import { rootPath } from 'electron-root-path';
+
+        // Import ES2015 way
+        const rootPath = require('electron-root-path').rootPath;
+        /*
+          // e.g:
+          // read a file in the root
+          const location = path.join(rootPath, 'package.json');
+          const pkgInfo = fs.readFileSync(location, { encoding: 'utf8' });
+        */
+        // Declare all my databases classes
+        const Forme =  require('./data/Forme')
+        const Categorie =  require('./data/Categorie')
+        const Medicament =  require('./data/Medicament')
+
+        //Save forme
+        $("#save_forme").click(function(){
+          var _forme = $("#design_forme").val();
+          var forme = Forme.create({
+            nom_forme: _forme
+          });
+
+          forme.save().then(function(l) {
+            console.log(l._id);
+          });
+        })
+
+        //save cat
+        $("#save_cat").click(function(){
+          var _cat = $("#design_cat").val();
+          var cat = Categorie.create({
+            nom_categorie: _cat
+          });
+
+          cat.save().then(function(l) {
+            console.log(l._id);
+          });
+        })
+
+        //save med
+        $("#save_med").click(function(){
+          var _med = $("#design_med").val();
+          var _cat = $("#design_med_cat").val();
+          var _forme = $("#design_med_forme").val();
+          var med = Medicament.create({
+            nom_medicament: _med,
+            id_categorie: _cat,
+            id_forme: _forme,
+          });
+
+          med.save().then(function(l) {
+            console.log(l._id);
+          });
+        })
+
+        // Liste
+        $("#list_med").click(function(){
+          Medicament.find({}).then(function(l) {
+            l.forEach(function(m) {
+              console.log(m._id + ': ' + m.nom_medicament);
+            });
+          });
+        });
 
       </script>
   </section>
@@ -256,13 +314,15 @@
             </select>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">
+            <button id="save_med" class="btn btn-primary">
               <span class="btn-label">
                 <i class="fa fa-save"></i>
               </span>
               Enregistrer
             </button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            <button id="list_med" class="btn btn-rose" >Liste</button>
+            
           </div>
         </div>
       </div>
@@ -284,7 +344,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">
+            <button id="save_forme" class="btn btn-primary">
               <span class="btn-label">
                 <i class="fa fa-save"></i>
               </span>
@@ -312,7 +372,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
+              <button id="save_cat" class="btn btn-primary">
                 <span class="btn-label">
                   <i class="fa fa-save"></i>
                 </span>
