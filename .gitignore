@@ -1,3 +1,5 @@
 node_modules
 out
 npm-debug.log
+assets/DataTables
+.vscode/

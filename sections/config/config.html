@@ -37,16 +37,16 @@
                     <div class="nav-tabs-wrapper">
                       <ul class="nav nav-tabs nav-config" data-tabs="tabs">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#medicaments" data-toggle="tab">
+                          <a class="nav-link active nav-link-med" href="#medicaments" data-toggle="tab">
                             Médicaments
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link " href="#formes" data-toggle="tab">
+                          <a class="nav-link nav-link-forme " href="#formes" data-toggle="tab">
                             Formes
                           </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-link-cat">
                           <a class="nav-link " href="#categories" data-toggle="tab">
                           Catégories
                           </a>
@@ -111,30 +111,15 @@
                     </div>
 
                     <div class="tab-pane" id="formes">
-                      <table class="table table-hover tab_left dataTable" id="tab_forme">
+                      <table class="table table-hover tab_left" style="width:100%" id="tab_forme">
                         <thead class="text-warning">
                           <th>ID</th>
                           <th>Forme</th>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Comprimés</td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Injection</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Poudre</td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Pommade</td>
-                          </tr>
                         </tbody>
                       </table>
+
                       <button class="btn btn-lg btn-round btn-rose btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
                           <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
@@ -148,22 +133,6 @@
                             <th>Catégories</th>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Médicaments</td>
-                            </tr>
-                            <tr>
-                              <td>2</td>
-                              <td>Consommables médicaux</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Intrants labo</td>
-                            </tr>
-                            <tr>
-                              <td>4</td>
-                              <td>Intrants imagerie</td>
-                            </tr>
                           </tbody>
                         </table>
                         <button class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddCatModal">
@@ -203,10 +172,10 @@
         //Data tables modules
         var $ = require( 'jquery' );
         require( 'datatables.net-dt' )( window, $ );
-
-        //Getting path
+                     
+        // Getting path
         // Import ES6 way
-        //import { rootPath } from 'electron-root-path';
+        // import { rootPath } from 'electron-root-path';
 
         // Import ES2015 way
         const rootPath = require('electron-root-path').rootPath;
@@ -231,28 +200,72 @@
         const Categorie =  require('./data/Categorie')
         const Medicament =  require('./data/Medicament')
 
-        //Init Form tab
+        // Populate tab forme
+        $(".nav-link-forme").click(function(){
+          const mm = new Map();
+
+          Forme.find({}).then(function(l) {
+            i = 0;
+            l.forEach(function(m) {
+              i++;
+              mm.set(i, m.nom_forme)
+            });
+
+            $('#tab_forme').DataTable({
+              language:{
+                url:'./assets/values/French.json'
+              },
+              "order": [[ 0, "asc" ]],
+              data:Array.from(mm),
+              destroy : true
+            });
+          });
+        });
+
+        $(".nav-link-cat").click(function(){
+          const mm = new Map();
+
+          Categorie.find({}).then(function(l) {
+            i = 0;
+            l.forEach(function(m) {
+              i++;
+              mm.set(i, m.nom_categorie)
+            });
+
+            $('#tab_cat').DataTable({
+              language:{
+                url:'./assets/values/French.json'
+              },
+              "order": [[ 0, "asc" ]],
+              data:Array.from(mm),
+              destroy : true
+            });
+          });
+        });
+
         $('#tab_forme').DataTable({
           language:{
             url:'./assets/values/French.json'
-          }
+          },
+          "order": [[ 0, "asc" ]],
         });
 
          //Init Cat tab
-         $('#tab_cat').DataTable({
+        $('#tab_cat').DataTable({
           language:{
             url:'./assets/values/French.json'
-          }
+          },
+          "order": [[ 0, "asc" ]],
         });
 
          //Init Med tab
          $('#tab_med').DataTable({
           language:{
             url:'./assets/values/French.json'
-          }
+          },
+          "order": [[ 0, "asc" ]],
         });
 
-        
         //Save forme
         $("#save_forme").click(function(){
           var _forme = $("#design_forme").val();
@@ -263,6 +276,28 @@
           forme.save().then(function(l) {
             console.log(l._id);
           });
+          //After saving forme
+          $("#design_forme").val("");
+
+          const mm = new Map();
+
+          Forme.find({}).then(function(l) {
+            i = 0;
+            l.forEach(function(m) {
+              i++;
+              mm.set(i, m.nom_forme)
+            });
+
+            $('#tab_forme').DataTable({
+              language:{
+                url:'./assets/values/French.json'
+              },
+              "order": [[ 0, "asc" ]],
+              data:Array.from(mm),
+              destroy : true
+            });
+          });
+          $("#AddFormModal .close").click();
         })
 
         //save cat
@@ -275,6 +310,31 @@
           cat.save().then(function(l) {
             console.log(l._id);
           });
+           //After saving forme
+          $("#design_cat").val("");
+
+          const mm = new Map();
+
+          Categorie.find({}).then(function(l) {
+            i = 0;
+            l.forEach(function(m) {
+              i++;
+              mm.set(i, m.nom_categorie)
+            });
+
+            $('#tab_cat').DataTable({
+              language:{
+                url:'./assets/values/French.json'
+              },
+              "order": [[ 0, "asc" ]],
+              data:Array.from(mm),
+              destroy : true
+            });
+            $('#tab_cat').data.reload();
+
+
+          });
+          $("#AddCatModal .close").click();
         })
 
         //save med
@@ -292,15 +352,6 @@
             console.log(l._id);
           });
         })
-
-        // Liste
-        $("#list_med").click(function(){
-          Medicament.find({}).then(function(l) {
-            l.forEach(function(m) {
-              console.log(m._id + ': ' + m.nom_medicament);
-            });
-          });
-        });
 
       </script>
   </section>
