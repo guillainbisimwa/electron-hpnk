@@ -206,88 +206,16 @@ $(document).ready(function() {
         });
 
         // Declare all my databases classes
-        const Forme =  require('./data/Forme')
-        const Categorie =  require('./data/Categorie')
-        const Medicament =  require('./data/Medicament')
+        const Forme =  require('./data/Forme');
+        const Categorie =  require('./data/Categorie');
+        const Medicament =  require('./data/Medicament');
+
+        //Init tables
+        var _tab_forme = $("#tab_forme").DataTable();
 
         // Populate tab forme
         $(".nav-link-forme").click(function(){
-          var tab_forme = [];
-
-          Forme.find({},{sort:'nom_forme'}).then(function(foundForme) {
-            i = 0;
-            foundForme.forEach(function(foundSingleForme) {
-              i++;
-              //console.log("_id = ", foundSingleForme._id)
-              var o = [i, foundSingleForme.nom_forme, foundSingleForme._id]; 
-              tab_forme.push(Array.from(o))
-            });
-
-            console.log(Array.from(tab_forme))
-            var table =  $('#tab_forme').DataTable({
-              dom: 'Blfrtip',
-              select: true,
-              buttons: [
-                {
-                  text: '<li class="fa fa-edit"></li> Modification',
-                  action: function ( e, dt, node, config ) {
-                      console.log(
-                          'Row data: '+
-                          JSON.stringify( dt.row( { selected: true } ).data() )
-                      ); 
-                      updateValueModalForme(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
-                      $("#AddFormModal").modal();
-                  },
-                  enabled: false
-                },
-                {
-                  text: '<li class="tetx-danger fa fa-trash"></li> Supprimer',
-                  action: function ( e, dt, node, config ) {
-                      console.log(
-                          'Row data: '+
-                          JSON.stringify( dt.row( { selected: true } ).data() )
-                      );
-                      delValueModalForme(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
-                      $("#SuppFormModal").modal(); 
-                  },
-                  enabled: false
-                },
-                //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
-                {
-                  extend:    'csv',
-                  text:      '<i class="fa fa-file-excel-o"></i> CSV',
-                  titleAttr: 'CSV',
-                  filename: 'Liste de formes',
-                  exportOptions: {
-                    columns: [0, 1]
-                  },
-                }                  
-              ],
-              // ICI on choisi la langue des details du tableau
-              language:{
-                url:'./assets/values/French.json'
-              },
-              "order": [[ 0, "asc" ]],
-              // Les donnees sont affichees dans le tableau HTML
-              data:tab_forme,
-              // On affiche pas la troisieme colonne, elle reprend les _id
-              "columnDefs": [
-                {
-                  "targets": [ 2 ],
-                  "visible": false,
-                  "searchable": false
-                },
-              ],
-              destroy:true
-            });
-            
-            table.on( 'select deselect', function () {
-              var selectedRows = table.rows( { selected: true } ).count();
-              console.log("ok: "+selectedRows)
-              table.button( 0 ).enable( selectedRows === 1 );
-              table.button( 1 ).enable( selectedRows === 1 );
-            });
-          });
+          populateTabForme();
         });
 
         $(".nav-link-cat").click(function(){
@@ -342,31 +270,13 @@ $(document).ready(function() {
           });
 
           forme.save().then(function(l) {
+            $("#design_forme").val("");
             console.log(l._id);
+            $("#AddFormModal .close").click();
+            populateTabForme();
           });
           //After saving forme
           $("#design_forme").val("");
-
-          const mm = new Map();
-
-          Forme.find({},{sort:'nom_forme'}).then(function(l) {
-            i = 0;
-            l.forEach(function(m) {
-              i++;
-              mm.set(i, m.nom_forme)
-            });
-
-            $('#tab_forme1').DataTable({
-              language:{
-                url:'./assets/values/French.json'
-              },
-              "order": [[ 0, "asc" ]],
-              data:Array.from(mm),
-              destroy : true
-            });
-            $("#AddFormModal .close").click();
-          });
-          
         })
 
         //save cat
@@ -429,6 +339,7 @@ $(document).ready(function() {
           var design_forme = $("#design_forme").val();
           var _id_design_forme = $("#_id_design_forme").val();
           Forme.findOneAndUpdate({_id:_id_design_forme},{nom_forme: design_forme},{upsert: true}).then(function(updatedForme) {
+            populateTabForme();
             console.log("_id = ", updatedForme._id)
             $("#AddFormModal .close").click();
             // swal({
@@ -459,8 +370,8 @@ $(document).ready(function() {
           Forme.deleteOne({_id:_id_del_design_forme}).then(function(deletedForme) {
             console.log('Deleted ', deletedForme, ' forme from the database.');
             swal({
-                title: "Genial",
-                text: del_design_forme+" a ete supprimer de la base de donnees",
+                title: del_design_forme.toUpperCase(),
+                text: " a ete supprimer de la base de donnees",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-success",
@@ -470,7 +381,8 @@ $(document).ready(function() {
                   $("#SuppFormModal .close").click();
                 },
                 onOpen: function () {
-                  console.log("Bre1")                  
+                  console.log("Bre1")
+                  populateTabForme();                
                 }
             }).catch(swal.noop)
           });
@@ -508,6 +420,89 @@ $(document).ready(function() {
         function delValueModalForme(forme,_id){
           $("#del_design_forme").text(forme);
           $("#_id_del_design_forme").val(_id);
+        }
+
+        //Function populate tab Forme
+        function populateTabForme(){
+          var tab_forme = [];
+          _tab_forme.destroy();
+          //$("#tab_forme").empty();
+          Forme.find({},{sort:'nom_forme'}).then(function(foundForme) {
+            i = 0;
+            foundForme.forEach(function(foundSingleForme) {
+              i++;
+              //console.log("_id = ", foundSingleForme._id)
+              var o = [i, foundSingleForme.nom_forme, foundSingleForme._id]; 
+              tab_forme.push(Array.from(o))
+            });
+
+            console.log(Array.from(tab_forme))
+            //_tab_forme.DataTable({
+            _tab_forme =  $('#tab_forme').DataTable({
+              
+              dom: 'Blfrtip',
+              select: true,
+              buttons: [
+                {
+                  text: '<li class="fa fa-edit"></li> Modification',
+                  action: function ( e, dt, node, config ) {
+                      console.log(
+                          'Row data: '+
+                          JSON.stringify( dt.row( { selected: true } ).data() )
+                      ); 
+                      updateValueModalForme(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
+                      $("#AddFormModal").modal();
+                  },
+                  enabled: false
+                },
+                {
+                  text: '<li class="tetx-danger fa fa-trash"></li> Supprimer',
+                  action: function ( e, dt, node, config ) {
+                      console.log(
+                          'Row data: '+
+                          JSON.stringify( dt.row( { selected: true } ).data() )
+                      );
+                      delValueModalForme(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
+                      $("#SuppFormModal").modal(); 
+                  },
+                  enabled: false
+                },
+                //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
+                {
+                  extend:    'csv',
+                  text:      '<i class="fa fa-file-excel-o"></i> CSV',
+                  titleAttr: 'CSV',
+                  filename: 'Liste de formes',
+                  exportOptions: {
+                    columns: [0, 1]
+                  },
+                }                  
+              ],
+              // ICI on choisi la langue des details du tableau
+              language:{
+                url:'./assets/values/French.json'
+              },
+              "order": [[ 0, "asc" ]],
+              // Les donnees sont affichees dans le tableau HTML
+              data:tab_forme,
+              // On affiche pas la troisieme colonne, elle reprend les _id
+              "columnDefs": [
+                {
+                  "targets": [ 2 ],
+                  "visible": false,
+                  "searchable": false
+                },
+              ],
+              destroy:true
+            });
+            
+            _tab_forme.on( 'select deselect', function () {
+              var selectedRows = _tab_forme.rows( { selected: true } ).count();
+              console.log("ok: "+selectedRows)
+              _tab_forme.button( 0 ).enable( selectedRows === 1 );
+              _tab_forme.button( 1 ).enable( selectedRows === 1 );
+            });
+          });
         }
       });
       </script>

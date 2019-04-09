@@ -29,7 +29,7 @@ Pour créer un <b>Installer (.exe) pour windows </b>, vous devez d'abord créer 
 $ npm run package:win 
 ```
 
-Et ensuite :
+Et en suite :
 ```bash
 $ npm run package:installer
 ```
