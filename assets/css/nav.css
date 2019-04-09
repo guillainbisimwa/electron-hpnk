@@ -177,3 +177,8 @@
 #about-modal {
   display: block;
 }
+.nav-header {
+  width: 100%;
+  background: url(../img/profile-menu.png);
+  background-size: cover;
+}
