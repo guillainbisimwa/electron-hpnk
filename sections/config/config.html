@@ -30,12 +30,12 @@
         <!-- End Navbar -->
         <div class="content_guy">
           <div class="container-fluid">
-            <div class="row">
+            <div class="ro">
               <div class="card card-nav-tabs">
                 <div class="card-header card-header-primary">
                   <div class="nav-tabs-navigation">
                     <div class="nav-tabs-wrapper">
-                      <ul class="nav nav-tabs nav-config" data-tabs="tabs">
+                      <ul class="nav nav-tabs nav-config nav-config-15" data-tabs="tabs">
                         <li class="nav-item">
                           <a class="nav-link active nav-link-med" href="#medicaments" data-toggle="tab">
                             Médicaments
@@ -113,21 +113,24 @@
                     <div class="tab-pane" id="formes">
                       <table class="table table-hover tab_left" style="width:100%" id="tab_forme">
                         <thead class="text-warning">
-                          <th>ID</th>
-                          <th>Forme</th>
+                          <tr>
+                            <th>ID</th>
+                            <th>Forme</th>
+                            <th>_id</th>
+                          </tr>
                         </thead>
                         <tbody>
                         </tbody>
                       </table>
 
-                      <button class="btn btn-lg btn-round btn-rose btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
+                      <button id="add-forme-modal" class="btn btn-lg btn-round btn-rose btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
                           <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
                       </button>
                     </div>
 
                     <div class="tab-pane" id="categories">
-                      <table class="table table-hover tab_left " id="tab_cat">
+                      <table class="table table-hover tab_left dataTable" id="tab_cat">
                           <thead class="text-warning">
                             <th>ID</th>
                             <th>Catégories</th>
@@ -168,11 +171,18 @@
           </footer>
       </div>
       <script>
-
+$(document).ready(function() {
         //Data tables modules
         var $ = require( 'jquery' );
+        require( 'jszip' );
+        require( 'pdfmake' );
         require( 'datatables.net-dt' )( window, $ );
-                     
+        require( 'datatables.net-buttons-dt' )( window, $ );
+        require( 'datatables.net-buttons/js/buttons.colVis.js' )( window, $ );
+        require( 'datatables.net-buttons/js/buttons.html5.js' )( window, $ );
+        require( 'datatables.net-buttons/js/buttons.print.js' )( window, $ );
+        require( 'datatables.net-select-dt' )( window, $ );
+
         // Getting path
         // Import ES6 way
         // import { rootPath } from 'electron-root-path';
@@ -202,22 +212,80 @@
 
         // Populate tab forme
         $(".nav-link-forme").click(function(){
-          const mm = new Map();
+          var tab_forme = [];
 
-          Forme.find({}).then(function(l) {
+          Forme.find({},{sort:'nom_forme'}).then(function(foundForme) {
             i = 0;
-            l.forEach(function(m) {
+            foundForme.forEach(function(foundSingleForme) {
               i++;
-              mm.set(i, m.nom_forme)
+              //console.log("_id = ", foundSingleForme._id)
+              var o = [i, foundSingleForme.nom_forme, foundSingleForme._id]; 
+              tab_forme.push(Array.from(o))
             });
 
-            $('#tab_forme').DataTable({
+            console.log(Array.from(tab_forme))
+            var table =  $('#tab_forme').DataTable({
+              dom: 'Blfrtip',
+              select: true,
+              buttons: [
+                {
+                  text: '<li class="fa fa-edit"></li> Modification',
+                  action: function ( e, dt, node, config ) {
+                      console.log(
+                          'Row data: '+
+                          JSON.stringify( dt.row( { selected: true } ).data() )
+                      ); 
+                      updateValueModalForme(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
+                      $("#AddFormModal").modal();
+                  },
+                  enabled: false
+                },
+                {
+                  text: '<li class="tetx-danger fa fa-trash"></li> Supprimer',
+                  action: function ( e, dt, node, config ) {
+                      console.log(
+                          'Row data: '+
+                          JSON.stringify( dt.row( { selected: true } ).data() )
+                      );
+                      delValueModalForme(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
+                      $("#SuppFormModal").modal(); 
+                  },
+                  enabled: false
+                },
+                //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
+                {
+                  extend:    'csv',
+                  text:      '<i class="fa fa-file-excel-o"></i> CSV',
+                  titleAttr: 'CSV',
+                  filename: 'Liste de formes',
+                  exportOptions: {
+                    columns: [0, 1]
+                  },
+                }                  
+              ],
+              // ICI on choisi la langue des details du tableau
               language:{
                 url:'./assets/values/French.json'
               },
               "order": [[ 0, "asc" ]],
-              data:Array.from(mm),
-              destroy : true
+              // Les donnees sont affichees dans le tableau HTML
+              data:tab_forme,
+              // On affiche pas la troisieme colonne, elle reprend les _id
+              "columnDefs": [
+                {
+                  "targets": [ 2 ],
+                  "visible": false,
+                  "searchable": false
+                },
+              ],
+              destroy:true
+            });
+            
+            table.on( 'select deselect', function () {
+              var selectedRows = table.rows( { selected: true } ).count();
+              console.log("ok: "+selectedRows)
+              table.button( 0 ).enable( selectedRows === 1 );
+              table.button( 1 ).enable( selectedRows === 1 );
             });
           });
         });
@@ -225,7 +293,7 @@
         $(".nav-link-cat").click(function(){
           const mm = new Map();
 
-          Categorie.find({}).then(function(l) {
+          Categorie.find({},{sort:'nom_categorie'}).then(function(l) {
             i = 0;
             l.forEach(function(m) {
               i++;
@@ -243,14 +311,14 @@
           });
         });
 
-        $('#tab_forme').DataTable({
+        $('#tab_forme1').DataTable({
           language:{
             url:'./assets/values/French.json'
           },
           "order": [[ 0, "asc" ]],
         });
 
-         //Init Cat tab
+        //Init Cat tab
         $('#tab_cat').DataTable({
           language:{
             url:'./assets/values/French.json'
@@ -258,8 +326,8 @@
           "order": [[ 0, "asc" ]],
         });
 
-         //Init Med tab
-         $('#tab_med').DataTable({
+        //Init Med tab
+        $('#tab_med').DataTable({
           language:{
             url:'./assets/values/French.json'
           },
@@ -281,14 +349,14 @@
 
           const mm = new Map();
 
-          Forme.find({}).then(function(l) {
+          Forme.find({},{sort:'nom_forme'}).then(function(l) {
             i = 0;
             l.forEach(function(m) {
               i++;
               mm.set(i, m.nom_forme)
             });
 
-            $('#tab_forme').DataTable({
+            $('#tab_forme1').DataTable({
               language:{
                 url:'./assets/values/French.json'
               },
@@ -296,8 +364,9 @@
               data:Array.from(mm),
               destroy : true
             });
+            $("#AddFormModal .close").click();
           });
-          $("#AddFormModal .close").click();
+          
         })
 
         //save cat
@@ -330,8 +399,7 @@
               data:Array.from(mm),
               destroy : true
             });
-            $('#tab_cat').data.reload();
-
+            //$('#tab_cat').data.reload();
 
           });
           $("#AddCatModal .close").click();
@@ -351,8 +419,97 @@
           med.save().then(function(l) {
             console.log(l._id);
           });
-        })
+        });
 
+        //Update forme
+        /** 
+         * https://github.com/scottwrobinson/camo#creating-and-saving
+        **/
+        $("#update_forme").click(function(){
+          var design_forme = $("#design_forme").val();
+          var _id_design_forme = $("#_id_design_forme").val();
+          Forme.findOneAndUpdate({_id:_id_design_forme},{nom_forme: design_forme},{upsert: true}).then(function(updatedForme) {
+            console.log("_id = ", updatedForme._id)
+            $("#AddFormModal .close").click();
+            // swal({
+            //     title: "Good job!",
+            //     text: "You clicked the button!",
+            //     toast: true,
+            //     position: 'top-end',
+            //     buttonsStyling: false,
+            //     confirmButtonClass: "btn btn-success",
+            //     type: "success",
+            //     target: document.getElementById('AddFormModalBody'),
+            //     onBeforeOpen: function () {
+            //       //Swal.getContainer().style.position = 'absolute';
+            //       //$("#AddFormModalContent").text("");
+            //       console.log("Bre")
+            //     },
+            //     onOpen: function () {
+            //       console.log("Bre1")                  
+            //     }
+            // }).catch(swal.noop)
+          }); 
+        });
+
+        //Supprimer une forme
+        $("#supp_forme").click(function(){
+          var _id_del_design_forme = $("#_id_del_design_forme").val();
+          var del_design_forme = $("#del_design_forme").text();
+          Forme.deleteOne({_id:_id_del_design_forme}).then(function(deletedForme) {
+            console.log('Deleted ', deletedForme, ' forme from the database.');
+            swal({
+                title: "Genial",
+                text: del_design_forme+" a ete supprimer de la base de donnees",
+                toast: false,
+                buttonsStyling: false,
+                confirmButtonClass: "btn btn-success",
+                type: "success",
+                //target: document.getElementById('config-section'),
+                onBeforeOpen: function () {
+                  $("#SuppFormModal .close").click();
+                },
+                onOpen: function () {
+                  console.log("Bre1")                  
+                }
+            }).catch(swal.noop)
+          });
+        });
+        
+        //Update text inside modal before Adding a forme
+        $("#add-forme-modal").click(function(){
+          addValueModalForme();
+        });
+        
+        //Function, update values before adding forme
+        function updateValueModalForme(forme,_id){
+          $("#update_forme").css("display","block");
+          $("#save_forme").css("display","none");
+          $(".forme-modal-title").text("Modifier la forme");
+          $(".forme-modal-title").css("color","#a11");
+          //$("#design_forme").click();
+          $("#design_forme").val(forme);
+          $("#_id_design_forme").val(_id);
+          
+          //Find is-filled is-focused
+          $("#AddFormModal").find(".form-group").addClass("has-danger is-filled is-focused");
+        }
+        function addValueModalForme(){
+          $("#update_forme").css("display","none");
+          $("#save_forme").css("display","block");
+          $(".forme-modal-title").text("Ajouter une forme");
+          $(".forme-modal-title").css("color","#000");
+          $("#AddFormModal").find(".form-group").removeClass("has-danger is-filled is-focused");
+          $("#design_forme").val("");
+          $("#_id_design_forme").val("");
+        }
+
+        //Function, update values before adding forme
+        function delValueModalForme(forme,_id){
+          $("#del_design_forme").text(forme);
+          $("#_id_del_design_forme").val(_id);
+        }
+      });
       </script>
   </section>
   <!-- Modal add medicaments -->
@@ -409,17 +566,18 @@
     <!-- Modal add Formes -->
     <div class="modal fade" id="AddFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content"  id="AddFormModalContent">
           <div class="modal-header">
-            <h4 class="modal-title">Ajouter une forme</h4>
+            <h4 class="modal-title forme-modal-title">Ajouter une forme</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
               <i class="fa fa-close"></i>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body"  id="AddFormModalBody">
             <div class="form-group">
               <label for="design_forme" class="bmd-label-floating">Forme du médicament</label>
               <input type="text" class="form-control" id="design_forme">
+              <input type="hidden" class="form-control" id="_id_design_forme">
             </div>
           </div>
           <div class="modal-footer">
@@ -429,6 +587,12 @@
               </span>
               Enregistrer
             </button>
+            <button id="update_forme" class="btn btn-rose">
+                <span class="btn-label">
+                  <i class="fa fa-save"></i>
+                </span>
+                Modifier
+              </button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
           </div>
         </div>
@@ -456,6 +620,35 @@
                   <i class="fa fa-save"></i>
                 </span>
                 Enregistrer
+              </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal delete Forme -->
+      <div class="modal fade" id="SuppFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-danger">Supprimer une Forme</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <h3 class="text-center">Voulez-vous vraiment supprimer la forme: 
+                <b class="text-danger" id="del_design_forme"></b>?</h3>
+                <input type="hidden" class="form-control" id="_id_del_design_forme">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="supp_forme" class="btn btn-rose">
+                <span class="btn-label">
+                  <i class="fa fa-trash"></i>
+                </span>
+                Supprimer
               </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>

@@ -52,3 +52,48 @@
 .tab_left {
   text-align-last: left;
 }
+.nav-config-15 {
+  margin: -15px;
+}
+.select-info, .select-item{
+  margin-left: 14px;
+  color: #a11;
+}
+.f-left{
+  float: left;
+}
+.dt-buttons {
+  width: 100%;
+  text-align: left;
+}
+.dt-button.disabled, .dt-button:disabled {
+  opacity: 0.65;
+  box-shadow: none;
+}
+.dt-button {
+  color: #fff;
+  background-color: #999999;
+  border-color: #999999;
+  position: relative;
+  padding: 12px 30px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow, transform;  
+  box-shadow:0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+}
+#update_forme {
+  display: none;
+}
+#AddFormModalBody .swal2-container {
+  /*position:inherit;*/
+}
+#AddFormModalBody .swal2-container.swal2-shown {
+  /*background-color: transparent;*/
+}
