@@ -60,7 +60,7 @@
                     <div class="tab-pane active" id="medicaments">
                       <table class="table table-hover tab_left " id="tab_med" style="width:100%">
                         <thead class="text-warning">
-                          <th>ID</th>
+                          <th>Numéro</th>
                           <th>Désignation du médicament</th>
                           <th>Forme (unitaire)</th>
                           <th>Catégorie</th>
@@ -81,7 +81,7 @@
                       <table class="table table-hover tab_left" style="width:100%" id="tab_forme">
                         <thead class="text-warning">
                           <tr>
-                            <th>ID</th>
+                            <th>Numéro</th>
                             <th>Forme</th>
                             <th>_id</th>
                           </tr>
@@ -99,7 +99,7 @@
                     <div class="tab-pane" id="categories">
                       <table class="table table-hover tab_left dataTable" id="tab_cat" style="width:100%">
                           <thead class="text-warning">
-                            <th>ID</th>
+                            <th>Numéro</th>
                             <th>Catégories</th>
                             <th>_id</th>
                           </thead>
@@ -325,8 +325,8 @@
             console.log('Deleted ', deletedForme, ' forme from the database.');
             if(deletedForme == 0){
               swal({
-                title: "Erreur!",
-                text: " Impossoble de supprimer dans la base de donnees",
+                title: "Erreur !",
+                text: " Impossible de supprimer de la base de données",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-danger",
@@ -344,7 +344,7 @@
             else {
               swal({
                 title: del_design_forme.toUpperCase(),
-                text: " a ete supprimer de la base de donnees",
+                text: " a été supprimé de la base de données",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-success",
@@ -370,8 +370,8 @@
             console.log('Deleted ', deletedCat, ' categorie from the database.');
             if(deletedCat == 0){
               swal({
-                title: "Erreur!",
-                text: " Impossoble de supprimer dans la base de donnees",
+                title: "Erreur !",
+                text: " Impossible de supprimer de la base de données",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-danger",
@@ -389,7 +389,7 @@
             else {
               swal({
                 title: del_design_cat.toUpperCase(),
-                text: " a ete supprimer de la base de donnees",
+                text: " a été supprimé de la base de données",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-success",
@@ -415,8 +415,8 @@
             console.log('Deleted ', deletedMed, ' medicamemt from the database.');
             if(deletedMed == 0){
               swal({
-                title: "Erreur!",
-                text: " Impossoble de supprimer dans la base de donnees",
+                title: "Erreur !",
+                text: " Impossible de supprimé de la base de données",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-danger",
@@ -433,7 +433,7 @@
             else {
               swal({
                 title: del_design_med.toUpperCase(),
-                text: " a ete supprimer de la base de donnees",
+                text: " a ete supprimé de la base de données",
                 toast: false,
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-success",
@@ -495,7 +495,7 @@
          function updateValueModalCat(cat,_id){
           $("#update_cat").css("display","block");
           $("#save_cat").css("display","none");
-          $(".cat-modal-title").text("Modifier la categorie");
+          $(".cat-modal-title").text("Modifier la catégorie");
           $(".cat-modal-title").css("color","#a11");
           //$("#design_forme").click();
           $("#design_cat").val(cat);
@@ -507,7 +507,7 @@
         function addValueModalCat(){
           $("#update_cat").css("display","none");
           $("#save_cat").css("display","block");
-          $(".cat-modal-title").text("Ajouter une categorie");
+          $(".cat-modal-title").text("Ajouter une catégorie");
           $(".cat-modal-title").css("color","#000");
           $("#AddCatModal").find(".form-group").removeClass("has-danger is-filled is-focused");
           $("#design_cat").val("");
@@ -518,7 +518,7 @@
          function updateValueModalMed(cat,_id, _id_forme, _id_categorie){
           $("#update_med").css("display","block");
           $("#save_med").css("display","none");
-          $(".med-modal-title").text("Modifier le medicament");
+          $(".med-modal-title").text("Modifier le médicament");
           $(".med-modal-title").css("color","#a11");
           //$("#design_forme").click();
           $("#design_med").val(cat);
@@ -534,7 +534,7 @@
         function addValueModalMed(){
           $("#update_med").css("display","none");
           $("#save_med").css("display","block");
-          $(".med-modal-title").text("Ajouter un medicament");
+          $(".med-modal-title").text("Ajouter un médicament");
           $(".med-modal-title").css("color","#000");
           $("#AddMedModal").find(".form-group").removeClass("has-danger is-filled is-focused");
           $("#design_med").val("");
@@ -745,10 +745,10 @@
               
               //get the real name of categorie by uising its _id
               //var _nom_cat = getCatById1(foundSingleMed.id_categorie);
-              var _nom_forme = mapForme.has(foundSingleMed.id_forme)? mapForme.get(foundSingleMed.id_forme):foundSingleMed.id_forme;
+              var _nom_forme = mapForme.has(foundSingleMed.id_forme)? mapForme.get(foundSingleMed.id_forme):"";
               //mapForme.get(foundSingleMed.id_forme);
               //var _nom_cat = "OK";
-              var _nom_cat = mapCat.has(foundSingleMed.id_categorie)? mapCat.get(foundSingleMed.id_categorie):foundSingleMed.id_categorie;
+              var _nom_cat = mapCat.has(foundSingleMed.id_categorie)? mapCat.get(foundSingleMed.id_categorie):"";
               
               _id_forme = (foundSingleMed.id_forme != undefined ) ? foundSingleMed.id_forme : "";
               _id_categorie =(foundSingleMed.id_categorie != undefined ) ? foundSingleMed.id_categorie : "";
@@ -793,10 +793,10 @@
                 {
                   extend:    'csv',
                   text:      '<i class="fa fa-file-excel-o"></i> CSV',
-                  titleAttr: 'CSV',
-                  filename: 'Liste de medicaments',
+                  titleAttr: 'Export CSV',
+                  filename: 'Liste des medicaments',
                   exportOptions: {
-                    columns: [0, 1, 2, 3]
+                    columns: [0, 1, 2, 3, 4, 5, 6]
                   },
                 }                  
               ],
@@ -947,7 +947,7 @@
                 <div class="form-group">
                   <label for="design_med" class="bmd-label-floating">Désignation du médicament</label>
                   <input type="text" class="form-control" id="design_med">
-                  <input type="text" class="form-control" id="_id_design_med">
+                  <input type="hidden" class="form-control" id="_id_design_med">
                 </div>
               </div>
             </div>
@@ -1063,7 +1063,7 @@
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <h3 class="text-center">Voulez-vous vraiment supprimer la forme: 
+                <h3 class="text-center">Voulez-vous vraiment supprimer la forme : 
                 <b class="text-danger" id="del_design_forme"></b>?</h3>
                 <input type="hidden" class="form-control" id="_id_del_design_forme">
               </div>
@@ -1086,14 +1086,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title text-danger">Supprimer une Categorie</h4>
+              <h4 class="modal-title text-danger">Supprimer une Catégorie</h4>
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 <i class="fa fa-close"></i>
               </button>
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <h3 class="text-center">Voulez-vous vraiment supprimer la categorie: 
+                <h3 class="text-center">Voulez-vous vraiment supprimer la catégorie : 
                 <b class="text-danger" id="del_design_cat"></b>?</h3>
                 <input type="hidden" class="form-control" id="_id_del_design_cat">
               </div>
@@ -1116,16 +1116,16 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title text-danger">Supprimer un medicamemt</h4>
+              <h4 class="modal-title text-danger">Supprimer un médicament</h4>
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 <i class="fa fa-close"></i>
               </button>
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <h3 class="text-center">Voulez-vous vraiment supprimer le medicamemt: 
+                <h3 class="text-center">Voulez-vous vraiment supprimer le médicament : 
                 <b class="text-danger" id="del_design_med"></b>?</h3>
-                <input type="text" class="form-control" id="_id_del_design_med">
+                <input type="hidden class="form-control" id="_id_del_design_med">
               </div>
             </div>
             <div class="modal-footer">
