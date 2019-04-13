@@ -1,0 +1,56 @@
+{
+    "name":"HPNK PHARMA",
+    "section_dashboard": {
+        "name": "Tableau de bord",
+        "icon": "fa fa-th-large fa-lg"
+    },
+    "section_config": {
+        "name": "Configurations",
+        "icon": "fa fa-cog fa-lg"
+    },
+    "section_stock": {
+        "name": "Stock Médicament",
+        "icon": "fa fa fa-medkitfa-lg"
+    },
+    "section_entrée": {
+        "name": "Entrée",
+        "icon": "fa fa-plus-circle fa-lg"
+    },
+    "section_sortie": {
+        "name": "Sortie",
+        "icon": "fa fa-minus-circle fa-lg"
+    },
+    "section_rapport": {
+        "name": "Rapport",
+        "icon": "fa fa-line-chart fa-lg"
+    },
+    "section_aide": {
+        "name": "Besoin d'aide?",
+        "icon": "fa fa-info fa-lg"
+    },
+    "section_apropos": {
+        "name": "Apropos du logiciel",
+        "icon": "fa fa-hashtag fa-lg"
+    },
+    "med":"Médicament",
+    "meds":"Médicaments",
+    "cat":"Catégorie",
+    "cats":"Catégories",
+    "forme":"Forme",
+    "formes":"Formes",
+    "nbr":"Numéro",
+    "buttons": {
+        "modifier": {
+            "name": "Modifier",
+            "icon": "fa fa fa-"
+        },
+        "supprimer": {
+            "name": "Supprimer",
+            "icon": "fa fa fa-"
+        },
+        "export": {
+            "name": "Exprt CSV",
+            "icon": "fa fa fa-"
+        }
+    }
+}
