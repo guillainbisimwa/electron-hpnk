@@ -46,8 +46,8 @@
                             Formes
                           </a>
                         </li>
-                        <li class="nav-item nav-link-cat">
-                          <a class="nav-link " href="#categories" data-toggle="tab">
+                        <li class="nav-item ">
+                          <a class="nav-link nav-link-cat" href="#categories" data-toggle="tab">
                           Catégories
                           </a>
                         </li>
@@ -60,13 +60,15 @@
                     <div class="tab-pane active" id="medicaments">
                       <table class="table table-hover tab_left " id="tab_med" style="width:100%">
                         <thead class="text-warning">
-                          <th>Numéro</th>
-                          <th>Désignation du médicament</th>
-                          <th>Forme (unitaire)</th>
-                          <th>Catégorie</th>
-                          <th>_id</th>
-                          <th>_id_forme</th>
-                          <th>_id_categorie</th>
+                          <tr>
+                            <th class="1">Numéro</th>
+                            <th class="2" >Désignation du médicament</th>
+                            <th class="3" >Forme (unitaire)</th>
+                            <th class="4" >Catégorie</th>
+                            <th>_id</th>
+                            <th>_id_forme</th>
+                            <th>_id_categorie</th>
+                          </tr>
                         </thead>
                         <tbody>
                         </tbody>
@@ -150,6 +152,10 @@
         require( 'datatables.net-buttons/js/buttons.html5.js' )( window, $ );
         require( 'datatables.net-buttons/js/buttons.print.js' )( window, $ );
         require( 'datatables.net-select-dt' )( window, $ );
+
+        //import tje JSON file
+        const json = require("./assets/values/String.json");
+
 
         // Getting path
         // Import ES6 way
@@ -323,42 +329,9 @@
           var del_design_forme = $("#del_design_forme").text();
           Forme.deleteOne({_id:_id_del_design_forme}).then(function(deletedForme) {
             console.log('Deleted ', deletedForme, ' forme from the database.');
-            if(deletedForme == 0){
-              swal({
-                title: "Erreur !",
-                text: " Impossible de supprimer de la base de données",
-                toast: false,
-                buttonsStyling: false,
-                confirmButtonClass: "btn btn-danger",
-                type: "error",
-                //target: document.getElementById('config-section'),
-                onBeforeOpen: function () {
-                  $("#SuppFormModal .close").click();
-                },
-                onOpen: function () {
-                  populateTabForme();
-                  mapOfForme();
-                }
-              }).catch(swal.noop)
-            }
-            else {
-              swal({
-                title: del_design_forme.toUpperCase(),
-                text: " a été supprimé de la base de données",
-                toast: false,
-                buttonsStyling: false,
-                confirmButtonClass: "btn btn-success",
-                type: "success",
-                //target: document.getElementById('config-section'),
-                onBeforeOpen: function () {
-                  $("#SuppFormModal .close").click();
-                },
-                onOpen: function () {
-                  populateTabForme();
-                  mapOfForme();               
-                }
-              }).catch(swal.noop)
-            }
+            result_del(deletedForme,del_design_forme,"SuppFormModal");
+            populateTabForme();
+            mapOfForme(); 
           });
         });
 
@@ -368,42 +341,9 @@
           var del_design_cat = $("#del_design_cat").text();
           Categorie.deleteOne({_id:_id_del_design_cat}).then(function(deletedCat) {
             console.log('Deleted ', deletedCat, ' categorie from the database.');
-            if(deletedCat == 0){
-              swal({
-                title: "Erreur !",
-                text: " Impossible de supprimer de la base de données",
-                toast: false,
-                buttonsStyling: false,
-                confirmButtonClass: "btn btn-danger",
-                type: "error",
-                //target: document.getElementById('config-section'),
-                onBeforeOpen: function () {
-                  $("#SuppCatModal .close").click();
-                },
-                onOpen: function () {
-                  populateTabCat();
-                  mapOfCat();
-                }
-              }).catch(swal.noop)
-            }
-            else {
-              swal({
-                title: del_design_cat.toUpperCase(),
-                text: " a été supprimé de la base de données",
-                toast: false,
-                buttonsStyling: false,
-                confirmButtonClass: "btn btn-success",
-                type: "success",
-                //target: document.getElementById('config-section'),
-                onBeforeOpen: function () {
-                  $("#SuppCatModal .close").click();
-                },
-                onOpen: function () {
-                  populateTabCat();  
-                  mapOfCat();              
-                }
-              }).catch(swal.noop)
-            }
+            result_del(deletedCat,del_design_cat,"SuppCatModal");
+            populateTabCat();
+            mapOfCat();
           });
         });
 
@@ -413,41 +353,8 @@
           var del_design_med = $("#del_design_med").text();
           Medicament.deleteOne({_id:_id_del_design_med}).then(function(deletedMed) {
             console.log('Deleted ', deletedMed, ' medicamemt from the database.');
-            if(deletedMed == 0){
-              swal({
-                title: "Erreur !",
-                text: " Impossible de supprimé de la base de données",
-                toast: false,
-                buttonsStyling: false,
-                confirmButtonClass: "btn btn-danger",
-                type: "error",
-                //target: document.getElementById('config-section'),
-                onBeforeOpen: function () {
-                  $("#SuppMedModal .close").click();
-                },
-                onOpen: function () {
-                  populateTabMed();                
-                }
-              }).catch(swal.noop)
-            }
-            else {
-              swal({
-                title: del_design_med.toUpperCase(),
-                text: " a ete supprimé de la base de données",
-                toast: false,
-                buttonsStyling: false,
-                confirmButtonClass: "btn btn-success",
-                type: "success",
-                //target: document.getElementById('config-section'),
-                onBeforeOpen: function () {
-                  $("#SuppMedModal .close").click();
-                },
-                onOpen: function () {
-                  populateTabMed();                
-                }
-              }).catch(swal.noop)
-            }
-            
+            result_del(deletedMed,del_design_med,"SuppMedModal");
+            populateTabMed();
           });
         });
         
@@ -472,7 +379,7 @@
         function updateValueModalForme(forme,_id){
           $("#update_forme").css("display","block");
           $("#save_forme").css("display","none");
-          $(".forme-modal-title").text("Modifier la forme");
+          $(".forme-modal-title").text(json.forme.edit);
           $(".forme-modal-title").css("color","#a11");
           //$("#design_forme").click();
           $("#design_forme").val(forme);
@@ -484,7 +391,7 @@
         function addValueModalForme(){
           $("#update_forme").css("display","none");
           $("#save_forme").css("display","block");
-          $(".forme-modal-title").text("Ajouter une forme");
+          $(".forme-modal-title").text(json.forme.add);
           $(".forme-modal-title").css("color","#000");
           $("#AddFormModal").find(".form-group").removeClass("has-danger is-filled is-focused");
           $("#design_forme").val("");
@@ -495,7 +402,7 @@
          function updateValueModalCat(cat,_id){
           $("#update_cat").css("display","block");
           $("#save_cat").css("display","none");
-          $(".cat-modal-title").text("Modifier la catégorie");
+          $(".cat-modal-title").text(json.cat.edit);
           $(".cat-modal-title").css("color","#a11");
           //$("#design_forme").click();
           $("#design_cat").val(cat);
@@ -507,7 +414,7 @@
         function addValueModalCat(){
           $("#update_cat").css("display","none");
           $("#save_cat").css("display","block");
-          $(".cat-modal-title").text("Ajouter une catégorie");
+          $(".cat-modal-title").text(json.cat.add);
           $(".cat-modal-title").css("color","#000");
           $("#AddCatModal").find(".form-group").removeClass("has-danger is-filled is-focused");
           $("#design_cat").val("");
@@ -518,7 +425,7 @@
          function updateValueModalMed(cat,_id, _id_forme, _id_categorie){
           $("#update_med").css("display","block");
           $("#save_med").css("display","none");
-          $(".med-modal-title").text("Modifier le médicament");
+          $(".med-modal-title").text(json.med.edit);
           $(".med-modal-title").css("color","#a11");
           //$("#design_forme").click();
           $("#design_med").val(cat);
@@ -534,7 +441,7 @@
         function addValueModalMed(){
           $("#update_med").css("display","none");
           $("#save_med").css("display","block");
-          $(".med-modal-title").text("Ajouter un médicament");
+          $(".med-modal-title").text(json.med.add);
           $(".med-modal-title").css("color","#000");
           $("#AddMedModal").find(".form-group").removeClass("has-danger is-filled is-focused");
           $("#design_med").val("");
@@ -582,7 +489,7 @@
               select: true,
               buttons: [
                 {
-                  text: '<li class="fa fa-edit"></li> Modification',
+                  text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
                   action: function ( e, dt, node, config ) {
                       console.log(
                           'Row data: '+
@@ -594,7 +501,7 @@
                   enabled: false
                 },
                 {
-                  text: '<li class="tetx-danger fa fa-trash"></li> Supprimer',
+                  text: '<li class="tetx-danger '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
                   action: function ( e, dt, node, config ) {
                       console.log(
                           'Row data: '+
@@ -608,9 +515,9 @@
                 //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
                 {
                   extend:    'csv',
-                  text:      '<i class="fa fa-file-excel-o"></i> CSV',
+                  text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
                   titleAttr: 'CSV',
-                  filename: 'Liste de formes',
+                  filename: json.forme.file_name,
                   exportOptions: {
                     columns: [0, 1]
                   },
@@ -665,7 +572,7 @@
               select: true,
               buttons: [
                 {
-                  text: '<li class="fa fa-edit"></li> Modification',
+                  text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
                   action: function ( e, dt, node, config ) {
                       console.log(
                           'Row data: '+
@@ -677,7 +584,7 @@
                   enabled: false
                 },
                 {
-                  text: '<li class="tetx-danger fa fa-trash"></li> Supprimer',
+                  text: '<li class="tetx-danger '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
                   action: function ( e, dt, node, config ) {
                       console.log(
                           'Row data: '+
@@ -691,9 +598,9 @@
                 //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
                 {
                   extend:    'csv',
-                  text:      '<i class="fa fa-file-excel-o"></i> CSV',
+                  text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
                   titleAttr: 'CSV',
-                  filename: 'Liste de categories',
+                  filename: json.cat.file_name,
                   exportOptions: {
                     columns: [0, 1]
                   },
@@ -744,9 +651,7 @@
               i++;
               
               //get the real name of categorie by uising its _id
-              //var _nom_cat = getCatById1(foundSingleMed.id_categorie);
               var _nom_forme = mapForme.has(foundSingleMed.id_forme)? mapForme.get(foundSingleMed.id_forme):"";
-              //mapForme.get(foundSingleMed.id_forme);
               //var _nom_cat = "OK";
               var _nom_cat = mapCat.has(foundSingleMed.id_categorie)? mapCat.get(foundSingleMed.id_categorie):"";
               
@@ -764,7 +669,7 @@
               select: true,
               buttons: [
                 {
-                  text: '<li class="fa fa-edit"></li> Modification',
+                  text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
                   action: function ( e, dt, node, config ) {
                       console.log(
                           'Row data: '+
@@ -778,7 +683,7 @@
                   enabled: false
                 },
                 {
-                  text: '<li class="tetx-danger fa fa-trash"></li> Supprimer',
+                  text: '<li class="tetx-danger '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
                   action: function ( e, dt, node, config ) {
                       console.log(
                           'Row data: '+
@@ -792,9 +697,9 @@
                 //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
                 {
                   extend:    'csv',
-                  text:      '<i class="fa fa-file-excel-o"></i> CSV',
-                  titleAttr: 'Export CSV',
-                  filename: 'Liste des medicaments',
+                  text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
+                  titleAttr: 'CSV',
+                  filename: json.med.file_name,
                   exportOptions: {
                     columns: [0, 1, 2, 3, 4, 5, 6]
                   },
@@ -926,6 +831,44 @@
             console.log(Array.from(mapCat))
           });
         }
+
+        function result_del(deletedMed,deleted_item,modal){
+          if(deletedMed == 0){
+            swal({
+              title: json.error,
+              text: json.error_del_db,
+              toast: false,
+              buttonsStyling: false,
+              confirmButtonClass: "btn btn-danger",
+              type: "error",
+              //target: document.getElementById('config-section'),
+              onBeforeOpen: function () {
+                $("#"+modal+" .close").click();
+              },
+              onOpen: function () {
+                //populateTabMed();                
+              }
+            }).catch(swal.noop)
+          }
+          else {
+            swal({
+              title: deleted_item.toUpperCase(),
+              text: json.success_del_db,
+              toast: false,
+              buttonsStyling: false,
+              confirmButtonClass: "btn btn-success",
+              type: "success",
+              //target: document.getElementById('config-section'),
+              onBeforeOpen: function () {
+                //$("#SuppMedModal .close").click();
+                $("#"+modal+" .close").click();
+              },
+              onOpen: function () {
+                //populateTabMed();                
+              }
+            }).catch(swal.noop)
+          }
+        }
        
 
       });
@@ -936,7 +879,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title med-modal-title">Ajouter un médicament</h4>
+            <h4 class="modal-title med-modal-title"></h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
               <i class="fa fa-close"></i>
             </button>
@@ -945,7 +888,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="form-group">
-                  <label for="design_med" class="bmd-label-floating">Désignation du médicament</label>
+                  <label for="design_med" class="bmd-label-floating design_med">Désignation du médicament</label>
                   <input type="text" class="form-control" id="design_med">
                   <input type="hidden" class="form-control" id="_id_design_med">
                 </div>
@@ -956,23 +899,19 @@
              multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
              
             </select>
-            <select class="selectpicker" title="Choisissez une categorie" id="design_med_cat" data-live-search="true"
+            <select class="selectpicker" title="Choisissez une catégorie" id="design_med_cat" data-live-search="true"
             multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
             
             </select>
           </div>
           <div class="modal-footer">
             <button id="save_med" class="btn btn-primary">
-              <span class="btn-label">
-                <i class="fa fa-save"></i>
-              </span>
-              Enregistrer
+              <i class=""></i>
+              <span>Enregistrer</span>
             </button>
             <button id="update_med" class="btn btn-rose">
-              <span class="btn-label">
-                <i class="fa fa-save"></i>
-              </span>
-              Modifier
+                <i class=""></i>
+                <span></span>
             </button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             <!-- <button id="list_med" class="btn btn-rose" >Liste</button> -->
@@ -986,30 +925,26 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title forme-modal-title">Ajouter une forme</h4>
+            <h4 class="modal-title forme-modal-title"></h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
               <i class="fa fa-close"></i>
             </button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label for="design_forme" class="bmd-label-floating">Forme du médicament</label>
+              <label for="design_forme" class="design_forme bmd-label-floating">Forme du médicament</label>
               <input type="text" class="form-control" id="design_forme">
               <input type="hidden" class="form-control" id="_id_design_forme">
             </div>
           </div>
           <div class="modal-footer">
             <button id="save_forme" class="btn btn-primary">
-              <span class="btn-label">
-                <i class="fa fa-save"></i>
-              </span>
-              Enregistrer
+                <i class=""></i>
+                <span></span>
             </button>
             <button id="update_forme" class="btn btn-rose">
-              <span class="btn-label">
-                <i class="fa fa-save"></i>
-              </span>
-              Modifier
+                <i class=""></i>
+                <span></span>
             </button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
           </div>
@@ -1021,30 +956,26 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title cat-modal-title">Ajouter une Catégorie</h4>
+              <h4 class="modal-title cat-modal-title"></h4>
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 <i class="fa fa-close"></i>
               </button>
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <label for="design_cat" class="bmd-label-floating">Catégorie du médicament</label>
+                <label for="design_cat" class="design_cat bmd-label-floating">Catégorie du médicament</label>
                 <input type="text" class="form-control" id="design_cat">
                 <input type="hidden" class="form-control" id="_id_design_cat">
               </div>
             </div>
             <div class="modal-footer">
               <button id="save_cat" class="btn btn-primary">
-                <span class="btn-label">
-                  <i class="fa fa-save"></i>
-                </span>
-                Enregistrer
+                  <i class=""></i>
+                  <span></span>
               </button>
               <button id="update_cat" class="btn btn-rose">
-                <span class="btn-label">
-                  <i class="fa fa-save"></i>
-                </span>
-                Modifier
+                  <i class=""></i>
+                  <span></span>
               </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
@@ -1063,17 +994,15 @@
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <h3 class="text-center">Voulez-vous vraiment supprimer la forme : 
+                <h3 class="text-center"><span>Voulez-vous vraiment supprimer la forme : </span>
                 <b class="text-danger" id="del_design_forme"></b>?</h3>
                 <input type="hidden" class="form-control" id="_id_del_design_forme">
               </div>
             </div>
             <div class="modal-footer">
               <button id="supp_forme" class="btn btn-rose">
-                <span class="btn-label">
-                  <i class="fa fa-trash"></i>
-                </span>
-                Supprimer
+                  <i class=""></i>
+                  <span></span>
               </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
@@ -1093,17 +1022,15 @@
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <h3 class="text-center">Voulez-vous vraiment supprimer la catégorie : 
+                <h3 class="text-center"><span>Voulez-vous vraiment supprimer la catégorie : </span>
                 <b class="text-danger" id="del_design_cat"></b>?</h3>
                 <input type="hidden" class="form-control" id="_id_del_design_cat">
               </div>
             </div>
             <div class="modal-footer">
               <button id="supp_cat" class="btn btn-rose">
-                <span class="btn-label">
-                  <i class="fa fa-trash"></i>
-                </span>
-                Supprimer
+                  <i class=""></i>
+                  <span></span>
               </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
@@ -1116,24 +1043,22 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title text-danger">Supprimer un médicament</h4>
+              <h4 class="modal-title text-danger"></h4>
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 <i class="fa fa-close"></i>
               </button>
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <h3 class="text-center">Voulez-vous vraiment supprimer le médicament : 
+                <h3 class="text-center"> <span></span>
                 <b class="text-danger" id="del_design_med"></b>?</h3>
-                <input type="hidden class="form-control" id="_id_del_design_med">
+                <input type="hidden" class="form-control" id="_id_del_design_med">
               </div>
             </div>
             <div class="modal-footer">
               <button id="supp_med" class="btn btn-rose">
-                <span class="btn-label">
-                  <i class="fa fa-trash"></i>
-                </span>
-                Supprimer
+                  <i class=""></i>
+                  <span></span>
               </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>

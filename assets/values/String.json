@@ -1,5 +1,10 @@
 {
     "name":"HPNK PHARMA",
+    "nbr":"Numéro",
+    "designation":"Désignation",
+    "error":"Erreur !",
+    "error_del_db":"Impossible de supprimer de la base de données",
+    "success_del_db":"a été supprimé de la base de données",
     "section_dashboard": {
         "name": "Tableau de bord",
         "icon": "fa fa-th-large fa-lg"
@@ -32,25 +37,52 @@
         "name": "Apropos du logiciel",
         "icon": "fa fa-hashtag fa-lg"
     },
-    "med":"Médicament",
-    "meds":"Médicaments",
-    "cat":"Catégorie",
-    "cats":"Catégories",
-    "forme":"Forme",
-    "formes":"Formes",
-    "nbr":"Numéro",
     "buttons": {
-        "modifier": {
-            "name": "Modifier",
-            "icon": "fa fa fa-"
+        "add": {
+            "name": "Enregistrer",
+            "icon": "fa fa-save"
         },
-        "supprimer": {
+        "edit": {
+            "name": "Modifier",
+            "icon": "fa fa-edit"
+        },
+        "del": {
             "name": "Supprimer",
-            "icon": "fa fa fa-"
+            "icon": "fa fa-trash"
         },
         "export": {
-            "name": "Exprt CSV",
-            "icon": "fa fa fa-"
+            "name": "Exporter CSV",
+            "icon": "fa fa-file-excel-o"
         }
+    },
+    "forme": {
+        "name": "Forme",
+        "plurial": "Formes",
+        "add": "Ajouter une forme",
+        "del": "Supprimer une forme",
+        "edit": "Modifier une forme",
+        "file_name":"Liste de formes",
+        "del_confirm_msg":"Voulez-vous vraiment supprimer la forme : ",
+        "designation":"Forme du médicament"
+    },
+    "cat": {
+        "name": "Catégorie",
+        "plurial": "Catégories",
+        "add": "Ajouter une catégorie",
+        "del": "Supprimer une catégorie",
+        "edit": "Modifier une catégorie",
+        "file_name":"Liste de catégories",
+        "del_confirm_msg":"Voulez-vous vraiment supprimer la Catégorie : ",
+        "designation":"Catégorie du médicament"
+    },
+    "med": {
+        "name": "Médicament",
+        "plurial": "Médicaments",
+        "add": "Ajouter un médicament",
+        "del": "Supprimer un médicament",
+        "edit": "Modifier un médicament",
+        "file_name":"Liste de médicaments",
+        "del_confirm_msg":"Voulez-vous vraiment supprimer le Médicament : ",
+        "designation":"Désignation du médicament"
     }
 }
