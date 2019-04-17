@@ -181,11 +181,9 @@
           mapOfForme();
           //Ajouter les cat dans l'objet Map
           mapOfCat();
-
           populateTabMed();
         });
         
-
         // Declare all my databases classes
         const Forme =  require('./data/Forme');
         const Categorie =  require('./data/Categorie');
@@ -332,6 +330,11 @@
             result_del(deletedForme,del_design_forme,"SuppFormModal");
             populateTabForme();
             mapOfForme(); 
+            //Update Medicaments and remove the deleted forme's ID
+            Medicament.findOneAndUpdate({id_forme:_id_del_design_forme},{id_forme:""},{upsert: true}).then(function(updatedMed) {
+              populateTabMed();
+              console.log("OKKKAY _id forme = ", updatedMed._id)
+            }); 
           });
         });
 
@@ -344,6 +347,11 @@
             result_del(deletedCat,del_design_cat,"SuppCatModal");
             populateTabCat();
             mapOfCat();
+            //Update Medicaments and remove the deleted Cat's ID
+            Medicament.findOneAndUpdate({id_categorie:_id_del_design_cat},{id_categorie:""},{upsert: true}).then(function(updatedMed) {
+              populateTabMed();
+              console.log("OKKKAY _id cat = ", updatedMed._id)
+            });
           });
         });
 
@@ -662,7 +670,7 @@
               tab_med.push(Array.from(localSingleMed))
             });
 
-            console.log(Array.from(tab_med))
+            console.log("Here ",Array.from(tab_med))
             //_tab_med.DataTable({
             _tab_med =  $('#tab_med').DataTable({
               dom: 'Blfrtip',
