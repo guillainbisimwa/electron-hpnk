@@ -140,6 +140,27 @@
             </div>
           </footer>
       </div>
+
+
+
+
+
+
+
+      <div class="fixed-plugin">
+        <div class="">
+          <a data-toggle="modal" data-target="#UploadMedModal" >
+            <i class="fa fa-cog fa-2x"> </i>
+          </a>
+          
+        </div>
+      </div>
+
+
+
+
+
+
       <script>
       $(document).ready(function() {
         //Data tables modules
@@ -155,6 +176,9 @@
 
         //import tje JSON file
         const json = require("./assets/values/String.json");
+
+        //require('jquery-csv/src/jquery.csv.js');
+        var _csv = require('jquery-csv');
 
 
         // Getting path
@@ -877,7 +901,46 @@
             }).catch(swal.noop)
           }
         }
+
+      
+  //Upload a CSV file
+         
+         $('input[type="file"]').change(function(e){
+          var files = e.target.files;
+          var file = files[0];
+            //alert('The file "' + fileName +  '" has been selected.');
+          console.log(file.name)
+          console.log(' - FileType: ',file.type)
+          console.log(' - FileSize: ',file.size );
+          console.log(' - LastModified: ',file.lastModifiedDate +" ==> "+file.lastModifiedDate.toLocaleDateString())
+
+          var filePath = $(this).val();
+          console.log("here : ",filePath);
+
+          var tmppath = URL.createObjectURL(event.target.files[0]);
+          console.log("here Too : ",tmppath);
+
+          var reader = new FileReader();
+          reader.readAsText(file);
+          reader.onload = function(event){
+            var csv = event.target.result;
+         
+            console.log(csv);
+            var data = _csv.toArrays(csv);
+            console.log("Array", data)
+
+            
+          }
+          reader.onerror = function(){ console.log('Unable to read ' + file.fileName); };
+
+          // var result = $.csv.toArray(tmppath);
+          // console.log("Resultat",result)
+
+        });
        
+      
+      
+        
 
       });
       </script>
@@ -1046,8 +1109,8 @@
         </div>
       </div>
 
-       <!-- Modal delete medicament -->
-       <div class="modal fade" id="SuppMedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <!-- Modal delete medicament -->
+      <div class="modal fade" id="SuppMedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -1073,4 +1136,47 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="UploadMedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Ttitle</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  <i class="fa fa-close"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+               
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        
+                        
+                        <input type="file" id="file" />
+                        <label for="file" class="btn-2" ><span>Importer un CSV</span></label>
+                        
+                       
+                    </div>
+                    <div id="preview_csv">
+
+                    </div>
+                    
+                  </div>
+
+
+
+
+
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">
+                    <i class=""></i>
+                    <span>Valider</span>
+                </button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
 </template>
