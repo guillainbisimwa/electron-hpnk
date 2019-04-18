@@ -218,6 +218,14 @@
         var _tab_cat = $("#tab_cat").DataTable();
         var _tab_med = $("#tab_med").DataTable();
 
+        var tab_uploaded_med = $("#tab_uploaded_med").DataTable(
+          {
+            language:{
+                url:'./assets/values/French.json'
+              }
+          }
+        );
+
         //init Map of "key","value"
         var mapForme = new Map();
         var mapCat = new Map();
@@ -915,10 +923,8 @@
           console.log(' - LastModified: ',file.lastModifiedDate +" ==> "+file.lastModifiedDate.toLocaleDateString())
 
           var filePath = $(this).val();
-          console.log("here : ",filePath);
 
           var tmppath = URL.createObjectURL(event.target.files[0]);
-          console.log("here Too : ",tmppath);
 
           var reader = new FileReader();
           reader.readAsText(file);
@@ -926,22 +932,32 @@
             var csv = event.target.result;
          
             console.log(csv);
-            var data = _csv.toArrays(csv);
-            console.log("Array", data)
+            // .slice(1) removes the first element of the array, and returns that element apart from item 1.
+            var dataUploaded = (_csv.toArrays(csv)).slice(1);
+            //var data = _csv.toObjects(csv);
+            console.log("Array", dataUploaded)
 
-            
+            tab_uploaded_med =  $('#tab_uploaded_med').DataTable({
+              // ICI on choisi la langue des details du tableau
+              language:{
+                url:'./assets/values/French.json'
+              },
+              "order": [[ 0, "asc" ]],
+              // Les donnees sont affichees dans le tableau HTML
+              data:dataUploaded,
+              // On affiche pas la 4e, 5em et 6em colonne, elles reprennent les _id
+              "columnDefs": [
+                {
+                  "targets": [ 4, 5, 6 ],
+                  "visible": false,
+                  "searchable": false
+                },
+              ],
+              destroy:true
+            });
           }
           reader.onerror = function(){ console.log('Unable to read ' + file.fileName); };
-
-          // var result = $.csv.toArray(tmppath);
-          // console.log("Resultat",result)
-
         });
-       
-      
-      
-        
-
       });
       </script>
   </section>
@@ -1158,7 +1174,22 @@
                         
                        
                     </div>
-                    <div id="preview_csv">
+                    <div id="preview_csv" class="row">
+                      <table class="table table-hover " id="tab_uploaded_med" style="width:100%">
+                        <thead class="text-warning">
+                          <tr>
+                            <th class="1">Numéro</th>
+                            <th class="2" >Désignation du médicament</th>
+                            <th class="3" >Forme (unitaire)</th>
+                            <th class="4" >Catégorie</th>
+                            <th>_id</th>
+                            <th>_id_forme</th>
+                            <th>_id_categorie</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
 
                     </div>
                     
