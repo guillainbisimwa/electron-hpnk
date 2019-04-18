@@ -38,17 +38,16 @@ $(".nav-link-cat").text((json.cat.plurial).toUpperCase());
 
 //Tab med
 //Header of Table
-$("#tab_med thead tr .1").text(json.nbr);
-$("#tab_med thead tr .2").text(json.designation+" "+json.med.name);
-$("#tab_med thead tr .3").text(json.forme.name);
-$("#tab_med thead tr .4").text(json.cat.name);
+$(".tab_med thead tr .1").text(json.nbr);
+$(".tab_med thead tr .2").text(json.designation+" "+json.med.name);
+$(".tab_med thead tr .3").text(json.forme.name);
+$(".tab_med thead tr .4").text(json.cat.name);
 
 //Modals
 $(".med-modal-title").text(json.med.add);
 $("label.design_med").text(json.med.designation);
 $("#SuppMedModal").find("h3 span").text(json.med.del_confirm_msg);
 $("#SuppMedModal").find("h4").text(json.med.del);
-
 
 $(".forme-modal-title").text(json.forme.add);
 $("label.design_forme").text(json.forme.designation);
@@ -60,7 +59,12 @@ $("label.design_cat").text(json.cat.designation);
 $("#SuppCatModal").find("h3 span").text(json.cat.del_confirm_msg);
 $("#SuppCatModal").find("h4").text(json.cat.del);
 
+$("#UploadMedModal").find("h4").text(json.med.upload);
+$("#UploadMedModal").find(".btn-2").text(json.buttons.upload.name);
+$("#submit_med span").text(json.buttons.valid.name);
+$("#submit_med").find("i").addClass(json.buttons.valid.icon);
 
+//Med
 $("#save_med span").text(json.buttons.add.name);
 $("#save_med").find("i").addClass(json.buttons.add.icon);
 $("#update_med span").text(json.buttons.edit.name);
@@ -68,7 +72,7 @@ $("#update_med").find("i").addClass(json.buttons.edit.icon);
 $("#supp_med span").text(json.buttons.del.name);
 $("#supp_med").find("i").addClass(json.buttons.del.icon);
 
-
+//Forme
 $("#save_forme span").text(json.buttons.add.name);
 $("#save_forme").find("i").addClass(json.buttons.add.icon);
 $("#update_forme span").text(json.buttons.edit.name);
@@ -76,6 +80,7 @@ $("#update_forme").find("i").addClass(json.buttons.edit.icon);
 $("#supp_forme span").text(json.buttons.del.name);
 $("#supp_forme").find("i").addClass(json.buttons.del.icon);
 
+//Cat
 $("#save_cat span").text(json.buttons.add.name);
 $("#save_cat").find("i").addClass(json.buttons.add.icon);
 $("#update_cat span").text(json.buttons.edit.name);

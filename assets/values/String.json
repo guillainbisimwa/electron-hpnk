@@ -53,6 +53,14 @@
         "export": {
             "name": "Exporter CSV",
             "icon": "fa fa-file-excel-o"
+        },
+        "valid": {
+            "name": "Valider",
+            "icon": "fa fa-check-square"
+        },
+        "upload": {
+            "name": "Importer un CSV",
+            "icon": "fa fa-download"
         }
     },
     "forme": {
@@ -83,6 +91,7 @@
         "edit": "Modifier un médicament",
         "file_name":"Liste de médicaments",
         "del_confirm_msg":"Voulez-vous vraiment supprimer le Médicament : ",
-        "designation":"Désignation du médicament"
+        "designation":"Désignation du médicament",
+        "upload":"Importer un fichier CSV"
     }
 }

@@ -58,13 +58,13 @@
                 <div class="card-body ">
                   <div class="tab-content text-center">
                     <div class="tab-pane active" id="medicaments">
-                      <table class="table table-hover tab_left " id="tab_med" style="width:100%">
+                      <table class="table table-hover tab_left tab_med" id="tab_med" style="width:100%">
                         <thead class="text-warning">
                           <tr>
                             <th class="1">Numéro</th>
-                            <th class="2" >Désignation du médicament</th>
-                            <th class="3" >Forme (unitaire)</th>
-                            <th class="4" >Catégorie</th>
+                            <th class="2">Désignation du médicament</th>
+                            <th class="3">Forme (unitaire)</th>
+                            <th class="4">Catégorie</th>
                             <th>_id</th>
                             <th>_id_forme</th>
                             <th>_id_categorie</th>
@@ -222,7 +222,14 @@
           {
             language:{
                 url:'./assets/values/French.json'
-              }
+            },
+            "columnDefs": [
+              {
+                "targets": [ 4, 5, 6 ],
+                "visible": false,
+                "searchable": false
+              },
+            ],
           }
         );
 
@@ -910,13 +917,10 @@
           }
         }
 
-      
-  //Upload a CSV file
-         
-         $('input[type="file"]').change(function(e){
+        //Upload a CSV file 
+        $('input[type="file"]').change(function(e){
           var files = e.target.files;
           var file = files[0];
-            //alert('The file "' + fileName +  '" has been selected.');
           console.log(file.name)
           console.log(' - FileType: ',file.type)
           console.log(' - FileSize: ',file.size );
@@ -1163,47 +1167,34 @@
                 </button>
               </div>
               <div class="modal-body">
-               
-
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        
-                        
-                        <input type="file" id="file" />
-                        <label for="file" class="btn-2" ><span>Importer un CSV</span></label>
-                        
-                       
-                    </div>
-                    <div id="preview_csv" class="row">
-                      <table class="table table-hover " id="tab_uploaded_med" style="width:100%">
-                        <thead class="text-warning">
-                          <tr>
-                            <th class="1">Numéro</th>
-                            <th class="2" >Désignation du médicament</th>
-                            <th class="3" >Forme (unitaire)</th>
-                            <th class="4" >Catégorie</th>
-                            <th>_id</th>
-                            <th>_id_forme</th>
-                            <th>_id_categorie</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                      </table>
-
-                    </div>
-                    
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <input type="file" id="file" />
+                    <label for="file" class="btn-2" ><span></span></label>   
                   </div>
-
-
-
-
-
+                  <div id="preview_csv" class="row">
+                    <table class="table table-hover tab_med" id="tab_uploaded_med" style="width:100%">
+                      <thead class="text-warning">
+                        <tr>
+                          <th class="1"></th>
+                          <th class="2"></th>
+                          <th class="3"></th>
+                          <th class="4"></th>
+                          <th>_id</th>
+                          <th>_id_forme</th>
+                          <th>_id_categorie</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" id="submit_med">
                     <i class=""></i>
-                    <span>Valider</span>
+                    <span></span>
                 </button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
               </div>
