@@ -222,14 +222,14 @@
           {
             language:{
                 url:'./assets/values/French.json'
-            },
-            "columnDefs": [
-              {
-                "targets": [ 4, 5, 6 ],
-                "visible": false,
-                "searchable": false
-              },
-            ],
+            }
+            // "columnDefs": [
+            //   {
+            //     "targets": [ 4, 5, 6 ],
+            //     "visible": false,
+            //     "searchable": false
+            //   },
+            // ],
           }
         );
 
@@ -935,10 +935,21 @@
           reader.onload = function(event){
             var csv = event.target.result;
          
-            console.log(csv);
+            //console.log(csv);
+            options = {
+              separator: ';',
+              delimiter: '"',
+            };
             // .slice(1) removes the first element of the array, and returns that element apart from item 1.
-            var dataUploaded = (_csv.toArrays(csv)).slice(1);
+            var dataUploaded = null;
+            try {
+              dataUploaded = (_csv.toArrays(csv,options)).slice(1);
+            } catch (error) {
+              console.log("csv: "+error);
+              dataUploaded = (_csv.toArrays(csv)).slice(1);
+            }
             //var data = _csv.toObjects(csv);
+
             console.log("Array", dataUploaded)
 
             tab_uploaded_med =  $('#tab_uploaded_med').DataTable({
@@ -950,13 +961,13 @@
               // Les donnees sont affichees dans le tableau HTML
               data:dataUploaded,
               // On affiche pas la 4e, 5em et 6em colonne, elles reprennent les _id
-              "columnDefs": [
-                {
-                  "targets": [ 4, 5, 6 ],
-                  "visible": false,
-                  "searchable": false
-                },
-              ],
+              // "columnDefs": [
+              //   {
+              //     "targets": [ 4, 5, 6 ],
+              //     "visible": false,
+              //     "searchable": false
+              //   },
+              // ],
               destroy:true
             });
           }
@@ -1161,7 +1172,7 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Ttitle</h4>
+                <h4 class="modal-title"></h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                   <i class="fa fa-close"></i>
                 </button>
@@ -1173,16 +1184,16 @@
                     <label for="file" class="btn-2" ><span></span></label>   
                   </div>
                   <div id="preview_csv" class="row">
-                    <table class="table table-hover tab_med" id="tab_uploaded_med" style="width:100%">
+                    <table class="table table-hover tab_med tab_left" id="tab_uploaded_med" style="width:100%">
                       <thead class="text-warning">
                         <tr>
                           <th class="1"></th>
                           <th class="2"></th>
                           <th class="3"></th>
                           <th class="4"></th>
-                          <th>_id</th>
+                          <!-- <th>_id</th>
                           <th>_id_forme</th>
-                          <th>_id_categorie</th>
+                          <th>_id_categorie</th> -->
                         </tr>
                       </thead>
                       <tbody>
