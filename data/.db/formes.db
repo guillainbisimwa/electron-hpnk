@@ -1,228 +1,76 @@
-{"nom_forme":"Crayon","_id":"3lwBC5XUUtOPS0wZ"}
-{"nom_forme":"Comprimé ŕ croquer","_id":"47ZK85Weekbum9Gs"}
-{"nom_forme":"Pommade ophta.","_id":"4Y8CMeUqfhvBu692"}
-{"nom_forme":"Microlavement","_id":"6JUg37W1q0uzfNTf"}
-{"nom_forme":"Comprimé  sécable","_id":"6unX2qr9oUDcC0xZ"}
-{"nom_forme":"Champooing","_id":"8NAgO43U68Cctxux"}
-{"nom_forme":"Gargarisme","_id":"8XP2NvoSSvIqIAn9"}
-{"nom_forme":"Sol. inj","_id":"A4O99PA8D8gHf0gv"}
-{"nom_forme":"Sol. huile","_id":"AT4Tr7AKEw0uJABN"}
-{"nom_forme":"Crčme","_id":"BHqonek8PRX1vQzo"}
-{"nom_forme":"Pommade","_id":"CzKQ1AZ5M7dd62wh"}
-{"nom_forme":"Sol. gouttes nasale","_id":"EAvJuqDF1MEYxWkF"}
-{"nom_forme":"Savon","_id":"ECypzjGgSUcwwfTX"}
-{"nom_forme":"Film","_id":"EiiX6SeZeXBoXIjw"}
-{"nom_forme":"Suppositoire","_id":"FxZ6IVVo4S7OgrqU"}
-{"nom_forme":"Poudre pour sp orale","_id":"Ga5LOkAMmfJRgOVS"}
-{"nom_forme":"Sol. injectable","_id":"Ib2oG06RWfVP7jOV"}
-{"nom_forme":"Aérosol","_id":"J4E5SlNwL4YiMesU"}
-{"nom_forme":"Comprimé efferv.","_id":"K8ZumJP0XKEB1c11"}
-{"nom_forme":"So. injectable","_id":"LcjgHZJpbsD9JrBi"}
-{"nom_forme":"Pdre","_id":"LlcRX7bJjYIzaEzA"}
-{"nom_forme":"Sol injectable","_id":"LrUrlctpsDYatphv"}
-{"nom_forme":"Poudre","_id":"O7OjZ1Djmo27joSM"}
-{"nom_forme":"Pdre pour sol. injectable","_id":"OybNrPv31YdYZKzx"}
-{"nom_forme":"Comprime pour sol. désinfectante","_id":"QTIzbJd0HDWzzJq7"}
-{"nom_forme":"Sol. ŕ usage externe","_id":"S3ugzuDV0ORt5LWN"}
-{"nom_forme":"Collutoire","_id":"SARHvPB9J7Uq1Yzw"}
-{"nom_forme":"Collyre","_id":"SkcrIXVbGOjTmfwR"}
-{"nom_forme":"Pdre pour sol injectable","_id":"SoNUMhdnQRfWfJLL"}
-{"nom_forme":"Sol. pour désinfection","_id":"XVqEYTozvlF36nus"}
-{"nom_forme":"Sol ŕ usage externe","_id":"Y0Jq06ATFDEa0IEi"}
-{"nom_forme":"Pdre por sp orale","_id":"Y6PrtHk47zdJlOQP"}
-{"nom_forme":"Sol. ŕ nébuliser","_id":"YqTupLZC4qE7bc7l"}
-{"nom_forme":"Sol. pour lavage du nez","_id":"ZIpvcTH22ppvs4iP"}
-{"nom_forme":"Amp. Buvable","_id":"a7CFOYMlGpX81RLA"}
-{"nom_forme":"Suspension","_id":"aXeQnzfWDXuLIIEH"}
-{"nom_forme":"Liquide volatil","_id":"acNYvzYqWKVfyGMb"}
-{"nom_forme":"Pdre pour sp orle","_id":"adVGkOzW3uahFbND"}
-{"nom_forme":"Pdre pour sp orale","_id":"bYPQjmLAIDxIzB3N"}
-{"nom_forme":"Pdre pour sol. Injectable","_id":"cZfKklYaTaF38frh"}
-{"nom_forme":"Pastille","_id":"daZ48S6vmkaVaz9u"}
-{"nom_forme":"Solution/gouttes","_id":"dakomTewqUh43Q77"}
-{"nom_forme":"Solution injectable","_id":"fNBObYvh3bjhwLlJ"}
-{"nom_forme":"Sol. gouttes nasales","_id":"gBMBOcMHBJc7dxpo"}
-{"nom_forme":"Sp orale","_id":"h6XGuKa5U0LnKX1R"}
-{"nom_forme":"Pdre pour sp injectable","_id":"jNtR6ag6SicgY81J"}
-{"nom_forme":"Gaz","_id":"jdCSovV2VJJuV4PV"}
-{"nom_forme":"Sol. buvable/ gouttes","_id":"k01ATsOR5MYxJNeS"}
-{"nom_forme":"Sol. pour bain intime","_id":"kbl5tQCtfTvT6zsr"}
-{"nom_forme":"Lotion","_id":"kqX17hGDtOlsIXxu"}
-{"nom_forme":"Sol. pour instillation auriculaire","_id":"mJ64Pu2xmiXKXuE1"}
-{"nom_forme":"Sp adm. par tube endotrachéal","_id":"mxjX9tH2IndSbliZ"}
-{"nom_forme":"Comprimé dispersible","_id":"nHeLRhXO9UbAbnPP"}
-{"nom_forme":"Solution","_id":"ncpuBKmX94iO4QrD"}
-{"nom_forme":"Sol. orale, gouttes","_id":"oNe9edLHoG2cfugI"}
-{"nom_forme":"Sp. Orale","_id":"p1TCmuWVNvEcWhFZ"}
-{"nom_forme":"Infusion IV","_id":"p5xLojVuQPtXdZN6"}
-{"nom_forme":"Solution orale","_id":"pKdOoi8FhPlmhaZq"}
-{"nom_forme":"Dragée","_id":"qgiHsjlsJ2C1c02c"}
-{"nom_forme":"Comprimé pelliculé","_id":"qhnj3N2ZdLXWR0W0"}
-{"nom_forme":"Sp. injectable","_id":"qnN9PwwzGs2KGpNc"}
-{"nom_forme":"Capsule","_id":"s6EJH8t1Wpg2kBq3"}
-{"nom_forme":"Sol.  injectable","_id":"tPOtNE4SDngWg1dS"}
-{"nom_forme":"Capsule orale","_id":"txWJXJGSR0xVr8gA"}
-{"nom_forme":"Solution gouttes nasales","_id":"u5acPZHuPFjGW7P8"}
-{"nom_forme":"Ovule","_id":"vHHmaNWRGQi4cgwh"}
-{"nom_forme":"Solution pour adm. nasale","_id":"vdWSXfNXjBOW8CtA"}
-{"nom_forme":"Gélule","_id":"vpXc0WGBRqDY1Y1t"}
-{"nom_forme":"Sol. orale","_id":"w1kTqLUM5WFpFZ9W"}
-{"nom_forme":"Sp injectable","_id":"wfrOD8r518y70LeI"}
-{"nom_forme":"Comprimé subl.","_id":"xFhnzhJ3BOeYagw6"}
-{"nom_forme":"Comprime pour désinfection","_id":"xbKbk6fmmBiZ1eju"}
-{"nom_forme":"Sol. huileuse","_id":"xmKcUuuq49DQeMqr"}
-{"nom_forme":"Capsule vaginale","_id":"yT6oQISETBx2GZ5S"}
-{"nom_forme":"Gel","_id":"zBenYl9cYP22PbRE"}
-{"nom_forme":"Comprimé","_id":"zS6n1ylWnrXRVwWk"}
-{"$$deleted":true,"_id":"3lwBC5XUUtOPS0wZ"}
-{"$$deleted":true,"_id":"47ZK85Weekbum9Gs"}
-{"$$deleted":true,"_id":"4Y8CMeUqfhvBu692"}
-{"$$deleted":true,"_id":"6JUg37W1q0uzfNTf"}
-{"$$deleted":true,"_id":"6unX2qr9oUDcC0xZ"}
-{"$$deleted":true,"_id":"8NAgO43U68Cctxux"}
-{"$$deleted":true,"_id":"8XP2NvoSSvIqIAn9"}
-{"$$deleted":true,"_id":"A4O99PA8D8gHf0gv"}
-{"$$deleted":true,"_id":"AT4Tr7AKEw0uJABN"}
-{"$$deleted":true,"_id":"BHqonek8PRX1vQzo"}
-{"$$deleted":true,"_id":"CzKQ1AZ5M7dd62wh"}
-{"$$deleted":true,"_id":"EAvJuqDF1MEYxWkF"}
-{"$$deleted":true,"_id":"ECypzjGgSUcwwfTX"}
-{"$$deleted":true,"_id":"EiiX6SeZeXBoXIjw"}
-{"$$deleted":true,"_id":"FxZ6IVVo4S7OgrqU"}
-{"$$deleted":true,"_id":"Ga5LOkAMmfJRgOVS"}
-{"$$deleted":true,"_id":"Ib2oG06RWfVP7jOV"}
-{"$$deleted":true,"_id":"J4E5SlNwL4YiMesU"}
-{"$$deleted":true,"_id":"K8ZumJP0XKEB1c11"}
-{"$$deleted":true,"_id":"LcjgHZJpbsD9JrBi"}
-{"$$deleted":true,"_id":"LlcRX7bJjYIzaEzA"}
-{"$$deleted":true,"_id":"LrUrlctpsDYatphv"}
-{"$$deleted":true,"_id":"O7OjZ1Djmo27joSM"}
-{"$$deleted":true,"_id":"OybNrPv31YdYZKzx"}
-{"$$deleted":true,"_id":"QTIzbJd0HDWzzJq7"}
-{"$$deleted":true,"_id":"S3ugzuDV0ORt5LWN"}
-{"$$deleted":true,"_id":"SARHvPB9J7Uq1Yzw"}
-{"$$deleted":true,"_id":"SkcrIXVbGOjTmfwR"}
-{"$$deleted":true,"_id":"SoNUMhdnQRfWfJLL"}
-{"$$deleted":true,"_id":"XVqEYTozvlF36nus"}
-{"$$deleted":true,"_id":"Y0Jq06ATFDEa0IEi"}
-{"$$deleted":true,"_id":"Y6PrtHk47zdJlOQP"}
-{"$$deleted":true,"_id":"YqTupLZC4qE7bc7l"}
-{"$$deleted":true,"_id":"ZIpvcTH22ppvs4iP"}
-{"$$deleted":true,"_id":"a7CFOYMlGpX81RLA"}
-{"$$deleted":true,"_id":"aXeQnzfWDXuLIIEH"}
-{"$$deleted":true,"_id":"acNYvzYqWKVfyGMb"}
-{"$$deleted":true,"_id":"adVGkOzW3uahFbND"}
-{"$$deleted":true,"_id":"bYPQjmLAIDxIzB3N"}
-{"$$deleted":true,"_id":"cZfKklYaTaF38frh"}
-{"$$deleted":true,"_id":"daZ48S6vmkaVaz9u"}
-{"$$deleted":true,"_id":"dakomTewqUh43Q77"}
-{"$$deleted":true,"_id":"fNBObYvh3bjhwLlJ"}
-{"$$deleted":true,"_id":"gBMBOcMHBJc7dxpo"}
-{"$$deleted":true,"_id":"h6XGuKa5U0LnKX1R"}
-{"$$deleted":true,"_id":"jNtR6ag6SicgY81J"}
-{"$$deleted":true,"_id":"jdCSovV2VJJuV4PV"}
-{"$$deleted":true,"_id":"k01ATsOR5MYxJNeS"}
-{"$$deleted":true,"_id":"kbl5tQCtfTvT6zsr"}
-{"$$deleted":true,"_id":"kqX17hGDtOlsIXxu"}
-{"$$deleted":true,"_id":"mJ64Pu2xmiXKXuE1"}
-{"$$deleted":true,"_id":"mxjX9tH2IndSbliZ"}
-{"$$deleted":true,"_id":"nHeLRhXO9UbAbnPP"}
-{"$$deleted":true,"_id":"ncpuBKmX94iO4QrD"}
-{"$$deleted":true,"_id":"oNe9edLHoG2cfugI"}
-{"$$deleted":true,"_id":"p1TCmuWVNvEcWhFZ"}
-{"$$deleted":true,"_id":"p5xLojVuQPtXdZN6"}
-{"$$deleted":true,"_id":"pKdOoi8FhPlmhaZq"}
-{"$$deleted":true,"_id":"qgiHsjlsJ2C1c02c"}
-{"$$deleted":true,"_id":"qhnj3N2ZdLXWR0W0"}
-{"$$deleted":true,"_id":"qnN9PwwzGs2KGpNc"}
-{"$$deleted":true,"_id":"s6EJH8t1Wpg2kBq3"}
-{"$$deleted":true,"_id":"tPOtNE4SDngWg1dS"}
-{"$$deleted":true,"_id":"txWJXJGSR0xVr8gA"}
-{"$$deleted":true,"_id":"u5acPZHuPFjGW7P8"}
-{"$$deleted":true,"_id":"vHHmaNWRGQi4cgwh"}
-{"$$deleted":true,"_id":"vdWSXfNXjBOW8CtA"}
-{"$$deleted":true,"_id":"vpXc0WGBRqDY1Y1t"}
-{"$$deleted":true,"_id":"w1kTqLUM5WFpFZ9W"}
-{"$$deleted":true,"_id":"wfrOD8r518y70LeI"}
-{"$$deleted":true,"_id":"xFhnzhJ3BOeYagw6"}
-{"$$deleted":true,"_id":"xbKbk6fmmBiZ1eju"}
-{"$$deleted":true,"_id":"xmKcUuuq49DQeMqr"}
-{"$$deleted":true,"_id":"yT6oQISETBx2GZ5S"}
-{"$$deleted":true,"_id":"zBenYl9cYP22PbRE"}
-{"$$deleted":true,"_id":"zS6n1ylWnrXRVwWk"}
-{"nom_forme":"Sol. injectable","_id":"C1dqmLOgP0KOso3x"}
-{"nom_forme":"G�lule","_id":"iBdxICE5W5FRouuf"}
-{"nom_forme":"Pdre pour sp orale","_id":"ZNOryH6vbGR0YgQa"}
-{"nom_forme":"Pdre pour sol. injectable","_id":"dr5THCIZ06EQPJf8"}
-{"nom_forme":"Pdre pour sol. Injectable","_id":"CdUgv3clV3jettRF"}
-{"nom_forme":"Comprim�","_id":"m7HynaKwd6xDYXPV"}
+{"nom_forme":"Capsule orale","_id":"0aCGYTLFLSRJ2XGj"}
+{"nom_forme":"Sol. � usage externe","_id":"0feKNFKc2koHh63r"}
+{"nom_forme":"Sol. gouttes nasale","_id":"1MQQ74HGroSoqPij"}
+{"nom_forme":"A�rosol","_id":"2B3ODWVMyuBhcbdT"}
+{"nom_forme":"Film","_id":"3JlhWuHR5KbnsuPn"}
+{"nom_forme":"Solution pour adm. nasale","_id":"3h41YMkTgaCXmiN6"}
+{"nom_forme":"Microlavement","_id":"6c0Dc0SMHiOBAdJ7"}
+{"nom_forme":"Comprim� efferv.","_id":"7PUVBqZ6twqOtle7"}
+{"nom_forme":"Comprim� dispersible","_id":"9aeLUtdr6K6GLkVB"}
+{"nom_forme":"Sol. gouttes nasales","_id":"A2FXhdzGjsdtKw8c"}
 {"nom_forme":"Poudre pour sp orale","_id":"AwSjq5WRj5JOJR6l"}
-{"nom_forme":"Pdre pour sol injectable","_id":"kNB12Tq8F6Yl4JuT"}
-{"nom_forme":"Sp orale","_id":"tD8fBQtIWnCW8x4j"}
-{"nom_forme":"Infusion IV","_id":"FOHGQkuvDaQBsfBZ"}
-{"nom_forme":"Sol injectable","_id":"PzyL2pONa35hjUad"}
-{"nom_forme":"Pdre por sp orale","_id":"Gx7VoGnjd9PwOGn5"}
-{"nom_forme":"Pdre pour sp orle","_id":"ddqIOmtqR2a9oF5m"}
-{"nom_forme":"Pdre pour sp injectable","_id":"YM4XB4cN2KCsX7Wk"}
-{"nom_forme":"Comprim� pellicul�","_id":"VEFyFLP3xI35tAKl"}
+{"nom_forme":"Sol. injectable","_id":"C1dqmLOgP0KOso3x"}
+{"nom_forme":"Amp. Buvable","_id":"CCQQ0RNBe4iT6XxV"}
+{"nom_forme":"Pdre pour sol. Injectable","_id":"CdUgv3clV3jettRF"}
 {"nom_forme":"Sol. orale","_id":"DBB4hjBWKOMLItSr"}
-{"nom_forme":"Gel","_id":"mLDg39akC1qe705x"}
-{"nom_forme":"Drag�e","_id":"IQucg7934PEGDJHC"}
-{"nom_forme":"So. injectable","_id":"wARQsXshSz2FQLgr"}
-{"nom_forme":"Solution injectable","_id":"nZcS01fM0Vj4MUMi"}
+{"nom_forme":"Solution/gouttes","_id":"DbFMlb59KZN2l1dW"}
+{"nom_forme":"Solution","_id":"EI4QG2cDNK8ZZPJB"}
+{"nom_forme":"Sol.  injectable","_id":"Eid7H6yDM3A2h9NA"}
+{"nom_forme":"Infusion IV","_id":"FOHGQkuvDaQBsfBZ"}
 {"nom_forme":"Sol. buvable/ gouttes","_id":"GL2uMoOIGoRXxFfq"}
-{"nom_forme":"Poudre","_id":"p9IfhuphuEwNbxw6"}
+{"nom_forme":"Pdre por sp orale","_id":"Gx7VoGnjd9PwOGn5"}
+{"nom_forme":"Sp. Orale","_id":"HyKJADNBMLiuKD3L"}
+{"nom_forme":"Drag�e","_id":"IQucg7934PEGDJHC"}
+{"nom_forme":"Sol. � n�buliser","_id":"K2xOxODrawCQPmwK"}
+{"nom_forme":"Gargarisme","_id":"KIWMfvVzY83Mi4Hn"}
+{"nom_forme":"Solution gouttes nasales","_id":"KT3CN4NeRgBIsNMU"}
+{"nom_forme":"Pastille","_id":"KZVR68emgNIhRx9w"}
+{"nom_forme":"Sp injectable","_id":"Lspv3e5sQEkAMgqc"}
+{"nom_forme":"Pommade ophta.","_id":"N3NZ7WaCdbHDIVcW"}
+{"nom_forme":"Crayon","_id":"NaFXgKALAf9GP3xg"}
+{"nom_forme":"Liquide volatil","_id":"PP2nCfcywbCC4cau"}
+{"nom_forme":"Sol injectable","_id":"PzyL2pONa35hjUad"}
+{"nom_forme":"Collyre","_id":"V0e4BoCif7UHhBgu"}
+{"nom_forme":"Comprim� pellicul�","_id":"VEFyFLP3xI35tAKl"}
+{"nom_forme":"Comprime pour d�sinfection","_id":"VQMYaPmJmDAp2PoK"}
+{"nom_forme":"Sol. inj","_id":"WZZlilezi3i37nnN"}
+{"nom_forme":"Suppositoire","_id":"X0E8uUSuuJjAGhoH"}
+{"nom_forme":"Pdre pour sp injectable","_id":"YM4XB4cN2KCsX7Wk"}
+{"nom_forme":"Comprime pour sol. d�sinfectante","_id":"Yyp2ApcutpoGLSjW"}
+{"nom_forme":"Pdre pour sp orale","_id":"ZNOryH6vbGR0YgQa"}
+{"nom_forme":"Capsule vaginale","_id":"ZOsvDHBPX14ppXY4"}
+{"nom_forme":"Champooing","_id":"a6ZuiVup8V1gB6DL"}
+{"nom_forme":"Ovule","_id":"aLobyX7jwfe6qHwn"}
+{"nom_forme":"Comprim�  s�cable","_id":"apQE52KdUuw1Bv6b"}
+{"nom_forme":"Solution orale","_id":"atYYyDUuLUjenqmA"}
+{"nom_forme":"Sol. pour d�sinfection","_id":"co88hyEkVNVLKxj3"}
+{"nom_forme":"Pdre pour sp orle","_id":"ddqIOmtqR2a9oF5m"}
+{"nom_forme":"Pdre pour sol. injectable","_id":"dr5THCIZ06EQPJf8"}
+{"nom_forme":"Comprim� � croquer","_id":"gFwctOW1zQWDlRJo"}
+{"nom_forme":"Sol. huileuse","_id":"gwcte2bKW3hFiNhD"}
 {"nom_forme":"Cr�me","_id":"h9bK5hBaqvFtbvst"}
+{"nom_forme":"G�lule","_id":"iBdxICE5W5FRouuf"}
+{"nom_forme":"Sp. injectable","_id":"k5KuIwZtXMwe3G8A"}
+{"nom_forme":"Gaz","_id":"kKVwZyMSGFKpQTDX"}
+{"nom_forme":"Pdre pour sol injectable","_id":"kNB12Tq8F6Yl4JuT"}
+{"nom_forme":"Collutoire","_id":"lYWYanjP9oTmVTIG"}
+{"nom_forme":"Comprim� subl.","_id":"lZBWJA3t2zDsPl4r"}
+{"nom_forme":"Sol. pour lavage du nez","_id":"lwzYJuDpKER3NpC0"}
+{"nom_forme":"Comprim�","_id":"m7HynaKwd6xDYXPV"}
+{"nom_forme":"Gel","_id":"mLDg39akC1qe705x"}
+{"nom_forme":"Solution injectable","_id":"nZcS01fM0Vj4MUMi"}
+{"nom_forme":"Sol. huile","_id":"nsOtfq8OERNPfzFR"}
+{"nom_forme":"Poudre","_id":"p9IfhuphuEwNbxw6"}
+{"nom_forme":"Sol. orale, gouttes","_id":"pYfqlK0oxkLYCQEX"}
+{"nom_forme":"Suspension","_id":"qU6flFz4kLVL1qwr"}
+{"nom_forme":"Sp adm. par tube endotrach�al","_id":"qnk3Uf3MT7wMmuIc"}
+{"nom_forme":"Pdre","_id":"qxtmge616uqXjHKc"}
+{"nom_forme":"Sol � usage externe","_id":"sZHXxvCjl29FcDAn"}
+{"nom_forme":"Capsule","_id":"tARFRPep8trAG8EB"}
+{"nom_forme":"Sp orale","_id":"tD8fBQtIWnCW8x4j"}
+{"nom_forme":"Lotion","_id":"tVW3prWY81U8lEBp"}
+{"nom_forme":"Sol. pour bain intime","_id":"w3rt2A9Flk8KsYNE"}
+{"nom_forme":"So. injectable","_id":"wARQsXshSz2FQLgr"}
+{"nom_forme":"Sol. pour instillation auriculaire","_id":"wKQWvVKbG89BP7AQ"}
 {"nom_forme":"Savon","_id":"x9Hezy4WgDZoaDb0"}
 {"nom_forme":"Pommade","_id":"yAZycTlX40Dcry4a"}
-{"nom_forme":"Solution","_id":"EI4QG2cDNK8ZZPJB"}
-{"nom_forme":"Lotion","_id":"tVW3prWY81U8lEBp"}
-{"nom_forme":"Sol. huileuse","_id":"gwcte2bKW3hFiNhD"}
-{"nom_forme":"Sol. huile","_id":"nsOtfq8OERNPfzFR"}
-{"nom_forme":"Crayon","_id":"NaFXgKALAf9GP3xg"}
-{"nom_forme":"Champooing","_id":"a6ZuiVup8V1gB6DL"}
-{"nom_forme":"Suspension","_id":"qU6flFz4kLVL1qwr"}
-{"nom_forme":"Sol. gouttes nasales","_id":"A2FXhdzGjsdtKw8c"}
-{"nom_forme":"Sol. gouttes nasale","_id":"1MQQ74HGroSoqPij"}
-{"nom_forme":"Solution/gouttes","_id":"DbFMlb59KZN2l1dW"}
-{"nom_forme":"A�rosol","_id":"2B3ODWVMyuBhcbdT"}
-{"nom_forme":"Solution pour adm. nasale","_id":"3h41YMkTgaCXmiN6"}
-{"nom_forme":"Solution gouttes nasales","_id":"KT3CN4NeRgBIsNMU"}
-{"nom_forme":"Sol. pour lavage du nez","_id":"lwzYJuDpKER3NpC0"}
-{"nom_forme":"Sol. pour instillation auriculaire","_id":"wKQWvVKbG89BP7AQ"}
-{"nom_forme":"Comprim�  s�cable","_id":"apQE52KdUuw1Bv6b"}
-{"nom_forme":"Sol. inj","_id":"WZZlilezi3i37nnN"}
-{"nom_forme":"Solution orale","_id":"atYYyDUuLUjenqmA"}
-{"nom_forme":"Comprim� subl.","_id":"lZBWJA3t2zDsPl4r"}
-{"nom_forme":"Amp. Buvable","_id":"CCQQ0RNBe4iT6XxV"}
-{"nom_forme":"Sol. orale, gouttes","_id":"pYfqlK0oxkLYCQEX"}
-{"nom_forme":"Sp. Orale","_id":"HyKJADNBMLiuKD3L"}
-{"nom_forme":"Pastille","_id":"KZVR68emgNIhRx9w"}
-{"nom_forme":"Capsule","_id":"tARFRPep8trAG8EB"}
-{"nom_forme":"Liquide volatil","_id":"PP2nCfcywbCC4cau"}
-{"nom_forme":"Gaz","_id":"kKVwZyMSGFKpQTDX"}
-{"nom_forme":"Sp injectable","_id":"Lspv3e5sQEkAMgqc"}
-{"nom_forme":"Suppositoire","_id":"X0E8uUSuuJjAGhoH"}
-{"nom_forme":"Comprim� efferv.","_id":"7PUVBqZ6twqOtle7"}
-{"nom_forme":"Sol. � n�buliser","_id":"K2xOxODrawCQPmwK"}
-{"nom_forme":"Sp adm. par tube endotrach�al","_id":"qnk3Uf3MT7wMmuIc"}
-{"nom_forme":"Capsule orale","_id":"0aCGYTLFLSRJ2XGj"}
-{"nom_forme":"Comprim� � croquer","_id":"gFwctOW1zQWDlRJo"}
-{"nom_forme":"Pdre","_id":"qxtmge616uqXjHKc"}
-{"nom_forme":"Sol.  injectable","_id":"Eid7H6yDM3A2h9NA"}
-{"nom_forme":"Microlavement","_id":"6c0Dc0SMHiOBAdJ7"}
-{"nom_forme":"Comprim� dispersible","_id":"9aeLUtdr6K6GLkVB"}
-{"nom_forme":"Sol. pour bain intime","_id":"w3rt2A9Flk8KsYNE"}
-{"nom_forme":"Ovule","_id":"aLobyX7jwfe6qHwn"}
-{"nom_forme":"Capsule vaginale","_id":"ZOsvDHBPX14ppXY4"}
-{"nom_forme":"Sp. injectable","_id":"k5KuIwZtXMwe3G8A"}
-{"nom_forme":"Collyre","_id":"V0e4BoCif7UHhBgu"}
-{"nom_forme":"Pommade ophta.","_id":"N3NZ7WaCdbHDIVcW"}
-{"nom_forme":"Sol. � usage externe","_id":"0feKNFKc2koHh63r"}
-{"nom_forme":"Comprime pour sol. d�sinfectante","_id":"Yyp2ApcutpoGLSjW"}
-{"nom_forme":"Sol. pour d�sinfection","_id":"co88hyEkVNVLKxj3"}
-{"nom_forme":"Comprime pour d�sinfection","_id":"VQMYaPmJmDAp2PoK"}
-{"nom_forme":"Sol � usage externe","_id":"sZHXxvCjl29FcDAn"}
-{"nom_forme":"Gargarisme","_id":"KIWMfvVzY83Mi4Hn"}
-{"nom_forme":"Film","_id":"3JlhWuHR5KbnsuPn"}
-{"nom_forme":"Collutoire","_id":"lYWYanjP9oTmVTIG"}
