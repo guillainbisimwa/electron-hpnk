@@ -238,6 +238,8 @@
         var mapCat = new Map();
         var mapMed = new Map();
 
+        var dataUploaded = null;
+
         //Init Selectors
         var listForme =  $("#design_med_forme");
         var listCat =  $("#design_med_cat");
@@ -931,7 +933,7 @@
           var tmppath = URL.createObjectURL(event.target.files[0]);
 
           var reader = new FileReader();
-          reader.readAsText(file);
+          reader.readAsText(file); //Encodage de Europe central //ISO-8859-2 //CP1251
           reader.onload = function(event){
             var csv = event.target.result;
          
@@ -941,7 +943,7 @@
               delimiter: '"',
             };
             // .slice(1) removes the first element of the array, and returns that element apart from item 1.
-            var dataUploaded = null;
+            dataUploaded = null;
             try {
               dataUploaded = (_csv.toArrays(csv,options)).slice(1);
             } catch (error) {
@@ -950,7 +952,7 @@
             }
             //var data = _csv.toObjects(csv);
 
-            console.log("Array", dataUploaded)
+            //console.log("Array", dataUploaded)
 
             tab_uploaded_med =  $('#tab_uploaded_med').DataTable({
               // ICI on choisi la langue des details du tableau
@@ -973,6 +975,50 @@
           }
           reader.onerror = function(){ console.log('Unable to read ' + file.fileName); };
         });
+
+        //Upload med , Forme and Cat
+        $("#submit_med").click(function(){
+          //console.log("Brerrr : ",dataUploaded)
+         
+          //Get the unique Forme
+          const distinct_forme = [...new Set(dataUploaded.map(item => item[2].trim()))];
+          //console.log(distinct_forme)
+
+           //Get the unique cat
+          const distinct_cat = [...new Set(dataUploaded.map(item => item[3].trim()))];
+          //console.log(distinct_cat)
+
+          //Get all unique values in a JavaScript array (remove duplicates)  ES6
+          //const x = words.filter((item,index,self) => self.indexOf(item)==index);
+
+          //A use full f(x) to remove deplicated datapoints
+
+          /*const distinct_all = Array.from(new Set(dataUploaded.map(item => item.id))).
+            map(id => {
+              return {
+                id : id,
+                med : dataUploaded.find(s => s.id === id).name
+              }
+            });*/
+
+          //Delette all Forme inside the db
+          Forme.deleteMany({}).then(function(deletedForme) {
+            console.log('Deleted ', deletedForme, ' forme(s) from the database.');
+            //save all newly added formes
+            distinct_forme.forEach(element => {
+              console.log(element)
+              if(element != ""){
+                var forme = Forme.create({nom_forme: element});
+                //Enregistrer la forme dans la BD
+                forme.save().then(function(addedForme) {
+                  //console.log("added: " ,addedForme._id)
+                });
+              }
+               
+            });
+          });
+
+        })
       });
       </script>
   </section>
