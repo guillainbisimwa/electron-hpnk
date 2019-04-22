@@ -933,7 +933,7 @@
           var tmppath = URL.createObjectURL(event.target.files[0]);
 
           var reader = new FileReader();
-          reader.readAsText(file); //Encodage de Europe central //ISO-8859-2 //CP1251
+          reader.readAsText(file, "ISO-8859-2"); //Encodage de Europe central //ISO-8859-2 //CP1251
           reader.onload = function(event){
             var csv = event.target.result;
          
@@ -1017,6 +1017,25 @@
                
             });
           });
+
+          //Delette all Forme inside the db
+          Categorie.deleteMany({}).then(function(deletedCat) {
+            console.log('Deleted ', deletedCat, ' categories(s) from the database.');
+            //save all newly added cat
+            distinct_cat.forEach(element => {
+              console.log(element)
+              if(element != ""){
+                var cat = Categorie.create({nom_categorie: element});
+                //Enregistrer la cat dans la BD
+                cat.save().then(function(addedForme) {
+                  //console.log("added: " ,addedForme._id)
+                });
+              }
+               
+            });
+          });
+
+          
 
         })
       });
