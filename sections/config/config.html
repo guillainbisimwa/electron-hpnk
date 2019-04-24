@@ -239,6 +239,7 @@
         var mapMed = new Map();
 
         var dataUploaded = null;
+        var medUploaded = null;
 
         //Init Selectors
         var listForme =  $("#design_med_forme");
@@ -933,27 +934,26 @@
           var tmppath = URL.createObjectURL(event.target.files[0]);
 
           var reader = new FileReader();
-          reader.readAsText(file, "ISO-8859-2"); //Encodage de Europe central //ISO-8859-2 //CP1251
+          reader.readAsText(file); //Encodage de Europe central //ISO-8859-2 //CP1251// Windows 1252 //ISO 8859-15
           reader.onload = function(event){
             var csv = event.target.result;
          
-            //console.log(csv);
             options = {
               separator: ';',
               delimiter: '"',
             };
             // .slice(1) removes the first element of the array, and returns that element apart from item 1.
             dataUploaded = null;
+            medUploaded = null;
             try {
               dataUploaded = (_csv.toArrays(csv,options)).slice(1);
+              medUploaded = (_csv.toArrays(csv,options)).slice(1);
             } catch (error) {
               console.log("csv: "+error);
               dataUploaded = (_csv.toArrays(csv)).slice(1);
+              medUploaded = (_csv.toArrays(csv)).slice(1);
             }
-            //var data = _csv.toObjects(csv);
-
-            //console.log("Array", dataUploaded)
-
+            
             tab_uploaded_med =  $('#tab_uploaded_med').DataTable({
               // ICI on choisi la langue des details du tableau
               language:{
@@ -977,66 +977,92 @@
         });
 
         //Upload med , Forme and Cat
-        $("#submit_med").click(function(){
-          //console.log("Brerrr : ",dataUploaded)
-         
+        $("#submit_med").click(async function(){
           //Get the unique Forme
           const distinct_forme = [...new Set(dataUploaded.map(item => item[2].trim()))];
-          //console.log(distinct_forme)
 
-           //Get the unique cat
+          //Get the unique cat
           const distinct_cat = [...new Set(dataUploaded.map(item => item[3].trim()))];
-          //console.log(distinct_cat)
-
-          //Get all unique values in a JavaScript array (remove duplicates)  ES6
-          //const x = words.filter((item,index,self) => self.indexOf(item)==index);
-
-          //A use full f(x) to remove deplicated datapoints
-
-          /*const distinct_all = Array.from(new Set(dataUploaded.map(item => item.id))).
-            map(id => {
-              return {
-                id : id,
-                med : dataUploaded.find(s => s.id === id).name
-              }
-            });*/
+          
+          //Get the unique med
+          let distinct_med = dataUploaded;
 
           //Delette all Forme inside the db
-          Forme.deleteMany({}).then(function(deletedForme) {
+          await Forme.deleteMany({}).then( function(deletedForme) {
             console.log('Deleted ', deletedForme, ' forme(s) from the database.');
             //save all newly added formes
-            distinct_forme.forEach(element => {
-              console.log(element)
+             distinct_forme.forEach(element => {
               if(element != ""){
                 var forme = Forme.create({nom_forme: element});
                 //Enregistrer la forme dans la BD
-                forme.save().then(function(addedForme) {
-                  //console.log("added: " ,addedForme._id)
-                });
+                forme.save().then(function(addedForme) { });
               }
-               
             });
           });
 
           //Delette all Forme inside the db
-          Categorie.deleteMany({}).then(function(deletedCat) {
+          await Categorie.deleteMany({}).then( function(deletedCat) {
             console.log('Deleted ', deletedCat, ' categories(s) from the database.');
+
             //save all newly added cat
-            distinct_cat.forEach(element => {
-              console.log(element)
+             distinct_cat.forEach(element => {
               if(element != ""){
                 var cat = Categorie.create({nom_categorie: element});
                 //Enregistrer la cat dans la BD
-                cat.save().then(function(addedForme) {
-                  //console.log("added: " ,addedForme._id)
-                });
+                cat.save().then(function(addedCat) { });
               }
-               
+            });
+          });
+          
+          //Find ids
+          await Forme.find({},{sort:'nom_forme'}).then(function(foundForme) {
+            foundForme.forEach(function(foundSingleForme) {
+              //Remplacer les noms de formes par les IDs
+              distinct_med.forEach((item) => {
+                //console.log("=+=> ",item[2])
+                if (item[2].trim() == foundSingleForme.nom_forme) {
+                  item[2] = foundSingleForme._id;
+                }
+                else {
+                  //item[3] ="";
+                }
+                //return item;
+              });
+              
             });
           });
 
-          
+          //Find ids
+          await Categorie.find({},{sort:'nom_categorie'}).then(function(foundCat) {
+            foundCat.forEach(function(foundSingleCat) {
+              //Remplacer les noms de formes par les IDs
+              distinct_med.forEach((item) => {
+                //console.log("=+=> ",item[2])
+                if (item[3].trim() == foundSingleCat.nom_categorie) {
+                  item[3] = foundSingleCat._id;
+                }
+                else {
+                  //item[3] ="";
+                }
+                //return item;
+              });
+              
+            });
+          });
 
+          //Delette all med inside the db
+          await Medicament.deleteMany({}).then(async function(deletedMed) {
+            console.log('Deleted ', deletedMed, ' Medicament(s) from the database.');
+            distinct_med.forEach(element => {
+              if(element != ""){
+                var med = Medicament.create({nom_medicament: element[1], id_forme: element[2], id_categorie: element[3]});
+                //Enregistrer le med dans la BD
+                med.save().then(function(addedForme) {
+                  //console.log("added: " ,addedForme._id)
+                });
+              }
+            });
+          });
         })
       });
       </script>
