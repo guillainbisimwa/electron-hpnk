@@ -68,6 +68,9 @@
 .f-left{
   float: left;
 }
+.m-left-15 {
+  margin-left: 15px
+}
 .dt-buttons {
   width: 100%;
   text-align: left;
@@ -162,4 +165,29 @@
 #tab_uploaded_med_wrapper {
   width: 100%;
   padding: 15px;
+}
+.dropdown-menu.show {
+  min-width: -webkit-fill-available !important;
+}
+.filter-option {
+  margin-left: -28px;
+}
+.progress {
+  height: auto;
+  border-radius: 5px;
+  background: #ddd;
+  margin: 15px;
+}
+.progress .progress-bar.progress-bar-primary {
+  background: #9c27b0!important;
+}
+.progress .progress-bar.progress-bar-info {
+  background: #00bcd4!important;
+}
+.progress .progress-bar.progress-bar-success {
+  background: #4caf50;
+}
+.progresses {
+  display: none;
+  width: 100%;
 }
