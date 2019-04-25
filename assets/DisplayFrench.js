@@ -44,9 +44,9 @@ $(".nav-link-cat").text((json.cat.plurial).toUpperCase());
 //Tab med
 //Header of Table
 $(".tab_med thead tr .1").text(json.nbr);
-$(".tab_med thead tr .2").text(json.designation+" "+json.med.name);
-$(".tab_med thead tr .3").text(json.forme.name);
-$(".tab_med thead tr .4").text(json.cat.name);
+$(".tab_med thead tr .2").text(json.med.designation);
+$(".tab_med thead tr .3").text(json.forme.designation);
+$(".tab_med thead tr .4").text(json.cat.designation);
 
 //Modals
 $(".med-modal-title").text(json.med.add);

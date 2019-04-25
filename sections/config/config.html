@@ -57,13 +57,13 @@
                 </div>
                 <div class="card-body ">
                   <div class="tab-content text-center">
-                    <div class="tab-pane active table-responsives" id="medicaments">
+                    <div class="tab-pane active table-responsives1" id="medicaments">
                       <table class="table table-hover tab_left tab_med table-striped" id="tab_med" style="width:100%">
-                        <thead class="text-warning">
+                        <thead class="text-primary">
                           <tr>
                             <th class="1">Numéro</th>
-                            <th class="2">Désignation du médicament</th>
-                            <th class="3">Forme (unitaire)</th>
+                            <th class="2">Désignation</th>
+                            <th class="3">Forme</th>
                             <th class="4">Catégorie</th>
                             <th>_id</th>
                             <th>_id_forme</th>
@@ -73,7 +73,7 @@
                         <tbody>
                         </tbody>
                       </table>
-                      <button id="add-med-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
+                      <button id="add-med-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
                         <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
                       </button>
@@ -92,7 +92,7 @@
                         </tbody>
                       </table>
 
-                      <button id="add-forme-modal" class="btn btn-lg btn-round btn-rose btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
+                      <button id="add-forme-modal" class="btn btn-lg btn-round btn-rose btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
                         <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
                       </button>
@@ -108,7 +108,7 @@
                           <tbody>
                           </tbody>
                         </table>
-                        <button id="add-cat-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddCatModal">
+                        <button id="add-cat-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddCatModal">
                           <i class="fa fa-plus"></i>
                           <div class="ripple-container"></div>
                         </button>
@@ -233,6 +233,9 @@
             //destroy:true
           }
         );
+
+        $(".tab_med").find("th").css("width","1%!important");
+
 
         //init Map of "key","value"
         var mapForme = new Map();
