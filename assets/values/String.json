@@ -15,7 +15,8 @@
     },
     "section_stock": {
         "name": "Stock médicament",
-        "icon": "fa fa-medkit fa-lg"
+        "icon": "fa fa-medkit fa-lg",
+        "sous_titre":"La liste de médicaments en stock"
     },
     "section_entrée": {
         "name": "Entrée",

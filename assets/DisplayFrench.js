@@ -30,6 +30,11 @@ $("#rapport-titre").text(json.name+" - "+json.section_rapport.name);
 $("#aide-titre").text(json.name+" - "+json.section_aide.name);
 $("#apropos-titre").text(json.name+" - "+json.section_apropos.name);
 
+//Put TITRE et SOUS TITRE to sections
+$(".card-stock").find("h4").text(json.section_stock.name);
+$(".card-stock").find("p").text(json.section_stock.sous_titre);
+
+
 //Section configuration
 //Onglets
 $(".nav-link-med").text((json.med.plurial).toUpperCase());
