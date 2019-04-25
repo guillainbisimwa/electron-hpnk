@@ -42,13 +42,13 @@
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link nav-link-forme " href="#formes" data-toggle="tab">
+                          <a class="nav-link nav-link-forme" href="#formes" data-toggle="tab">
                             Formes
                           </a>
                         </li>
                         <li class="nav-item ">
                           <a class="nav-link nav-link-cat" href="#categories" data-toggle="tab">
-                          Catégories
+                            Catégories
                           </a>
                         </li>
                       </ul>
@@ -57,8 +57,8 @@
                 </div>
                 <div class="card-body ">
                   <div class="tab-content text-center">
-                    <div class="tab-pane active" id="medicaments">
-                      <table class="table table-hover tab_left tab_med" id="tab_med" style="width:100%">
+                    <div class="tab-pane active table-responsives" id="medicaments">
+                      <table class="table table-hover tab_left tab_med table-striped" id="tab_med" style="width:100%">
                         <thead class="text-warning">
                           <tr>
                             <th class="1">Numéro</th>
@@ -74,13 +74,13 @@
                         </tbody>
                       </table>
                       <button id="add-med-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
-                          <i class="fa fa-plus"></i>
+                        <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
                       </button>
                     </div>
 
                     <div class="tab-pane" id="formes">
-                      <table class="table table-hover tab_left" style="width:100%" id="tab_forme">
+                      <table class="table table-hover tab_left table-striped" style="width:100%" id="tab_forme">
                         <thead class="text-warning">
                           <tr>
                             <th>Numéro</th>
@@ -93,13 +93,13 @@
                       </table>
 
                       <button id="add-forme-modal" class="btn btn-lg btn-round btn-rose btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
-                          <i class="fa fa-plus"></i>
+                        <i class="fa fa-plus"></i>
                         <div class="ripple-container"></div>
                       </button>
                     </div>
 
                     <div class="tab-pane" id="categories">
-                      <table class="table table-hover tab_left dataTable" id="tab_cat" style="width:100%">
+                      <table class="table table-hover tab_left dataTable table-striped" id="tab_cat" style="width:100%">
                           <thead class="text-warning">
                             <th>Numéro</th>
                             <th>Catégories</th>
@@ -109,7 +109,7 @@
                           </tbody>
                         </table>
                         <button id="add-cat-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: fixed;right: 55px;bottom: 20px;" data-toggle="modal" data-target="#AddCatModal">
-                            <i class="fa fa-plus"></i>
+                          <i class="fa fa-plus"></i>
                           <div class="ripple-container"></div>
                         </button>
                     </div>
@@ -149,7 +149,7 @@
 
       <div class="fixed-plugin">
         <div class="">
-          <a data-toggle="modal" data-target="#UploadMedModal" >
+          <a id="uploadModalRun" data-toggle="modal" data-target="#UploadMedModal" >
             <i class="fa fa-cog fa-2x"> </i>
           </a>
           
@@ -230,6 +230,7 @@
             //     "searchable": false
             //   },
             // ],
+            //destroy:true
           }
         );
 
@@ -693,7 +694,8 @@
          //Function populate tab medicament
         function populateTabMed(){
           var tab_med = [];
-          _tab_med.destroy();
+          //_tab_med.destroy();
+          console.log("Nanannanan")
           //$("#tab_med").empty();
           Medicament.find({},{sort:'nom_medicament'}).then(function(foundMed) {
             i = 0;
@@ -712,7 +714,7 @@
               tab_med.push(Array.from(localSingleMed))
             });
 
-            console.log("Here ",Array.from(tab_med))
+            //console.log("Here ",Array.from(tab_med))
             //_tab_med.DataTable({
             _tab_med =  $('#tab_med').DataTable({
               dom: 'Blfrtip',
@@ -759,7 +761,7 @@
               language:{
                 url:'./assets/values/French.json'
               },
-              "order": [[ 0, "asc" ]],
+              //"order": [[ 0, "asc" ]],
               // Les donnees sont affichees dans le tableau HTML
               data:tab_med,
               // On affiche pas la troisieme colonne, elle reprend les _id
@@ -865,7 +867,7 @@
               //populate the Map of formr
               mapForme.set(foundSingleForme._id, foundSingleForme.nom_forme);              
             });
-            console.log(Array.from(mapForme))
+            //console.log(Array.from(mapForme))
           });
         }
 
@@ -878,7 +880,7 @@
               //populate the Map of cat
               mapCat.set(foundSingleCat._id, foundSingleCat.nom_categorie);              
             });
-            console.log(Array.from(mapCat))
+            //console.log(Array.from(mapCat))
           });
         }
 
@@ -920,6 +922,31 @@
           }
         }
 
+        $("#uploadModalRun").click(async function(){
+          //Finish uploading
+          $("#submit_med").css("display","block");
+
+          //Init all the proresses bars
+          $(".progress-bar-forme").css("width", "0%");
+          $(".progress-bar-cat").css("width", "0%");
+          $(".progress-bar-med").css("width", "0%");
+
+          await $(".progresses").css("display", "none");
+          await $(".uploaded_file_name").text("")
+          //Clear the table
+          tab_uploaded_med.destroy();
+          //tab_uploaded_med.empty();
+          tab_uploaded_med = await $('#tab_uploaded_med').DataTable({
+            // ICI on choisi la langue des details du tableau
+            language:{
+              url:'./assets/values/French.json'
+            },
+            // Les donnees sont affichees dans le tableau HTML
+            data: null,
+            destroy: true,
+          });
+        })
+
         //Upload a CSV file 
         $('input[type="file"]').change(function(e){
           var files = e.target.files;
@@ -930,7 +957,7 @@
           console.log(' - LastModified: ',file.lastModifiedDate +" ==> "+file.lastModifiedDate.toLocaleDateString())
 
           //show the name uploaded file's name
-         $(".uploaded_file_name").text(file.name)
+         $(".uploaded_file_name").text(" NOM DU FICHIER : "+file.name)
 
           var filePath = $(this).val();
 
@@ -1091,8 +1118,20 @@
                   $(".progress-bar-med").css("width", percent+"%");
                 });
               }
+              
             });
+            //Finish uploading
+            $("#submit_med").css("display","none");
           });
+        })
+
+        $("#fermerUploadModal").click(function(){
+          //populate table med
+          //populate table cat
+          //populate table forme
+          mapOfForme();
+          mapOfCat();
+          populateTabMed();
         })
         
       });
@@ -1304,11 +1343,11 @@
                   <div class="col-xs-12 m-left-15">
                     <input type="file" id="file" />
                     <label for="file" class="btn-2" ><span></span></label> 
-                    <label><span>NOM DU FICHIER : </span><span class="uploaded_file_name"> </span></label> 
+                    <label><span class="uploaded_file_name"> </span></label> 
                   </div>
                   
                   <div id="preview_csv" class="row">
-                    <table class="table table-hover tab_med tab_left" id="tab_uploaded_med" style="width:100%">
+                    <table class="table table-hover tab_med tab_left table-striped" id="tab_uploaded_med" style="width:100%">
                       <thead class="text-warning">
                         <tr>
                           <th class="1"></th>
@@ -1345,10 +1384,10 @@
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" id="submit_med">
-                    <i class=""></i>
-                    <span></span>
+                  <i class=""></i>
+                  <span></span>
                 </button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                <button id="fermerUploadModal" type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
               </div>
             </div>
           </div>

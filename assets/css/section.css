@@ -191,3 +191,10 @@
   display: none;
   width: 100%;
 }
+.table-responsives{
+  display:block;
+  width:100%;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  -ms-overflow-style:-ms-autohiding-scrollbar
+}
