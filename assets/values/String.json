@@ -14,7 +14,7 @@
         "icon": "fa fa-cog fa-lg"
     },
     "section_stock": {
-        "name": "Stock médicament",
+        "name": "Stock médicament1",
         "icon": "fa fa-medkit fa-lg",
         "sous_titre":"La liste de médicaments en stock"
     },
