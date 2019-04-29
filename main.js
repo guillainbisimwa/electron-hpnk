@@ -76,19 +76,19 @@ function makeSingleInstance () {
 
   app.requestSingleInstanceLock()
 
-  // app.on('second-instance', () => {
-  //   if (mainWindow) {
-  //     if (mainWindow.isMinimized()) mainWindow.restore()
-  //     mainWindow.focus()
-  //   }
-  // })
+  app.on('second-instance', () => {
+    if (mainWindow) {
+      if (mainWindow.isMinimized()) mainWindow.restore()
+      mainWindow.focus()
+    }
+  })
 }
 
 // Require each JS file in the main-process dir
 function loadDemos () {
-  return
-  // const files = glob.sync(path.join(__dirname, 'main-process/**/*.js'))
-  // files.forEach((file) => { require(file) })
+  //return
+  const files = glob.sync(path.join(__dirname, 'main-process/**/*.js'))
+  files.forEach((file) => { require(file) })
 }
 
 initialize()
