@@ -5,7 +5,8 @@ const fs = require('fs')
 const path = require('path')
 const octokit = require('@octokit/rest')
 
-const token = process.env.ELECTRON_API_DEMO_GITHUB_TOKEN
+const token = process.env.HPNK_PHARMA_GITHUB_TOKEN
+//const token = "f90a473912aabee0a0b800f112c3bfd9e4c4ac8f"
 const version = require('../package').version
 const github = octokit({
   timeout: 30 * 1000,
@@ -13,7 +14,8 @@ const github = octokit({
 })
 
 if (!token) {
-  console.error('ELECTRON_API_DEMO_GITHUB_TOKEN environment variable not set\nSet it to a token with repo scope created from https://github.com/settings/tokens/new')
+  console.log(token)
+  console.error('HPNK_PHARMA_GITHUB_TOKEN environment variable not set\nSet it to a token with repo scope created from https://github.com/settings/tokens/new')
   process.exit(1)
 }
 
@@ -87,6 +89,7 @@ function zipAsset (asset) {
 }
 
 async function getOrCreateRelease () {
+  console.log("getOrCreateRelease")
   const { data: releases } = await github.repos.listReleases({
     owner: 'guillainbisimwa',
     repo: 'electron-hpnk',
