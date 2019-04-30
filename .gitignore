@@ -3,3 +3,4 @@ out
 npm-debug.log
 assets/DataTables
 .vscode/
+cert/
