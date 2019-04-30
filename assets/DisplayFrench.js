@@ -55,6 +55,20 @@ $(".tab_med thead tr .2").text(json.med.designation);
 $(".tab_med thead tr .3").text(json.forme.designation);
 $(".tab_med thead tr .4").text(json.cat.designation);
 
+//Tab forme
+$(".tab_forme thead tr .1").text(json.nbr);
+$(".tab_forme thead tr .2").text(json.forme.designation);
+
+//Tab cat
+$(".tab_cat thead tr .1").text(json.nbr);
+$(".tab_cat thead tr .2").text(json.cat.designation);
+
+//Tab entree
+$(".tab_entree thead tr .1").text(json.nbr);
+$(".tab_entree thead tr .2").text(json.med.designation);
+$(".tab_entree thead tr .3").text(json.section_entrée.quantité);
+$(".tab_entree thead tr .4").text(json.section_entrée.date);
+
 //Modals
 $(".med-modal-title").text(json.med.add);
 $("label.design_med").text(json.med.designation);

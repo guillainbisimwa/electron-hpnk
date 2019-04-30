@@ -21,12 +21,16 @@
     "section_entrée": {
         "name": "Entrée",
         "icon": "fa fa-plus-circle fa-lg",
-        "sous_titre":"Mouvements de médicaments entrés"
+        "sous_titre":"Mouvements de médicaments entrés",
+        "date" : "Date d'entrée",
+        "quantité" : "Quantité entrée"
     },
     "section_sortie": {
         "name": "Sortie",
         "icon": "fa fa-minus-circle fa-lg",
-        "sous_titre":"Mouvements de médicaments sorties"
+        "sous_titre":"Mouvements de médicaments sorties",
+        "date" : "Date de sortie",
+        "quantité" : "Quantité sortie"
     },
     "section_rapport": {
         "name": "Rapport",
