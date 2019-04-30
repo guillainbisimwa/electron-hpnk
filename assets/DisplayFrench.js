@@ -20,7 +20,7 @@ $("#button-rapport").find("i").addClass(json.section_rapport.icon);
 $("#button-aide").find("i").addClass(json.section_aide.icon);
 $("#button-apropos").find("i").addClass(json.section_apropos.icon);
 
-//Put title to sections
+//Show section's title 
 $("#dashboard-titre").text(json.name+" - "+json.section_dashboard.name);
 $("#config-titre").text(json.name+" - "+json.section_config.name);
 $("#stock-titre").text(json.name+" - "+json.section_stock.name);
@@ -30,10 +30,17 @@ $("#rapport-titre").text(json.name+" - "+json.section_rapport.name);
 $("#aide-titre").text(json.name+" - "+json.section_aide.name);
 $("#apropos-titre").text(json.name+" - "+json.section_apropos.name);
 
-//Put TITRE et SOUS TITRE to sections
+//Put TITRE et SOUS TITRE to sections STOCK
 $(".card-stock").find("h4").text(json.section_stock.name);
 $(".card-stock").find("p").text(json.section_stock.sous_titre);
 
+//Put TITRE et SOUS TITRE to sections ENTREE
+$(".card-entree").find("h4").text(json.section_entrée.name);
+$(".card-entree").find("p").text(json.section_entrée.sous_titre);
+
+//Put TITRE et SOUS TITRE to sections ENTREE
+$(".card-sortie").find("h4").text(json.section_sortie.name);
+$(".card-sortie").find("p").text(json.section_sortie.sous_titre);
 
 //Section configuration
 //Onglets

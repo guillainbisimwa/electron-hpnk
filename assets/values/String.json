@@ -14,17 +14,19 @@
         "icon": "fa fa-cog fa-lg"
     },
     "section_stock": {
-        "name": "Stock médicament1",
+        "name": "Stock médicament",
         "icon": "fa fa-medkit fa-lg",
         "sous_titre":"La liste de médicaments en stock"
     },
     "section_entrée": {
         "name": "Entrée",
-        "icon": "fa fa-plus-circle fa-lg"
+        "icon": "fa fa-plus-circle fa-lg",
+        "sous_titre":"Mouvements de médicaments entrés"
     },
     "section_sortie": {
         "name": "Sortie",
-        "icon": "fa fa-minus-circle fa-lg"
+        "icon": "fa fa-minus-circle fa-lg",
+        "sous_titre":"Mouvements de médicaments sorties"
     },
     "section_rapport": {
         "name": "Rapport",
