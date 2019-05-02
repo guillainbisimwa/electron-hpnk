@@ -73,7 +73,7 @@ $(document).ready(function() {
           var dateString = new Date( foundSingleEntree.date_).toISOString().split("T")[0];
 
           //Put the result recursivelly inside the medicament's table
-          var localSingleMed = [i, _nom_med,foundSingleEntree.qt, dateString ,foundSingleEntree._id]; 
+          var localSingleMed = [i, _nom_med,foundSingleEntree.qt, dateString ,foundSingleEntree._id,foundSingleEntree.id_medicament ]; 
           tab_entree.push(Array.from(localSingleMed))
         });
 
@@ -85,6 +85,7 @@ $(document).ready(function() {
             {
               text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
               action: function ( e, dt, node, config ) {
+                addValueModalEntree()
                 $("#AddEntreeModal").modal();
               }
             },
@@ -95,8 +96,9 @@ $(document).ready(function() {
                       'Row data: '+
                       JSON.stringify( dt.row( { selected: true } ).data() )
                   ); 
-                  updateValueModalMed(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4],
-                    dt.row( { selected: true } ).data()[5], dt.row( { selected: true } ).data()[6]);
+                  //qt_entree,_id, _id_med
+                  updateValueModalEntree(dt.row( { selected: true } ).data()[2], dt.row( { selected: true } ).data()[4],
+                    dt.row( { selected: true } ).data()[5]);
 
                   $("#AddEntreeModal").modal();
               },
@@ -119,7 +121,7 @@ $(document).ready(function() {
               extend:    'csv',
               text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
               titleAttr: 'CSV',
-              filename: json.section_entrée.file_name,
+              filename: json.entree.file_name,
               exportOptions: {
                 columns: [1, 2, 3]
               },
@@ -135,7 +137,7 @@ $(document).ready(function() {
           // On affiche pas la troisieme colonne, elle reprend les _id
           "columnDefs": [
             {
-              "targets": [ 4 ],
+              "targets": [ 4, 5 ],
               "visible": false,
               "searchable": false
             },
@@ -173,8 +175,10 @@ $(document).ready(function() {
     //Save Entree
     $("#save_entree").click(function(){
       var _entree = $("#design_entree").children("option:selected").val();
+      var qt_entree = $("#qt_entree").val();
       var entree = Entree.create({
-        id_medicament: _entree
+        id_medicament: _entree,
+        qt:parseInt(qt_entree, 10)
       });
       //Enregistrer la forme dans la BD
       entree.save().then(function(addedEntree) {
@@ -190,7 +194,68 @@ $(document).ready(function() {
       $("#design_entree").val("");
     })
 
-    
+     //Function, update values before adding medicament
+     function updateValueModalEntree(qt_entree,_id, _id_med){
+      $("#update_entree").css("display","block");
+      $("#save_entree").css("display","none");
+      $(".entree-modal-title").text(json.entree.edit);
+      $(".entree-modal-title").css("color","#a11");
+      //$("#design_forme").click();
+      $("#qt_entree").val(qt_entree);
+      $("#_id_design_entree").val(_id);
+
+      //Choose the selected values
+      populateSelectEntreeUpdate(_id_med);
+      
+      //Find is-filled is-focused
+      $("#AddEntreeModal").find(".form-group").addClass("has-danger is-filled is-focused");
+    }
+
+    function addValueModalEntree(){
+      $("#update_entree").css("display","none");
+      $("#save_entree").css("display","block");
+      $(".entree-modal-title").text(json.entree.add);
+      $(".entree-modal-title").css("color","#000");
+      $("#AddEntreeModal").find(".form-group").removeClass("has-danger is-filled is-focused");
+      $("#design_entree").val("");
+      $("#_id_design_entree").val("");
+      $("#qt_entree").val("");
+
+      populateSelectEntreeUpdate("");
+    }
+
+    //Update medicament
+    $("#update_entree").click(function(){
+      var med_entree = $("#design_entree").children("option:selected").val();
+      var qt_entree = $("#qt_entree").val();
+      var _id_design_entree = $("#_id_design_entree").val();
+      Entree.findOneAndUpdate({_id:_id_design_entree},{id_medicament: med_entree,qt:parseInt(qt_entree, 10)},{upsert: true}).then(function(updatedEntree) {
+        console.log("_id = ", updatedEntree._id)
+        populateTabEntree();
+        $("#AddEntreeModal .close").click();
+      }); 
+    });
+
+    //Populate med SELECTPICKERS
+    function populateSelectEntreeUpdate(_id_med){
+      
+      Medicament.find({},{sort:'nom_medicament'}).then(function(foundMed) {
+        i = 0;
+        //remove all oprion before adding new
+        listMed.children().remove();
+        listMed.children().empty();
+
+        foundMed.forEach(function(foundSingleMed) {
+          i++;
+          listMed.append('<option value="' + foundSingleMed._id + '">' + foundSingleMed.nom_medicament + '</option>');
+        });
+        listMed.val(_id_med).change();
+        listMed.selectpicker();
+        listMed.selectpicker('refresh');
+      });
+    }
+
+
 
     $("#button-entree").click(function(){
       console.log("entree ") 

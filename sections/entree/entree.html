@@ -48,6 +48,7 @@
                             <th class="3"></th>
                             <th class="4"></th>
                             <th>_id</th>
+                            <th>_id_medicament</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -100,13 +101,14 @@
             <select title="Choisissez un médicament" id="design_entree" data-live-search="true"
              multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
             </select>
+            <input type="hidden" class="form-control" id="_id_design_entree" />
             </br>
             </br>
             <div class="row"> 
               <div class="col-sm-12">
                 <div class="form-group">
-                  <label for="qt_entree" class="qt_entree bmd-label-floating">Quantite du médicament</label>
-                  <input type="text" class="form-control" id="qt_entree">
+                  <label for="qt_entree" class="qt_entree design_entree bmd-label-floating">Q du médicament</label>
+                  <input type="text" class="form-control" id="qt_entree" />
                 </div>
               </div>
             </div>

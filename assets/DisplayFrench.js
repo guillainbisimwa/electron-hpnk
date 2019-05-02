@@ -107,7 +107,7 @@ $("#supp_cat").find("i").addClass(json.buttons.del.icon);
  */
 //Modals Entree
 $(".entree-modal-title").text(json.entree.add);
-$("label.design_entree").text(json.entree.designation);
+$("label.design_entree").text(json.entree.quantité);
 $("#SuppEntreeModal").find("h3 span").text(json.entree.del_confirm_msg);
 $("#SuppEntreeModal").find("h4").text(json.entree.del);
 

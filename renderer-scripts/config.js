@@ -185,8 +185,8 @@ $(document).ready(function() {
       }); 
     });
 
-     //Update medicament
-     $("#update_med").click(function(){
+    //Update medicament
+    $("#update_med").click(function(){
       var design_med = $("#design_med").val();
       var _id_design_med = $("#_id_design_med").val();
 
