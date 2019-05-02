@@ -73,7 +73,6 @@ $(document).ready(function() {
     //init Map of "key","value"
     var mapForme = new Map();
     var mapCat = new Map();
-    var mapMed = new Map();
 
     var dataUploaded = null;
     var medUploaded = null;
@@ -246,21 +245,21 @@ $(document).ready(function() {
     });
     
     //Update text inside modal before Adding a forme
-    $("#add-forme-modal").click(function(){
-      addValueModalForme();
-    });
+    // $("#add-forme-modal").click(function(){
+    //   addValueModalForme();
+    // });
 
     //Update text inside modal before Adding a Categorie
-    $("#add-cat-modal").click(function(){
-      addValueModalCat();
-    });
+    // $("#add-cat-modal").click(function(){
+    //   addValueModalCat();
+    // });
 
      //Update text inside modal before Adding a medicament
-     $("#add-med-modal").click(function(){
-      addValueModalMed();
-      populateSelectForme();
-      populateSelectCat();
-    });
+    //  $("#add-med-modal").click(function(){
+    //   addValueModalMed();
+    //   populateSelectForme();
+    //   populateSelectCat();
+    // });
     
     //Function, update values before adding forme
     function updateValueModalForme(forme,_id){
@@ -376,6 +375,13 @@ $(document).ready(function() {
           select: true,
           buttons: [
             {
+              text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
+              action: function ( e, dt, node, config ) {
+                addValueModalForme();
+                $("#AddFormModal").modal();
+              }
+            },
+            {
               text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
               action: function ( e, dt, node, config ) {
                   console.log(
@@ -431,8 +437,8 @@ $(document).ready(function() {
         _tab_forme.on( 'select deselect', function () {
           var selectedRows = _tab_forme.rows( { selected: true } ).count();
           console.log("ok: "+selectedRows)
-          _tab_forme.button( 0 ).enable( selectedRows === 1 );
           _tab_forme.button( 1 ).enable( selectedRows === 1 );
+          _tab_forme.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
@@ -458,6 +464,13 @@ $(document).ready(function() {
           dom: 'Blfrtip',
           select: true,
           buttons: [
+            {
+              text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
+              action: function ( e, dt, node, config ) {
+                addValueModalCat();
+                $("#AddCatModal").modal();
+              }
+            },
             {
               text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
               action: function ( e, dt, node, config ) {
@@ -514,8 +527,8 @@ $(document).ready(function() {
         _tab_cat.on( 'select deselect', function () {
           var selectedRows = _tab_cat.rows( { selected: true } ).count();
           console.log("ok: "+selectedRows)
-          _tab_cat.button( 0 ).enable( selectedRows === 1 );
           _tab_cat.button( 1 ).enable( selectedRows === 1 );
+          _tab_cat.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
@@ -556,6 +569,15 @@ $(document).ready(function() {
           dom: 'Blfrtip',
           select: true,
           buttons: [
+            {
+              text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
+              action: function ( e, dt, node, config ) {
+                addValueModalMed();
+                populateSelectForme();
+                populateSelectCat();
+                $("#AddMedModal").modal();
+              }
+            },
             {
               text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
               action: function ( e, dt, node, config ) {
@@ -614,8 +636,8 @@ $(document).ready(function() {
         _tab_med.on( 'select deselect', function () {
           var selectedRows = _tab_med.rows( { selected: true } ).count();
           console.log("ok: "+selectedRows)
-          _tab_med.button( 0 ).enable( selectedRows === 1 );
           _tab_med.button( 1 ).enable( selectedRows === 1 );
+          _tab_med.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
