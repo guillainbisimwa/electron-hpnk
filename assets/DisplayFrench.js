@@ -108,7 +108,7 @@ $("#supp_cat").find("i").addClass(json.buttons.del.icon);
 //Modals Entree
 $(".entree-modal-title").text(json.entree.add);
 $("label.design_entree").text(json.entree.quantité);
-$("#SuppEntreeModal").find("h3 span").text(json.entree.del_confirm_msg);
+$("#SuppEntreeModal").find("h3 .confirm_msg").text(json.entree.del_confirm_msg);
 $("#SuppEntreeModal").find("h4").text(json.entree.del);
 
 $("#save_entree span").text(json.buttons.add.name);
@@ -127,6 +127,10 @@ $(".tab_entree thead tr .4").text(json.entree.date);
 //Put TITRE et SOUS TITRE to sections ENTREE
 $(".card-entree").find("h4").text(json.section_entrée.name);
 $(".card-entree").find("p").text(json.section_entrée.sous_titre);
+
+//Delete
+$(".date_entree_titre").text(json.entree.date);
+$(".qt_titre").text(json.entree.quantité);
 
 /**
  * SORTIE

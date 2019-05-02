@@ -111,12 +111,12 @@ $(document).ready(function() {
                       'Row data: '+
                       JSON.stringify( dt.row( { selected: true } ).data() )
                   );
-                  delValueModalMed(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4]);
-                  $("#SuppEntreeModal").modal(); 
+                  delValueModalEntree(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4],
+                  dt.row( { selected: true } ).data()[3], dt.row( { selected: true } ).data()[2]);
+                  $("#SuppEntreeModal").modal();
               },
               enabled: false
             },
-            //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
             {
               extend:    'csv',
               text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
@@ -255,7 +255,62 @@ $(document).ready(function() {
       });
     }
 
+    //Function, update values before adding Entree
+    function delValueModalEntree(entree,_id, _date, qt){
+      $("#del_design_entree").text(entree);
+      $("#_id_del_design_entree").val(_id);
+      $(".date_entree").text(_date);
+      $(".qt").text(qt);
+    }
 
+    function result_del(deletedEntree,deleted_item,modal){
+      if(deletedEntree == 0){
+        swal({
+          title: json.error,
+          text: json.error_del_db,
+          toast: false,
+          buttonsStyling: false,
+          confirmButtonClass: "btn btn-danger",
+          type: "error",
+          //target: document.getElementById('config-section'),
+          onBeforeOpen: function () {
+            $("#"+modal+" .close").click();
+          },
+          onOpen: function () {
+            //populateTabMed();                
+          }
+        }).catch(swal.noop)
+      }
+      else {
+        swal({
+          title: deleted_item.toUpperCase(),
+          text: json.success_del_db,
+          toast: false,
+          buttonsStyling: false,
+          confirmButtonClass: "btn btn-success",
+          type: "success",
+          //target: document.getElementById('config-section'),
+          onBeforeOpen: function () {
+            //$("#SuppMedModal .close").click();
+            $("#"+modal+" .close").click();
+          },
+          onOpen: function () {
+            //populateTabMed();                
+          }
+        }).catch(swal.noop)
+      }
+    }
+
+    //Supprimer un medicament
+    $("#supp_entree").click(function(){
+      var _id_del_design_entree = $("#_id_del_design_entree").val();
+      var del_design_entree = $("#del_design_entree").text();
+      Entree.deleteOne({_id:_id_del_design_entree}).then(function(deletedEntree) {
+        console.log('Deleted ', deletedEntree, ' entree from the database.');
+        result_del(deletedEntree,del_design_entree,"SuppEntreeModal");
+        populateTabEntree();
+      });
+    });
 
     $("#button-entree").click(function(){
       console.log("entree ") 

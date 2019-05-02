@@ -109,7 +109,7 @@
         "add": "Entrer un médicament",
         "del": "Supprimer une entrée",
         "edit": "Modifier une entrée",
-        "del_confirm_msg":"Voulez-vous vraiment supprimer cette ntrée : ",
+        "del_confirm_msg":"Confirmez-vous cette suppression ?",
         "designation":"Entrée du médicament",
         "date" : "Date d'entrée",
         "quantité" : "Quantité entrée",

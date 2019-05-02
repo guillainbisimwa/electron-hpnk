@@ -348,8 +348,8 @@ $(document).ready(function() {
       $("#_id_del_design_cat").val(_id);
     }
 
-     //Function, update values before adding medicament
-     function delValueModalMed(med,_id){
+    //Function, update values before adding medicament
+    function delValueModalMed(med,_id){
       $("#del_design_med").text(med);
       $("#_id_del_design_med").val(_id);
     }
