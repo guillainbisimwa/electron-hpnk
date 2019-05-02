@@ -114,5 +114,18 @@
         "date" : "Date d'entrée",
         "quantité" : "Quantité entrée",
         "file_name": "Mouvements de médicaments entrés"
+    },
+    "sortie": {
+        "name": "Sortie",
+        "plurial": "Sorties",
+        "add": "Sortir un médicament",
+        "del": "Supprimer une sortie",
+        "edit": "Modifier une sortie",
+        "del_confirm_msg":"Confirmez-vous cette suppression ?",
+        "designation":"Sortie du médicament",
+        "date" : "Date de sortie",
+        "quantité" : "Quantité sortie",
+        "file_name": "Mouvements de médicaments sorties"
     }
+
 }

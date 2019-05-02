@@ -108,7 +108,7 @@ $("#supp_cat").find("i").addClass(json.buttons.del.icon);
 //Modals Entree
 $(".entree-modal-title").text(json.entree.add);
 $("label.design_entree").text(json.entree.quantité);
-$("#SuppEntreeModal").find("h3 .confirm_msg").text(json.entree.del_confirm_msg);
+$("#SuppEntreeModal").find("h3 .confirm_msg_entree").text(json.entree.del_confirm_msg);
 $("#SuppEntreeModal").find("h4").text(json.entree.del);
 
 $("#save_entree span").text(json.buttons.add.name);
@@ -135,11 +135,32 @@ $(".qt_titre").text(json.entree.quantité);
 /**
  * SORTIE
  */
+//Modals Entree
+$(".sortie-modal-title").text(json.sortie.add);
+$("label.design_sortie").text(json.sortie.quantité);
+$("#SuppSortieModal").find("h3 .confirm_msg_sortie").text(json.sortie.del_confirm_msg);
+$("#SuppSortieModal").find("h4").text(json.sortie.del);
+
+$("#save_sortie span").text(json.buttons.add.name);
+$("#save_sortie").find("i").addClass(json.buttons.add.icon);
+$("#update_sortie span").text(json.buttons.edit.name);
+$("#update_sortie").find("i").addClass(json.buttons.edit.icon);
+$("#supp_sortie span").text(json.buttons.del.name);
+$("#supp_sortie").find("i").addClass(json.buttons.del.icon);
+
+//Tab sortie
+$(".tab_sortie thead tr .1").text(json.nbr);
+$(".tab_sortie thead tr .2").text(json.med.designation);
+$(".tab_sortie thead tr .3").text(json.sortie.quantité);
+$(".tab_sortie thead tr .4").text(json.sortie.date);
+
 //Put TITRE et SOUS TITRE to sections ENTREE
 $(".card-sortie").find("h4").text(json.section_sortie.name);
 $(".card-sortie").find("p").text(json.section_sortie.sous_titre);
 
-
+//Delete
+$(".date_sortie_titre").text(json.sortie.date);
+$(".qt_titre_sortie").text(json.sortie.quantité);
 /**
  * STOCK
  */

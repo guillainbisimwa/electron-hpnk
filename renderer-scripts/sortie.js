@@ -37,24 +37,24 @@ $(document).ready(function() {
     connect(uri).then( function(db) {
       database = db;
       populateSelectMed();
-      populateTabEntree();
+      populateTabSortie();
     });
     
     // Declare all my databases classes
     const Medicament =  require('../data/Medicament');
-    const Entree =  require('../data/Entree');
+    const Sortie =  require('../data/Sortie');
 
-    var listMed =  $("#design_entree");
+    var listMed =  $("#design_sortie");
    
     //Init tables
-    //var _tab_entree = $("#tab_entree").DataTable();
+    //var _tab_sortie = $("#tab_sortie").DataTable();
 
     //init Map of "key","value"
     var mapMed = new Map();
 
      //Function populate tab medicament
-    async function populateTabEntree(){
-      var tab_entree = [];
+    async function populateTabSortie(){
+      var tab_sortie = [];
       await mapMed.clear();
       await Medicament.find({},{sort:'nom_medicament'}).then( function(foundMed) {
         foundMed.forEach( function(foundSingleMed) {
@@ -63,30 +63,30 @@ $(document).ready(function() {
         });
       });
       // Sorts by date in descending order 
-      await Entree.find({},{sort:'-date_'}).then(function(foundEntree) {
+      await Sortie.find({},{sort:'-date_'}).then(function(foundSortie) {
         i = 0;
 
-        foundEntree.forEach(async function(foundSingleEntree) {
+        foundSortie.forEach(async function(foundSingleSortie) {
           i++;
           
-          var _nom_med =  mapMed.has(foundSingleEntree.id_medicament)? mapMed.get(foundSingleEntree.id_medicament):" - ";
-          var dateString = new Date( foundSingleEntree.date_).toISOString().split("T")[0];
+          var _nom_med =  mapMed.has(foundSingleSortie.id_medicament)? mapMed.get(foundSingleSortie.id_medicament):" - ";
+          var dateString = new Date( foundSingleSortie.date_).toISOString().split("T")[0];
 
           //Put the result recursivelly inside the medicament's table
-          var localSingleMed = [i, _nom_med,foundSingleEntree.qt, dateString ,foundSingleEntree._id,foundSingleEntree.id_medicament ]; 
-          tab_entree.push(Array.from(localSingleMed))
+          var localSingleMed = [i, _nom_med,foundSingleSortie.qt, dateString ,foundSingleSortie._id,foundSingleSortie.id_medicament ]; 
+          tab_sortie.push(Array.from(localSingleMed))
         });
 
-        //_tab_entree.DataTable({
-        _tab_entree =  $('#tab_entree').DataTable({
+        //_tab_sortie.DataTable({
+        _tab_sortie =  $('#tab_sortie').DataTable({
           dom: 'Blfrtip',
           select: true,
           buttons: [
             {
               text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
               action: function ( e, dt, node, config ) {
-                addValueModalEntree()
-                $("#AddEntreeModal").modal();
+                addValueModalSortie()
+                $("#AddSortieModal").modal();
               }
             },
             {
@@ -96,11 +96,10 @@ $(document).ready(function() {
                       'Row data: '+
                       JSON.stringify( dt.row( { selected: true } ).data() )
                   ); 
-                  //qt_entree,_id, _id_med
-                  updateValueModalEntree(dt.row( { selected: true } ).data()[2], dt.row( { selected: true } ).data()[4],
+                  updateValueModalSortie(dt.row( { selected: true } ).data()[2], dt.row( { selected: true } ).data()[4],
                     dt.row( { selected: true } ).data()[5]);
 
-                  $("#AddEntreeModal").modal();
+                  $("#AddSortieModal").modal();
               },
               enabled: false
             },
@@ -111,9 +110,9 @@ $(document).ready(function() {
                       'Row data: '+
                       JSON.stringify( dt.row( { selected: true } ).data() )
                   );
-                  delValueModalEntree(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4],
+                  delValueModalSortie(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4],
                   dt.row( { selected: true } ).data()[3], dt.row( { selected: true } ).data()[2]);
-                  $("#SuppEntreeModal").modal();
+                  $("#SuppSortieModal").modal();
               },
               enabled: false
             },
@@ -121,7 +120,7 @@ $(document).ready(function() {
               extend:    'csv',
               text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
               titleAttr: 'CSV',
-              filename: json.entree.file_name,
+              filename: json.sortie.file_name,
               exportOptions: {
                 columns: [1, 2, 3]
               },
@@ -133,7 +132,7 @@ $(document).ready(function() {
           },
           //"order": [[ 0, "asc" ]],
           // Les donnees sont affichees dans le tableau HTML
-          data: tab_entree,
+          data: tab_sortie,
           // On affiche pas la troisieme colonne, elle reprend les _id
           "columnDefs": [
             {
@@ -145,11 +144,11 @@ $(document).ready(function() {
           destroy:true
         });
         
-        _tab_entree.on( 'select deselect', function () {
-          var selectedRows = _tab_entree.rows( { selected: true } ).count();
+        _tab_sortie.on( 'select deselect', function () {
+          var selectedRows = _tab_sortie.rows( { selected: true } ).count();
           console.log("ok: "+selectedRows)
-          _tab_entree.button( 1 ).enable( selectedRows === 1 );
-          _tab_entree.button( 2 ).enable( selectedRows === 1 );
+          _tab_sortie.button( 1 ).enable( selectedRows === 1 );
+          _tab_sortie.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
@@ -172,72 +171,72 @@ $(document).ready(function() {
       });
     }
 
-    //Save Entree
-    $("#save_entree").click(function(){
-      var _entree = $("#design_entree").children("option:selected").val();
-      var qt_entree = $("#qt_entree").val();
-      var entree = Entree.create({
-        id_medicament: _entree,
-        qt:parseInt(qt_entree, 10)
+    //Save Sortie
+    $("#save_sortie").click(function(){
+      var _sortie = $("#design_sortie").children("option:selected").val();
+      var qt_sortie = $("#qt_sortie").val();
+      var sortie = Sortie.create({
+        id_medicament: _sortie,
+        qt:parseInt(qt_sortie, 10)
       });
       //Enregistrer la forme dans la BD
-      entree.save().then(function(addedEntree) {
-        $("#design_entree").val("");
-        console.log(addedEntree._id);
+      sortie.save().then(function(addedSortie) {
+        $("#design_sortie").val("");
+        console.log(addedSortie._id);
         //Close programmaticaly the modal
-        $("#AddEntreeModal .close").click();
-        populateTabEntree();
+        $("#AddSortieModal .close").click();
+        populateTabSortie();
         //populateSelectMed();
-        $("#design_entree").val("");
+        $("#design_sortie").val("");
       });
       //After saving forme
-      $("#design_entree").val("");
+      $("#design_sortie").val("");
     })
 
      //Function, update values before adding medicament
-     function updateValueModalEntree(qt_entree,_id, _id_med){
-      $("#update_entree").css("display","block");
-      $("#save_entree").css("display","none");
-      $(".entree-modal-title").text(json.entree.edit);
-      $(".entree-modal-title").css("color","#a11");
+     function updateValueModalSortie(qt_sortie,_id, _id_med){
+      $("#update_sortie").css("display","block");
+      $("#save_sortie").css("display","none");
+      $(".sortie-modal-title").text(json.sortie.edit);
+      $(".sortie-modal-title").css("color","#a11");
       //$("#design_forme").click();
-      $("#qt_entree").val(qt_entree);
-      $("#_id_design_entree").val(_id);
+      $("#qt_sortie").val(qt_sortie);
+      $("#_id_design_sortie").val(_id);
 
       //Choose the selected values
-      populateSelectEntreeUpdate(_id_med);
+      populateSelectSortieUpdate(_id_med);
       
       //Find is-filled is-focused
-      $("#AddEntreeModal").find(".form-group").addClass("has-danger is-filled is-focused");
+      $("#AddSortieModal").find(".form-group").addClass("has-danger is-filled is-focused");
     }
 
-    function addValueModalEntree(){
-      $("#update_entree").css("display","none");
-      $("#save_entree").css("display","block");
-      $(".entree-modal-title").text(json.entree.add);
-      $(".entree-modal-title").css("color","#000");
-      $("#AddEntreeModal").find(".form-group").removeClass("has-danger is-filled is-focused");
-      $("#design_entree").val("");
-      $("#_id_design_entree").val("");
-      $("#qt_entree").val("");
+    function addValueModalSortie(){
+      $("#update_sortie").css("display","none");
+      $("#save_sortie").css("display","block");
+      $(".sortie-modal-title").text(json.sortie.add);
+      $(".sortie-modal-title").css("color","#000");
+      $("#AddSortieModal").find(".form-group").removeClass("has-danger is-filled is-focused");
+      $("#design_sortie").val("");
+      $("#_id_design_sortie").val("");
+      $("#qt_sortie").val("");
 
-      populateSelectEntreeUpdate("");
+      populateSelectSortieUpdate("");
     }
 
     //Update medicament
-    $("#update_entree").click(function(){
-      var med_entree = $("#design_entree").children("option:selected").val();
-      var qt_entree = $("#qt_entree").val();
-      var _id_design_entree = $("#_id_design_entree").val();
-      Entree.findOneAndUpdate({_id:_id_design_entree},{id_medicament: med_entree,qt:parseInt(qt_entree, 10)},{upsert: true}).then(function(updatedEntree) {
-        console.log("_id = ", updatedEntree._id)
-        populateTabEntree();
-        $("#AddEntreeModal .close").click();
+    $("#update_sortie").click(function(){
+      var med_sortie = $("#design_sortie").children("option:selected").val();
+      var qt_sortie = $("#qt_sortie").val();
+      var _id_design_sortie = $("#_id_design_sortie").val();
+      Sortie.findOneAndUpdate({_id:_id_design_sortie},{id_medicament: med_sortie,qt:parseInt(qt_sortie, 10)},{upsert: true}).then(function(updatedSortie) {
+        console.log("_id = ", updatedSortie._id)
+        populateTabSortie();
+        $("#AddSortieModal .close").click();
       }); 
     });
 
     //Populate med SELECTPICKERS
-    function populateSelectEntreeUpdate(_id_med){
+    function populateSelectSortieUpdate(_id_med){
       
       Medicament.find({},{sort:'nom_medicament'}).then(function(foundMed) {
         i = 0;
@@ -255,16 +254,16 @@ $(document).ready(function() {
       });
     }
 
-    //Function, update values before adding Entree
-    function delValueModalEntree(entree,_id, _date, qt){
-      $("#del_design_entree").text(entree);
-      $("#_id_del_design_entree").val(_id);
-      $(".date_entree").text(_date);
-      $(".qt_entree_").text(qt);
+    //Function, update values before adding Sortie
+    function delValueModalSortie(sortie,_id, _date, qt){
+      $("#del_design_sortie").text(sortie);
+      $("#_id_del_design_sortie").val(_id);
+      $(".date_sortie").text(_date);
+      $(".qt_sortie_").text(qt);
     }
 
-    function result_del(deletedEntree,deleted_item,modal){
-      if(deletedEntree == 0){
+    function result_del(deletedSortie,deleted_item,modal){
+      if(deletedSortie == 0){
         swal({
           title: json.error,
           text: json.error_del_db,
@@ -302,17 +301,17 @@ $(document).ready(function() {
     }
 
     //Supprimer un medicament
-    $("#supp_entree").click(function(){
-      var _id_del_design_entree = $("#_id_del_design_entree").val();
-      var del_design_entree = $("#del_design_entree").text();
-      Entree.deleteOne({_id:_id_del_design_entree}).then(function(deletedEntree) {
-        console.log('Deleted ', deletedEntree, ' entree from the database.');
-        result_del(deletedEntree,del_design_entree,"SuppEntreeModal");
-        populateTabEntree();
+    $("#supp_sortie").click(function(){
+      var _id_del_design_sortie = $("#_id_del_design_sortie").val();
+      var del_design_sortie = $("#del_design_sortie").text();
+      Sortie.deleteOne({_id:_id_del_design_sortie}).then(function(deletedSortie) {
+        console.log('Deleted ', deletedSortie, ' sortie from the database.');
+        result_del(deletedSortie,del_design_sortie,"SuppSortieModal");
+        populateTabSortie();
       });
     });
 
-    $("#button-entree").click(function(){
-      console.log("entree ") 
+    $("#button-sortie").click(function(){
+      console.log("sortie ") 
     });
   });
