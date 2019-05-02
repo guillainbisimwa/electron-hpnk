@@ -47,6 +47,7 @@
                             <th class="2"></th>
                             <th class="3"></th>
                             <th class="4"></th>
+                            <th>_id</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -80,8 +81,50 @@
   
     </section>
     <script>
-      //require("./jquery_index.js");
+      require("./renderer-scripts/entree.js");
       
     </script>
+
+    <!-- Modal add Formes -->
+    <div class="modal fade" id="AddEntreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title entree-modal-title"></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <select title="Choisissez un médicament" id="design_entree" data-live-search="true"
+             multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
+            </select>
+            </br>
+            </br>
+            <div class="row"> 
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="qt_entree" class="qt_entree bmd-label-floating">Quantite du médicament</label>
+                  <input type="text" class="form-control" id="qt_entree">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button id="save_entree" class="btn btn-primary">
+                <i class=""></i>
+                <span></span>
+            </button>
+            <button id="update_entree" class="btn btn-rose">
+                <i class=""></i>
+                <span></span>
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </template>
   

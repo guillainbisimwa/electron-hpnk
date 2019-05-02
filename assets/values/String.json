@@ -21,9 +21,7 @@
     "section_entrée": {
         "name": "Entrée",
         "icon": "fa fa-plus-circle fa-lg",
-        "sous_titre":"Mouvements de médicaments entrés",
-        "date" : "Date d'entrée",
-        "quantité" : "Quantité entrée"
+        "sous_titre":"Mouvements de médicaments entrés"
     },
     "section_sortie": {
         "name": "Sortie",
@@ -48,6 +46,10 @@
         "add": {
             "name": "Enregistrer",
             "icon": "fa fa-save"
+        },
+        "new": {
+            "name": "Nouveau",
+            "icon": "fa fa-plus"
         },
         "edit": {
             "name": "Modifier",
@@ -100,5 +102,17 @@
         "del_confirm_msg":"Voulez-vous vraiment supprimer le Médicament : ",
         "designation":"Désignation du médicament",
         "upload":"Importer un fichier CSV"
+    },
+    "entree": {
+        "name": "Entrée",
+        "plurial": "Entrées",
+        "add": "Entrer un médicament",
+        "del": "Supprimer une entrée",
+        "edit": "Modifier une entrée",
+        "del_confirm_msg":"Voulez-vous vraiment supprimer cette ntrée : ",
+        "designation":"Entrée du médicament",
+        "date" : "Date d'entrée",
+        "quantité" : "Quantité entrée",
+        "file_name": "Mouvements de médicaments entrés"
     }
 }

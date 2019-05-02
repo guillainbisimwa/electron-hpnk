@@ -30,18 +30,9 @@ $("#rapport-titre").text(json.name+" - "+json.section_rapport.name);
 $("#aide-titre").text(json.name+" - "+json.section_aide.name);
 $("#apropos-titre").text(json.name+" - "+json.section_apropos.name);
 
-//Put TITRE et SOUS TITRE to sections STOCK
-$(".card-stock").find("h4").text(json.section_stock.name);
-$(".card-stock").find("p").text(json.section_stock.sous_titre);
-
-//Put TITRE et SOUS TITRE to sections ENTREE
-$(".card-entree").find("h4").text(json.section_entrée.name);
-$(".card-entree").find("p").text(json.section_entrée.sous_titre);
-
-//Put TITRE et SOUS TITRE to sections ENTREE
-$(".card-sortie").find("h4").text(json.section_sortie.name);
-$(".card-sortie").find("p").text(json.section_sortie.sous_titre);
-
+/**
+ * CONFIGURATIONS
+ */
 //Section configuration
 //Onglets
 $(".nav-link-med").text((json.med.plurial).toUpperCase());
@@ -63,28 +54,25 @@ $(".tab_forme thead tr .2").text(json.forme.designation);
 $(".tab_cat thead tr .1").text(json.nbr);
 $(".tab_cat thead tr .2").text(json.cat.designation);
 
-//Tab entree
-$(".tab_entree thead tr .1").text(json.nbr);
-$(".tab_entree thead tr .2").text(json.med.designation);
-$(".tab_entree thead tr .3").text(json.section_entrée.quantité);
-$(".tab_entree thead tr .4").text(json.section_entrée.date);
-
-//Modals
+//Modals Med
 $(".med-modal-title").text(json.med.add);
 $("label.design_med").text(json.med.designation);
 $("#SuppMedModal").find("h3 span").text(json.med.del_confirm_msg);
 $("#SuppMedModal").find("h4").text(json.med.del);
 
+//Modals forme
 $(".forme-modal-title").text(json.forme.add);
 $("label.design_forme").text(json.forme.designation);
 $("#SuppFormModal").find("h3 span").text(json.forme.del_confirm_msg);
 $("#SuppFormModal").find("h4").text(json.forme.del);
 
+//Modals cat
 $(".cat-modal-title").text(json.cat.add);
 $("label.design_cat").text(json.cat.designation);
 $("#SuppCatModal").find("h3 span").text(json.cat.del_confirm_msg);
 $("#SuppCatModal").find("h4").text(json.cat.del);
 
+//Modals upload
 $("#UploadMedModal").find("h4").text(json.med.upload);
 $("#UploadMedModal").find(".btn-2").text(json.buttons.upload.name);
 $("#submit_med span").text(json.buttons.valid.name);
@@ -113,3 +101,44 @@ $("#update_cat span").text(json.buttons.edit.name);
 $("#update_cat").find("i").addClass(json.buttons.edit.icon);
 $("#supp_cat span").text(json.buttons.del.name);
 $("#supp_cat").find("i").addClass(json.buttons.del.icon);
+
+/**
+ * ENTREES
+ */
+//Modals Entree
+$(".entree-modal-title").text(json.entree.add);
+$("label.design_entree").text(json.entree.designation);
+$("#SuppEntreeModal").find("h3 span").text(json.entree.del_confirm_msg);
+$("#SuppEntreeModal").find("h4").text(json.entree.del);
+
+$("#save_entree span").text(json.buttons.add.name);
+$("#save_entree").find("i").addClass(json.buttons.add.icon);
+$("#update_entree span").text(json.buttons.edit.name);
+$("#update_entree").find("i").addClass(json.buttons.edit.icon);
+$("#supp_entree span").text(json.buttons.del.name);
+$("#supp_entree").find("i").addClass(json.buttons.del.icon);
+
+//Tab entree
+$(".tab_entree thead tr .1").text(json.nbr);
+$(".tab_entree thead tr .2").text(json.med.designation);
+$(".tab_entree thead tr .3").text(json.entree.quantité);
+$(".tab_entree thead tr .4").text(json.entree.date);
+
+//Put TITRE et SOUS TITRE to sections ENTREE
+$(".card-entree").find("h4").text(json.section_entrée.name);
+$(".card-entree").find("p").text(json.section_entrée.sous_titre);
+
+/**
+ * SORTIE
+ */
+//Put TITRE et SOUS TITRE to sections ENTREE
+$(".card-sortie").find("h4").text(json.section_sortie.name);
+$(".card-sortie").find("p").text(json.section_sortie.sous_titre);
+
+
+/**
+ * STOCK
+ */
+//Put TITRE et SOUS TITRE to sections STOCK
+$(".card-stock").find("h4").text(json.section_stock.name);
+$(".card-stock").find("p").text(json.section_stock.sous_titre);

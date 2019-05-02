@@ -8,7 +8,7 @@ class Entree extends Document {
             type: Number,
             default: 0
         },
-        this._date = {
+        this.date_ = {
             type: Date,
             default: Date.now
         };
