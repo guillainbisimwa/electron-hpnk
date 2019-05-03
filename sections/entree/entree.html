@@ -1,163 +1,162 @@
 <template class="task-template">
-    <section id="entree-section" class="section js-section u-category-dashboard">
-      <div class="main-panel1">
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-            <div class="container-fluid">
-              <div class="navbar-wrapper">
-                <span class="navbar-brand" id="entree-titre"></span>
-              </div>
-              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-              </button> -->
-              <div class="collapse navbar-collapse justify-content-end">
-                <div class="navbar-form">
-                <div class="input-group no-border">
-                  <input type="text" value="" class="form-control" placeholder="Search...">
-                  <button class="btn btn-white btn-round btn-just-icon">
-                      <i class="fa fa-search fa-lg"></i>
-                    <div class="ripple-container"></div>
-                  </button>
-                </div>
-              </div>
-                <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
-              
+  <section id="entree-section" class="section js-section u-category-dashboard">
+    <div class="main-panel1">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+          <div class="container-fluid">
+            <div class="navbar-wrapper">
+              <span class="navbar-brand" id="entree-titre"></span>
+            </div>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+            </button> -->
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button class="btn btn-white btn-round btn-just-icon">
+                    <i class="fa fa-search fa-lg"></i>
+                  <div class="ripple-container"></div>
+                </button>
               </div>
             </div>
+              <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
+            
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="content_guy">
+          <div class="container-fluid">
+            
+            <div class="col-lg-12 col-md-12">
+              <div class="card card-entree" >
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Entree</h4>
+                  <p class="card-category">Entree des medicaments</p>
+                </div>
+                <div class="card-body table-responsive">
+                  <div class="table-responsives1">
+                    <table class="table table-hover tab_left tab_entree table-striped" id="tab_entree" style="width:100%">
+                      <thead class="text-primary">
+                        <tr>
+                          <th class="1"></th>
+                          <th class="2"></th>
+                          <th class="3"></th>
+                          <th class="4"></th>
+                          <th>_id</th>
+                          <th>_id_medicament</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                  Facebook HPNK / 
+              </li>
+              <li>
+                  Twitter HPNK
+              </li>
+            </ul>
           </nav>
-          <!-- End Navbar -->
-          <div class="content_guy">
-            <div class="container-fluid">
-              
-              <div class="col-lg-12 col-md-12">
-                <div class="card card-entree" >
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title">Entree</h4>
-                    <p class="card-category">Entree des medicaments</p>
-                  </div>
-                  <div class="card-body table-responsive">
-                    <div class="table-responsives1">
-                      <table class="table table-hover tab_left tab_entree table-striped" id="tab_entree" style="width:100%">
-                        <thead class="text-primary">
-                          <tr>
-                            <th class="1"></th>
-                            <th class="2"></th>
-                            <th class="3"></th>
-                            <th class="4"></th>
-                            <th>_id</th>
-                            <th>_id_medicament</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-          </div>
-          <footer class="footer">
-            <div class="container-fluid">
-            <nav class="float-left">
-              <ul>
-                <li>
-                    Facebook HPNK / 
-                </li>
-                <li>
-                    Twitter HPNK
-                </li>
-              </ul>
-            </nav>
-            <div class="copyright float-right">
-              &copy; 2019, HPNK IT
-            </div>
-          </div>
-          </footer>
-        </div>
-  
-    </section>
-    <script>
-      require("./renderer-scripts/entree.js");
-      
-    </script>
-
-    <!-- Modal add Formes -->
-    <div class="modal fade" id="AddEntreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title entree-modal-title"></h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-              <i class="fa fa-close"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            
-            <select title="Choisissez un médicament" id="design_entree" data-live-search="true"
-             multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
-            </select>
-            <input type="hidden" class="form-control" id="_id_design_entree" />
-            </br>
-            </br>
-            <div class="row"> 
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="qt_entree" class="qt_entree design_entree bmd-label-floating">Q du médicament</label>
-                  <input type="text" class="form-control" id="qt_entree" />
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <button id="save_entree" class="btn btn-primary">
-                <i class=""></i>
-                <span></span>
-            </button>
-            <button id="update_entree" class="btn btn-rose">
-                <i class=""></i>
-                <span></span>
-            </button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+          <div class="copyright float-right">
+            &copy; 2019, HPNK IT
           </div>
         </div>
+        </footer>
       </div>
-    </div>
 
-     <!-- Modal enytree medicament -->
-     <div class="modal fade" id="SuppEntreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title text-danger"></h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-              <i class="fa fa-close"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-              <h3 class=""> <span class="confirm_msg_entree"></span>
-                <p class=""><span class="date_entree_titre"></span> : <span class="text-danger date_entree"></span</p>
-                <p class=""><span class="qt_titre"></span> : <span class="text-danger qt_entree_"></span</p>
-                <p class="text-danger" id="del_design_entree"></p>
-              </h3>
-              <input type="hidden" class="form-control" id="_id_del_design_entree">
+  </section>
+  <script>
+    require("./renderer-scripts/entree.js");
+    
+  </script>
+
+  <!-- Modal add Formes -->
+  <div class="modal fade" id="AddEntreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title entree-modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <select title="Choisissez un médicament" id="design_entree" data-live-search="true"
+            multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
+          </select>
+          <input type="hidden" class="form-control" id="_id_design_entree" />
+          </br>
+          </br>
+          <div class="row"> 
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="qt_entree" class="qt_entree design_entree bmd-label-floating">Q du médicament</label>
+                <input type="text" class="form-control" id="qt_entree" />
+              </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button id="supp_entree" class="btn btn-rose">
+
+        </div>
+        <div class="modal-footer">
+          <button id="save_entree" class="btn btn-primary">
               <i class=""></i>
               <span></span>
-            </button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-          </div>
+          </button>
+          <button id="update_entree" class="btn btn-rose">
+              <i class=""></i>
+              <span></span>
+          </button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
         </div>
       </div>
     </div>
-  </template>
-  
+  </div>
+
+    <!-- Modal enytree medicament -->
+    <div class="modal fade" id="SuppEntreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-danger"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <h3 class=""> <span class="confirm_msg_entree"></span>
+              <p class=""><span class="date_entree_titre"></span> : <span class="text-danger date_entree"></span</p>
+              <p class=""><span class="qt_titre"></span> : <span class="text-danger qt_entree_"></span</p>
+              <p class="text-danger" id="del_design_entree"></p>
+            </h3>
+            <input type="hidden" class="form-control" id="_id_del_design_entree">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="supp_entree" class="btn btn-rose">
+            <i class=""></i>
+            <span></span>
+          </button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

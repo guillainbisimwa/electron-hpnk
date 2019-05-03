@@ -1,163 +1,163 @@
 <template class="task-template">
-    <section id="sortie-section" class="section js-section u-category-dashboard">
-      <div class="main-panel1">
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-            <div class="container-fluid">
-              <div class="navbar-wrapper">
-                <span class="navbar-brand">SORTIE - LOGICIEL DE GESTION DE STOCK PHARMACIE</span>
-              </div>
-              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-              </button> -->
-              <div class="collapse navbar-collapse justify-content-end">
-                <div class="navbar-form">
-                <div class="input-group no-border">
-                  <input type="text" value="" class="form-control" placeholder="Search...">
-                  <button class="btn btn-white btn-round btn-just-icon">
-                      <i class="fa fa-search fa-lg"></i>
-                    <div class="ripple-container"></div>
-                  </button>
-                </div>
-              </div>
-                <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
-              
+  <section id="sortie-section" class="section js-section u-category-dashboard">
+    <div class="main-panel1">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+          <div class="container-fluid">
+            <div class="navbar-wrapper">
+              <span class="navbar-brand">SORTIE - LOGICIEL DE GESTION DE STOCK PHARMACIE</span>
+            </div>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+            </button> -->
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button class="btn btn-white btn-round btn-just-icon">
+                    <i class="fa fa-search fa-lg"></i>
+                  <div class="ripple-container"></div>
+                </button>
               </div>
             </div>
-          </nav>
-          <!-- End Navbar -->
-          <div class="content_guy">
-            <div class="container-fluid">
-              
-              <div class="col-lg-12 col-md-12">
-                  <div class="card card-sortie">
-                    <div class="card-header card-header-primary">
-                      <h4 class="card-title">Sortie</h4>
-                      <p class="card-category">Differents types de sortie des medicamaments</p>
-                    </div>
-                    <div class="card-body table-responsive">
-                      <div class="table-responsives1">
-                        <table class="table table-hover tab_left tab_sortie table-striped" id="tab_sortie" style="width:100%">
-                          <thead class="text-primary">
-                            <tr>
-                              <th class="1"></th>
-                              <th class="2"></th>
-                              <th class="3"></th>
-                              <th class="4"></th>
-                              <th>_id</th>
-                              <th>_id_medicament</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                          </tbody>
-                        </table>
-                      </div>
+              <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
+            
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="content_guy">
+          <div class="container-fluid">
+            
+            <div class="col-lg-12 col-md-12">
+                <div class="card card-sortie">
+                  <div class="card-header card-header-primary">
+                    <h4 class="card-title">Sortie</h4>
+                    <p class="card-category">Differents types de sortie des medicamaments</p>
+                  </div>
+                  <div class="card-body table-responsive">
+                    <div class="table-responsives1">
+                      <table class="table table-hover tab_left tab_sortie table-striped" id="tab_sortie" style="width:100%">
+                        <thead class="text-primary">
+                          <tr>
+                            <th class="1"></th>
+                            <th class="2"></th>
+                            <th class="3"></th>
+                            <th class="4"></th>
+                            <th>_id</th>
+                            <th>_id_medicament</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
-              
-            </div>
-          </div>
-          <footer class="footer">
-            <div class="container-fluid">
-            <nav class="float-left">
-              <ul>
-                <li>
-                    Facebook HPNK / 
-                </li>
-                <li>
-                    Twitter HPNK
-                </li>
-              </ul>
-            </nav>
-            <div class="copyright float-right">
-              &copy; 2019, HPNK IT
-            </div>
-          </div>
-          </footer>
-        </div>
-  
-    </section>
-    <script>
-      require("./renderer-scripts/sortie.js");
-      
-    </script>
-
-    <!-- Modal add Formes -->
-    <div class="modal fade" id="AddSortieModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title sortie-modal-title"></h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-              <i class="fa fa-close"></i>
-            </button>
-          </div>
-          <div class="modal-body">
+              </div>
             
-            <select title="Choisissez un médicament" id="design_sortie" data-live-search="true"
-             multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
-            </select>
-            <input type="hidden" class="form-control" id="_id_design_sortie" />
-            </br>
-            </br>
-            <div class="row"> 
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="qt_sortie" class="qt_sortie design_sortie bmd-label-floating">Q du médicament</label>
-                  <input type="text" class="form-control" id="qt_sortie" />
-                </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                  Facebook HPNK / 
+              </li>
+              <li>
+                  Twitter HPNK
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy; 2019, HPNK IT
+          </div>
+        </div>
+        </footer>
+      </div>
+
+  </section>
+  <script>
+    require("./renderer-scripts/sortie.js");
+    
+  </script>
+
+  <!-- Modal add Formes -->
+  <div class="modal fade" id="AddSortieModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title sortie-modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <select title="Choisissez un médicament" id="design_sortie" data-live-search="true"
+            multiple data-max-options="1" data-style="btn btn-link" data-width="auto">
+          </select>
+          <input type="hidden" class="form-control" id="_id_design_sortie" />
+          </br>
+          </br>
+          <div class="row"> 
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="qt_sortie" class="qt_sortie design_sortie bmd-label-floating">Q du médicament</label>
+                <input type="text" class="form-control" id="qt_sortie" />
               </div>
             </div>
+          </div>
 
-          </div>
-          <div class="modal-footer">
-            <button id="save_sortie" class="btn btn-primary">
-                <i class=""></i>
-                <span></span>
-            </button>
-            <button id="update_sortie" class="btn btn-rose">
-                <i class=""></i>
-                <span></span>
-            </button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-          </div>
         </div>
-      </div>
-    </div>
-
-     <!-- Modal enytree medicament -->
-     <div class="modal fade" id="SuppSortieModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title text-danger"></h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-              <i class="fa fa-close"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-              <h3 class=""> <span class="confirm_msg_sortie"></span>
-                <p class=""><span class="date_sortie_titre"></span> : <span class="text-danger date_sortie"></span</p>
-                <p class=""><span class="qt_titre_sortie"></span> : <span class="text-danger qt_sortie_"></span</p>
-                <p class="text-danger" id="del_design_sortie"></p>
-              </h3>
-              <input type="hidden" class="form-control" id="_id_del_design_sortie">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button id="supp_sortie" class="btn btn-rose">
+        <div class="modal-footer">
+          <button id="save_sortie" class="btn btn-primary">
               <i class=""></i>
               <span></span>
-            </button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-          </div>
+          </button>
+          <button id="update_sortie" class="btn btn-rose">
+              <i class=""></i>
+              <span></span>
+          </button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
         </div>
       </div>
     </div>
-  </template>
+  </div>
+
+    <!-- Modal enytree medicament -->
+    <div class="modal fade" id="SuppSortieModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-danger"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <h3 class=""> <span class="confirm_msg_sortie"></span>
+              <p class=""><span class="date_sortie_titre"></span> : <span class="text-danger date_sortie"></span</p>
+              <p class=""><span class="qt_titre_sortie"></span> : <span class="text-danger qt_sortie_"></span</p>
+              <p class="text-danger" id="del_design_sortie"></p>
+            </h3>
+            <input type="hidden" class="form-control" id="_id_del_design_sortie">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="supp_sortie" class="btn btn-rose">
+            <i class=""></i>
+            <span></span>
+          </button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
   

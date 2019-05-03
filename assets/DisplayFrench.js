@@ -45,6 +45,7 @@ $(".tab_med thead tr .1").text(json.nbr);
 $(".tab_med thead tr .2").text(json.med.designation);
 $(".tab_med thead tr .3").text(json.forme.designation);
 $(".tab_med thead tr .4").text(json.cat.designation);
+$(".tab_med thead tr .5").text(json.med.stock_init);
 
 //Tab forme
 $(".tab_forme thead tr .1").text(json.nbr);

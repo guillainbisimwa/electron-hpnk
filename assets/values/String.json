@@ -101,7 +101,8 @@
         "file_name":"Liste de médicaments",
         "del_confirm_msg":"Voulez-vous vraiment supprimer le Médicament : ",
         "designation":"Désignation du médicament",
-        "upload":"Importer un fichier CSV"
+        "upload":"Importer un fichier CSV",
+        "stock_init":"Stock initial"
     },
     "entree": {
         "name": "Entrée",
