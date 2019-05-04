@@ -162,6 +162,9 @@
 #UploadMedModal .modal-lg{
   min-width: 85%;
 }
+#EntreeSortieStockModal .modal-lg{
+  min-width: 85%;
+}
 #tab_uploaded_med_wrapper {
   width: 100%;
   padding: 15px;

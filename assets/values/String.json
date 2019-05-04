@@ -127,6 +127,12 @@
         "date" : "Date de sortie",
         "quantité" : "Quantité sortie",
         "file_name": "Mouvements de médicaments sorties"
+    },
+    "stock": {
+        "name": "Stock",
+        "plurial": "Stocks",
+        "date" : "Date",
+        "file_name": "Stock de médicaments"
     }
 
 }

@@ -594,7 +594,7 @@ $(document).ready(function() {
               titleAttr: 'CSV',
               filename: json.med.file_name,
               exportOptions: {
-                columns: [1, 2, 3, 4, 5, 6]
+                columns: [1, 2, 3, 4, 5, 6, 7]
               },
             }                  
           ],

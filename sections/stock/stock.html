@@ -1,86 +1,136 @@
 <template class="task-template">
-    <section id="stock-section" class="section js-section u-category-dashboard">
-      <div class="main-panel1">
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-            <div class="container-fluid">
-              <div class="navbar-wrapper">
-                <span id="stock-titre" class="navbar-brand"></span>
-              </div>
-              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-                <span class="navbar-toggler-icon icon-bar"></span>
-              </button> -->
-              <div class="collapse navbar-collapse justify-content-end">
-                <div class="navbar-form">
-                <div class="input-group no-border">
-                  <input type="text" value="" class="form-control" placeholder="Search...">
-                  <button class="btn btn-white btn-round btn-just-icon">
-                      <i class="fa fa-search fa-lg"></i>
-                    <div class="ripple-container"></div>
-                  </button>
-                </div>
-              </div>
-                <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
-              
+  <section id="stock-section" class="section js-section u-category-dashboard">
+    <div class="main-panel1">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+          <div class="container-fluid">
+            <div class="navbar-wrapper">
+              <span id="stock-titre" class="navbar-brand"></span>
+            </div>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+            </button> -->
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button class="btn btn-white btn-round btn-just-icon">
+                    <i class="fa fa-search fa-lg"></i>
+                  <div class="ripple-container"></div>
+                </button>
               </div>
             </div>
-          </nav>
-          <!-- End Navbar -->
-          <div class="content_guy">
-            <div class="container-fluid">
-              
-              <div class="col-lg-12 col-md-12">
-                <div class="card card-stock">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title"></h4>
-                    <p class="card-category"></p>
-                  </div>
-                  <div class="card-body table-responsive">
-                    <div class="table-responsives1">
-                      <table class="table table-hover tab_left tab_stock table-striped" id="tab_stock" style="width:100%">
-                        <thead class="text-primary">
-                          <tr>
-                            <th class="1"></th>
-                            <th class="2"></th>
-                            <th class="3"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                      </table>
-                      <button id="add-med-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
-                        <i class="fa fa-plus"></i>
-                        <div class="ripple-container"></div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <i class="fa fa-power-off text-danger fa-spin fa-3x fa-fw point" aria-hidden="true"></i> <span class="sr-only">Refreshing...</span>
             
             </div>
           </div>
-          <footer class="footer">
-            <div class="container-fluid">
-            <nav class="float-left">
-              <ul>
-                <li>
-                    Facebook HPNK / 
-                </li>
-                <li>
-                    Twitter HPNK
-                </li>
-              </ul>
-            </nav>
-            <div class="copyright float-right">
-              &copy; 2019, HPNK IT
+        </nav>
+        <!-- End Navbar -->
+        <div class="content_guy">
+          <div class="container-fluid">
+            
+            <div class="col-lg-12 col-md-12">
+              <div class="card card-stock">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title"></h4>
+                  <p class="card-category"></p>
+                </div>
+                <div class="card-body table-responsive">
+                  <div class="table-responsives1">
+                    <table class="table table-hover tab_left tab_stock table-striped" id="tab_stock" style="width:100%">
+                      <thead class="text-primary">
+                        <tr>
+                          <th class="1"></th>
+                          <th class="2"></th>
+                          <th class="3"></th>
+                          <th class="4">_id</th>
+                          <th>_id</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
+          
           </div>
-          </footer>
         </div>
-  
-    </section>
-  </template>
-  
+        <footer class="footer">
+          <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                  Facebook HPNK / 
+              </li>
+              <li>
+                  Twitter HPNK
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy; 2019, HPNK IT
+          </div>
+        </div>
+        </footer>
+      </div>
+
+  </section>
+  <script>
+    require("./renderer-scripts/stock.js");
+    
+  </script>
+  <!-- Modal upload medicament -->
+  <div class="modal fade" id="EntreeSortieStockModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Aspirines </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+           
+            <div id="view_EntreeSortie" class="col-sm-6">
+              <table class=" table table-hover  tab_left table-striped" id="tab_view_Entree" style="width:100%">
+                <thead class="text-primary">
+                  <tr>
+                    <th class="1">Num</th>
+                    <th class="2">Date</th>
+                    <th class="5">QT Entree</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="view_EntreeSortie1" class="col-sm-6">
+              <table class="table table-hover tab_left table-striped" id="tab_view_Sortie" style="width:100%">
+                <thead class="text-warning">
+                  <tr>
+                    <th class="1">Num</th>
+                    <th class="2">Date</th>
+                    <th class="5">QT Sortie</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

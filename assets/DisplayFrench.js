@@ -168,3 +168,9 @@ $(".qt_titre_sortie").text(json.sortie.quantité);
 //Put TITRE et SOUS TITRE to sections STOCK
 $(".card-stock").find("h4").text(json.section_stock.name);
 $(".card-stock").find("p").text(json.section_stock.sous_titre);
+
+//Tab Stock
+$(".tab_stock thead tr .1").text(json.nbr);
+$(".tab_stock thead tr .2").text(json.med.designation);
+$(".tab_stock thead tr .3").text(json.stock.name);
+$(".tab_stock thead tr .4").text(json.stock.date);
