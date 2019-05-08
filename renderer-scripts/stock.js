@@ -52,9 +52,42 @@ $(document).ready(function() {
    
     //Init tables
     var tab_view_Entree = $("#tab_view_Entree").DataTable();
-    var tab_view_Sortie = $("#tab_view_Sortie").DataTable();
-    
 
+    var tab_view_Sortie = $("#tab_view_Sortie").DataTable({
+      "footerCallback": function ( row, data, start, end, display ) {
+            var api = this.api(), data;
+    
+            // Remove the formatting to get integer data for summation
+            var intVal = function ( i ) {
+                return typeof i === 'string' ?
+                    i.replace(/[\$,]/g, '')*1 :
+                    typeof i === 'number' ?
+                        i : 0;
+            };
+    
+            // Total over all pages
+            total = api
+                .column( 2 )
+                .data()
+                .reduce( function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0 );
+    
+            // Total over this page
+            pageTotal = api
+                .column( 2, { page: 'current'} )
+                .data()
+                .reduce( function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0 );
+    
+            // Update footer
+            $( api.column( 2 ).footer() ).html(
+                '$'+pageTotal +' ( $'+ total +' total)'
+            );
+          }
+    });
+    
     //init Map of "key","value"
     var mapMed = new Map();
     var mapEntree = new Map();
@@ -62,12 +95,15 @@ $(document).ready(function() {
 
     async function populateTabMed(){
       var tab_stock = [];
+      var tab_stock_Entree = [];
       //Entree
       await mapEntree.clear();
       await Entree.find({},{sort:'-date'}).then( function(foundEntree) {
         foundEntree.forEach(function(foundSingleEntree) {
           //populate the Map of formr
-          mapEntree.set(foundSingleEntree.id_medicament, foundSingleEntree.qt); 
+          mapEntree.set(foundSingleEntree.id_medicament, foundSingleEntree.qt);
+          var localSameEntree = [foundSingleEntree.id_medicament, foundSingleEntree.qt, foundSingleEntree.date_]; 
+          tab_stock_Entree.push(Array.from(localSameEntree))
         });
       });
 
@@ -80,24 +116,21 @@ $(document).ready(function() {
         });
       });
 
-      Medicament.find({},{sort:'-stock'}).then(function(foundMed) {
+      Medicament.find({},{sort:'nom_medicament'}).then(function(foundMed) {
         i = 0;
         foundMed.forEach(function(foundSingleMed) {
           i++;
           
-          //get the real name of categorie by uising its _id
-          //var _nom_forme = mapForme.has(foundSingleMed.id_forme)? mapForme.get(foundSingleMed.id_forme):"";
-          //var _nom_cat = "OK";
-          var qt_entree = mapEntree.has(foundSingleMed._id) ? mapEntree.get(foundSingleMed._id) : 0 ;
+          //get all qt by med_id
+          var filterQt_entree = tab_stock_Entree.filter((item) => item[0] == foundSingleMed._id );
           
-
-
-          
-          //_id_forme = (foundSingleMed.id_forme != undefined ) ? foundSingleMed.id_forme : "";
-          //_id_categorie =(foundSingleMed.id_categorie != undefined ) ? foundSingleMed.id_categorie : "";
+          //var qt_entree = mapEntree.has(foundSingleMed._id) ? mapEntree.get(foundSingleMed._id) : 0 ;
+          var qt_entree = filterQt_entree.reduce((key, val) => val[1] + key, 0);
+          console.log("qt_entree: ",qt_entree)
+    
           //Put the result recursivelly inside the medicament's table
-          var stock = foundSingleMed.stock;
-          var localSingleMed = [i, foundSingleMed.nom_medicament, stock, "date", foundSingleMed._id]; 
+          //var stock = foundSingleMed.stock + qt_entree;
+          var localSingleMed = [i, foundSingleMed.nom_medicament, qt_entree, foundSingleMed._id]; 
           tab_stock.push(Array.from(localSingleMed))
         });
 
@@ -136,7 +169,7 @@ $(document).ready(function() {
           // On affiche pas la troisieme colonne, elle reprend les _id
           "columnDefs": [
             {
-              "targets": [ 4 ],
+              "targets": [ 3 ],
               "visible": false,
               "searchable": false
             },
@@ -145,124 +178,85 @@ $(document).ready(function() {
         });
         
         _tab_stock.on( 'select ', function () {
-          // var selectedRows = _tab_stock.rows( { selected: true } ).count();
-          // console.log("ok: "+selectedRows)
-
+         
           console.log(
             'Row data: '+
             JSON.stringify( _tab_stock.row( { selected: true } ).data() )
           );
+          var filterQt_entree = tab_stock_Entree.filter((item) => item[0] == _tab_stock.row( { selected: true } ).data()[3]);
 
+          var tab_qt_entree = [];
+          var i = 0;
+          filterQt_entree.forEach(function(foundQtEntree){
+            i++;
+            var dateString = new Date( foundQtEntree[2]).toISOString().split("T")[0];
+
+            //Put the result recursivelly inside the entree's table
+            var localSingleEntree = [i, dateString, foundQtEntree[1]]; 
+            tab_qt_entree.push(Array.from(localSingleEntree))
+          })
+
+          tab_view_Entree =  $('#tab_view_Entree').DataTable({
+            // ICI on choisi la langue des details du tableau
+            language:{
+              url:'./assets/values/French.json'
+            },
+            // Les donnees sont affichees dans le tableau HTML
+            data: tab_qt_entree,
+            destroy:true,
+            "footerCallback": function ( row, data, start, end, display ) {
+              var api = this.api(), data;
+   
+              // Remove the formatting to get integer data for summation
+              var intVal = function ( i ) {
+                  return typeof i === 'string' ?
+                      i.replace(/[\$,]/g, '')*1 :
+                      typeof i === 'number' ?
+                          i : 0;
+              };
+   
+              // Total over all pages
+              total = api
+                  .column( 2 )
+                  .data()
+                  .reduce( function (a, b) {
+                      return intVal(a) + intVal(b);
+                  }, 0 );
+   
+              // Total over this page
+              pageTotal = api
+                  .column( 2, { page: 'current'} )
+                  .data()
+                  .reduce( function (a, b) {
+                      return intVal(a) + intVal(b);
+                  }, 0 );
+   
+              // Update footer
+              $( api.column( 2 ).footer() ).html(
+                  ''+pageTotal +' ( '+ total +' total )'
+              );
+            }
+          });
+
+        
+          
+
+          // var column = tab_view_Entree.column( 0 );
+ 
+          // $( column.footer() ).html(
+          //     column.data().reduce( function (a,b) {
+          //       console.log("Footer: ",a)
+          //         return a+b;
+          //     })
+          // );
           
           $("#EntreeSortieStockModal").modal();
           
-          //_tab_stock.button( 1 ).enable( selectedRows === 1 );
-          //_tab_stock.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
 
-     //Function populate tab medicament
-    async function populateTabEntree(){
-      var tab_entree = [];
-      await mapMed.clear();
-      await Medicament.find({},{sort:'nom_medicament'}).then( function(foundMed) {
-        foundMed.forEach( function(foundSingleMed) {
-          //populate the Map of formr
-          mapMed.set(foundSingleMed._id, foundSingleMed.nom_medicament); 
-        });
-      });
-      // Sorts by date in descending order 
-      await Entree.find({},{sort:'-date_'}).then(function(foundEntree) {
-        i = 0;
-
-        foundEntree.forEach(async function(foundSingleEntree) {
-          i++;
-          
-          var _nom_med =  mapMed.has(foundSingleEntree.id_medicament)? mapMed.get(foundSingleEntree.id_medicament):" - ";
-          var dateString = new Date( foundSingleEntree.date_).toISOString().split("T")[0];
-
-          //Put the result recursivelly inside the medicament's table
-          var localSingleMed = [i, _nom_med,foundSingleEntree.qt, dateString ,foundSingleEntree._id,foundSingleEntree.id_medicament ]; 
-          tab_entree.push(Array.from(localSingleMed))
-        });
-
-        //_tab_entree.DataTable({
-        _tab_entree =  $('#tab_entree').DataTable({
-          dom: 'Blfrtip',
-          select: true,
-          buttons: [
-            {
-              text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
-              action: function ( e, dt, node, config ) {
-                addValueModalEntree()
-                $("#AddEntreeModal").modal();
-              }
-            },
-            {
-              text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
-              action: function ( e, dt, node, config ) {
-                  console.log(
-                      'Row data: '+
-                      JSON.stringify( dt.row( { selected: true } ).data() )
-                  ); 
-                  //qt_entree,_id, _id_med
-                  updateValueModalEntree(dt.row( { selected: true } ).data()[2], dt.row( { selected: true } ).data()[4],
-                    dt.row( { selected: true } ).data()[5]);
-
-                  $("#AddEntreeModal").modal();
-              },
-              enabled: false
-            },
-            {
-              text: '<li class="tetx-danger '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
-              action: function ( e, dt, node, config ) {
-                  console.log(
-                      'Row data: '+
-                      JSON.stringify( dt.row( { selected: true } ).data() )
-                  );
-                  delValueModalEntree(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4],
-                  dt.row( { selected: true } ).data()[3], dt.row( { selected: true } ).data()[2]);
-                  $("#SuppEntreeModal").modal();
-              },
-              enabled: false
-            },
-            {
-              extend:    'csv',
-              text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
-              titleAttr: 'CSV',
-              filename: json.entree.file_name,
-              exportOptions: {
-                columns: [1, 2, 3]
-              },
-            }                  
-          ],
-          // ICI on choisi la langue des details du tableau
-          language:{
-            url:'./assets/values/French.json'
-          },
-          //"order": [[ 0, "asc" ]],
-          // Les donnees sont affichees dans le tableau HTML
-          data: tab_entree,
-          // On affiche pas la troisieme colonne, elle reprend les _id
-          "columnDefs": [
-            {
-              "targets": [ 4, 5 ],
-              "visible": false,
-              "searchable": false
-            },
-          ],
-          destroy:true
-        });
-        
-        _tab_entree.on( 'select deselect', function () {
-          var selectedRows = _tab_entree.rows( { selected: true } ).count();
-          console.log("ok: "+selectedRows)
-          _tab_entree.button( 1 ).enable( selectedRows === 1 );
-          _tab_entree.button( 2 ).enable( selectedRows === 1 );
-        });
-      });
-    }
+     
 
     $("#button-stock").click(function(){
       console.log("stock ") 

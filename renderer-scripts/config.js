@@ -48,6 +48,7 @@ $(document).ready(function() {
     const Forme =  require('../data/Forme');
     const Categorie =  require('../data/Categorie');
     const Medicament =  require('../data/Medicament');
+    const Entree =  require('../data/Entree');
 
     //Init tables
     var _tab_forme = $("#tab_forme").DataTable();
@@ -542,7 +543,7 @@ $(document).ready(function() {
           _id_forme = (foundSingleMed.id_forme != undefined ) ? foundSingleMed.id_forme : "";
           _id_categorie =(foundSingleMed.id_categorie != undefined ) ? foundSingleMed.id_categorie : "";
           //Put the result recursivelly inside the medicament's table
-          var localSingleMed = [i, foundSingleMed.nom_medicament, _nom_forme, _nom_cat, foundSingleMed._id,_id_forme,_id_categorie,foundSingleMed.stock]; 
+          var localSingleMed = [i, foundSingleMed.nom_medicament, _nom_forme, _nom_cat, foundSingleMed._id,_id_forme,_id_categorie]; 
           tab_med.push(Array.from(localSingleMed))
         });
 
@@ -949,10 +950,19 @@ $(document).ready(function() {
         percent = (1/unity_percent);
         distinct_med.forEach(element => {
           if(element != ""){
-            var med = Medicament.create({nom_medicament: element[1], id_forme: element[2], id_categorie: element[3], stock: parseInt(element[4], 10)});
+            var med = Medicament.create({nom_medicament: element[1], id_forme: element[2], id_categorie: element[3]});
             //Enregistrer le med dans la BD
             med.save().then(function(addedForme) {
-              //console.log("added: " ,addedForme._id)
+              console.log("added_med: " ,addedForme._id)
+              if(parseInt(element[4], 10) > 0 )
+              {
+                var entree = Entree.create({id_medicament: addedForme._id , qt: parseInt(element[4], 10)});
+                  entree.save().then(function(addedEntree) {
+              
+                  console.log("added_entree: " ,addedEntree._id)
+
+                })
+              }
               percent = percent +(1/unity_percent);
               if(percent<70) $(".progress-bar-med span").text(percent+"%");
               else $(".progress-bar-med span").text("Medicaments "+percent+" % Complète");
