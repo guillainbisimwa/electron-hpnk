@@ -49,6 +49,7 @@ $(document).ready(function() {
     const Categorie =  require('../data/Categorie');
     const Medicament =  require('../data/Medicament');
     const Entree =  require('../data/Entree');
+    const Sortie =  require('../data/Sortie');
 
     //Init tables
     var _tab_forme = $("#tab_forme").DataTable();
@@ -577,7 +578,7 @@ $(document).ready(function() {
               enabled: false
             },
             {
-              text: '<li class="tetx-danger '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
+              text: '<li class=" '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
               action: function ( e, dt, node, config ) {
                   console.log(
                       'Row data: '+
@@ -597,7 +598,13 @@ $(document).ready(function() {
               exportOptions: {
                 columns: [1, 2, 3, 4, 5, 6, 7]
               },
-            }                  
+            },
+            {
+              text: '<li class=" '+json.buttons.upload.icon+'"></li> '+json.buttons.upload.name,
+              action: function ( e, dt, node, config ) {
+                  $("#UploadMedModal").modal(); 
+              },
+            },              
           ],
           // ICI on choisi la langue des details du tableau
           language:{
@@ -861,13 +868,23 @@ $(document).ready(function() {
       //Get the unique med
       let distinct_med = dataUploaded;
 
+       //Delette all Entree  inside the db
+       await Entree.deleteMany({}).then( function(deletedEntree) {
+        console.log('Deleted ', deletedEntree, ' entree(s) from the database.');
+      });
+
+      //Delette all Sortie  inside the db
+      await Sortie.deleteMany({}).then( function(deletedSortie) {
+        console.log('Deleted ', deletedSortie, ' sortie(s) from the database.');
+      });
+
       //Delette all Forme inside the db
       await Forme.deleteMany({}).then( function(deletedForme) {
         console.log('Deleted ', deletedForme, ' forme(s) from the database.');
          //Progess bar calculus
         tab_forme_len = distinct_forme.length;
         unity_percent_forme = tab_forme_len / 100;
-        percent_forme = (1/unity_percent_forme);
+        percent_forme = 0;
         //save all newly added formes
          distinct_forme.forEach(element => {
           if(element != ""){
@@ -876,7 +893,7 @@ $(document).ready(function() {
             forme.save().then(function(addedForme) {
               percent_forme = percent_forme +(1/unity_percent_forme);
               if(percent_forme<70) $(".progress-bar-forme span").text(percent_forme+"%");
-              else $(".progress-bar-forme span").text("Forme "+percent_forme+" % Complète");
+              else $(".progress-bar-forme span").text("Forme "+parseInt(percent_forme, 10)+" % Complète");
               $(".progress-bar-forme").css("width", percent_forme+"%");
             });
           }
@@ -889,7 +906,7 @@ $(document).ready(function() {
         //Progess bar calculus
         tab_cat_len = distinct_cat.length;
         unity_percent_cat = tab_cat_len / 100;
-        percent_cat = (1/unity_percent_cat);
+        percent_cat = 0;
         //save all newly added cat
          distinct_cat.forEach(element => {
           if(element != ""){
@@ -898,7 +915,7 @@ $(document).ready(function() {
             cat.save().then(function(addedCat) {
               percent_cat = percent_cat +(1/unity_percent_cat);
               if(percent_cat<70) $(".progress-bar-cat span").text(percent_cat+"%");
-              else $(".progress-bar-cat span").text("Catégorie "+percent_cat+" % Complète");
+              else $(".progress-bar-cat span").text("Catégorie "+parseInt(percent_cat, 10)+" % Complète");
               $(".progress-bar-cat").css("width", percent_cat+"%");
             });
           }
@@ -947,7 +964,7 @@ $(document).ready(function() {
         //Add progess bar calculus
         tab_med_len = distinct_med.length;
         unity_percent = tab_med_len / 100;
-        percent = (1/unity_percent);
+        percent = 0;
         distinct_med.forEach(element => {
           if(element != ""){
             var med = Medicament.create({nom_medicament: element[1], id_forme: element[2], id_categorie: element[3]});
@@ -965,7 +982,7 @@ $(document).ready(function() {
               }
               percent = percent +(1/unity_percent);
               if(percent<70) $(".progress-bar-med span").text(percent+"%");
-              else $(".progress-bar-med span").text("Medicaments "+percent+" % Complète");
+              else $(".progress-bar-med span").text("Medicaments "+parseInt(percent, 10)+" % Complète");
               $(".progress-bar-med").css("width", percent+"%");
             });
           }

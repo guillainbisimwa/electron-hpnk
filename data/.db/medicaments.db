@@ -1,847 +1,100 @@
-{"nom_medicament":"Ipratropium (ATROVENT)","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"j7oCn6J4HLhNnT0J","_id":"01EPKxQkTxB3JjpO"}
-{"nom_medicament":"Omega 3 (FORTALINE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"PfcDBYH7WTAq94Vo","_id":"03clYX3VwatnQbgg"}
-{"nom_medicament":"Budésonide 64 µg nasal","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"0DO6Svxl6ZVHRfXf"}
-{"nom_medicament":"Amikacine 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"gqZyKLBsr2gM4wqP","_id":"0HM6p6zdTAhR84yW"}
-{"nom_medicament":"Salbutamol sulfate 2mg + bromhexine HCL + guaphénisine 100mg (MUCORYL)","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"ml94B7Z5vYUTBkQ8","_id":"0J2E4yduywdjjexd"}
-{"nom_medicament":"Fentanyl 100mcg/2ml","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"0J8PWV9gwdHE4nT3"}
-{"nom_medicament":"Résine acrylic autopolymérisante (poudre et liquide)","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"0Km8J18LNDKSHvlo"}
-{"nom_medicament":"Caféine citrate, amp","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"0McShj6hd1IL4mmL"}
-{"nom_medicament":"Film dentaire RX","id_categorie":"hsKlTEKjUHXBserp","id_forme":"pQgXYAMqwqzlNaGU","_id":"0O8g0hWhotLiKC15"}
-{"nom_medicament":"Caféine citrate","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"CLldFzSkX1cbcPBx","_id":"0PuBv20sV1p9MGWP"}
-{"nom_medicament":"Widal test","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"0QiRAirekQ6ACZLw"}
-{"nom_medicament":"Néomycine + nystatine + hydrocortisone + polymixine B (CYCLOMAX)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"0TremddFzMoIZRR6"}
-{"nom_medicament":"Sac à colostomie","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"0Z1lchgrnOOSeh25"}
-{"nom_medicament":"Clomipramine (ANAFRANIL) 25mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"0aYH07EvsBzwpi4l"}
-{"nom_medicament":"Propofol 20mg/ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"aEpYst82SVd8bbPF","_id":"0vRxpVfymyCWY4eS"}
-{"nom_medicament":"Phloroglycinol 80mg+ trimethylphloroglycinol 80mg (SPAFON)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"gqZyKLBsr2gM4wqP","_id":"17FvIKpCLEAt45Y5"}
-{"nom_medicament":"Zidovudine 300mg + lamivudine 150mg + névirapine 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"19VUnzmGaJOP1mil"}
-{"nom_medicament":"Beta arthéméther 180mg + lumefantrine 1080mg/60ml (co-ARINATE)","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"1HHPDme8riTL4htt"}
-{"nom_medicament":"Glibenclamide + metformine (GLIBEN M)","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"1KKTfzk55Oad1VfO"}
-{"nom_medicament":"Clarythromycine 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"1ML0juzwaUkhGt1A"}
-{"nom_medicament":"Griséofulvine 250mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"PfcDBYH7WTAq94Vo","_id":"1Mr2Afqb8wi2M0fN"}
-{"nom_medicament":"Multivitamines (PRENATAL DMA)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"","_id":"1MrJzqQs4QMUunDe"}
-{"nom_medicament":"Morphine 10mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"1NDf8Acnc9NS45yl"}
-{"nom_medicament":"Suture acide polyglycolique sertie avec aig ronde no 2/0, 36pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"1NS7n7QjZZOxH6jm"}
-{"nom_medicament":"Vitro Z","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"Inn5WMw0T5YdGNCW","_id":"1Z3kPQ1nc1aHNrt4"}
-{"nom_medicament":"Propranolol 40mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"1a5fF3qxOC54AneB"}
-{"nom_medicament":"Quinine 300mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"1cUQ61oGMoeyk7PW"}
-{"nom_medicament":"Alcool dénaturé 70%, 1ltre","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"4C8YTtPptYxrNagQ","_id":"1mCkXLzQpJG5U4KU"}
-{"nom_medicament":"Phénobrbital 30mg","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"PfcDBYH7WTAq94Vo","_id":"1sfOC8rJ9jJ3YtyQ"}
-{"nom_medicament":"Griséofulvine 500mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"PfcDBYH7WTAq94Vo","_id":"1tsciUNzwxi34Owh"}
-{"nom_medicament":"Diloxanide furoate + Métronidazole benzoate (ENTAMIZOLE)","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"20BX92ELlU7HRKE6"}
-{"nom_medicament":"Amoxicilline 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"20f83ARSJ2Ulp4P7"}
-{"nom_medicament":"Micropaque (sulfate de barium pour RX), 1Kg","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"2BE0QyYK4L98ZgfR"}
-{"nom_medicament":"Vitamine B1 50mg + vitamine B6 50mg + cyanocobalamine 500mcg (TRIBEXFORT)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"oiqmeiSVXcIs25Jy","_id":"2FLx65mGd3lrG5wP"}
-{"nom_medicament":"Prédnisolone 0,5%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"2Kpv770rbWCOMkrq"}
-{"nom_medicament":"Compresse abdominale, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"2QBNotUuFSfYuwS5"}
-{"nom_medicament":"Acide tranexamique 500mg (EXACYL)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"2RZgwWv7YoEQmXVO"}
-{"nom_medicament":"Dihydralazine 50mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"2Zsa8MKOBTYJ5dnU"}
-{"nom_medicament":"MICROPIPETTE100-1000","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"2a2IdMdUr6I7TrRn"}
-{"nom_medicament":"OESTROGENE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"2baBxyOD4gLYP4TW"}
-{"nom_medicament":"Gélatine/polygéline (HAEMACEL) solution 3,5% IV, 500ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"2cMQp7PDZZAqi8F4"}
-{"nom_medicament":"Telmisartan 80mg + hydrochlorothiazide 25mg (TELESHAL)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"2iAIs4cvKqtr2WQ4"}
-{"nom_medicament":"Pénicilline benzathine  2,4 MUI, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"En6brFmdBiCaW2fN","_id":"2jNA7xhJswXV9VG5"}
-{"nom_medicament":"Dexamethazone + néomycine + polymixine (MAXIDROL)","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"2l6WPmgothpNnbGe"}
-{"nom_medicament":"Zidovudine 300mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"2tWkECPUL24xBhvF"}
-{"nom_medicament":"Lynestrénol (ORGAMETRIL) 5mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"2uiRQUJbkHrRQiU2"}
-{"nom_medicament":"Masque à usage unique","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"2zbEEjnVKiwZRrLw"}
-{"nom_medicament":"Cassette RX avec écran no 35X35cm, pce","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"31ZISshyqpKPEVaF"}
-{"nom_medicament":"Papavérine 0,03%","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"gqZyKLBsr2gM4wqP","_id":"39Hab0WixI9txIYY"}
-{"nom_medicament":"Fluconazole 200mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"nBryIxSUjcHN4hso","_id":"3EZzDFj7LEpz86t5"}
-{"nom_medicament":"Chlorure de potassium 10%, 10ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"gqZyKLBsr2gM4wqP","_id":"3MfY0YLqDBVdWvZx"}
-{"nom_medicament":"Cindamycine 100mg + clotrimazole 200mg (FEMOCLIN)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"3NdjR8ZYMhkPu4mH"}
-{"nom_medicament":"Drain lamellaire","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"3OaMZby2sgmWsSSg"}
-{"nom_medicament":"Paracétamol suppo enfant","id_categorie":"OHV6K951NElcfomT","id_forme":"awBmrah6f30wBz0E","_id":"3SZJ6j73jq9pbXW8"}
-{"nom_medicament":"Immunoglobuline anti D","id_categorie":"sa99FvcpMPWLjum3","id_forme":"gqZyKLBsr2gM4wqP","_id":"3cBVlL4gtVd8guqh"}
-{"nom_medicament":"Menadione sodium pphosphate10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"3gx8OiGcNyaosnVA"}
-{"nom_medicament":"Vincristine 5mg/ml, fl","id_categorie":"gF0Sz9Cy9nCEnS1l","id_forme":"AzKeHdiCVSwbp8iU","_id":"3ktLvNJ4TcnRHrfG"}
-{"nom_medicament":"Didanosine 400mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"nBryIxSUjcHN4hso","_id":"3u9rmYTTi9BPt9Cu"}
-{"nom_medicament":"Dextrose 5% IV, 500ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"43il0M0LfQRKzcbk"}
-{"nom_medicament":"Glycérine phénique","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"eQS8IeG4RxBs8Czn","_id":"4CQAjQBVkNBhSH3Y"}
-{"nom_medicament":"Insuline retard 100UI/ml","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"gqZyKLBsr2gM4wqP","_id":"4FVGJp8E8NdxkEIs"}
-{"nom_medicament":"Gant chirurgical stérile no 8","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"4IJDneuWmHTDNEJm"}
-{"nom_medicament":"Phloroglycinol 80mg+ trimethylphloroglycinol 80mg  (SPASFON)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"awBmrah6f30wBz0E","_id":"4NXD7RORNMdOJ1wV"}
-{"nom_medicament":"Cellules de new Bauer","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"4NYEIJ13dYDM0b5O"}
-{"nom_medicament":"Vécuronium 10mg /ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"AzKeHdiCVSwbp8iU","_id":"4NualP885vFd4Ax3"}
-{"nom_medicament":"Détartrine","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"4OkRdPGzOlMehmh3"}
-{"nom_medicament":"Albendazole 400mg","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"PfcDBYH7WTAq94Vo","_id":"4UCRn4Yd44z2rfLf"}
-{"nom_medicament":"Ranitidine","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"4UHv1juRPDdNfz7i"}
-{"nom_medicament":"Ionomère de verre","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"4avtvQZfq8p4cbnZ"}
-{"nom_medicament":"Ultralévure","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"4hdjCyQTxNKyCDbm"}
-{"nom_medicament":"Oxacilline 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"4ikU5aaZumNf4Vio"}
-{"nom_medicament":"Valproate sodique (DEPAKINE)","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"QtYyNoYmCHoz5Udt","_id":"4lbycqAjhOd5qdSC"}
-{"nom_medicament":"LH","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"4luqfDNGEkIQ9zP3"}
-{"nom_medicament":"PIPETTES PASTEUR","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"4rg5vSKUNpxwJHvL"}
-{"nom_medicament":"Acide polyglycolique sertie avec aig. ronde no 1, 36pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"4sRsEAtgqagW4WxM"}
-{"nom_medicament":"T.RAPIDE CHLAMYDIA","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"507LMfmstZwrFBdb"}
-{"nom_medicament":"Vitamines + sels minéraux + antioxydants (LYNEVIT)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"Inn5WMw0T5YdGNCW","_id":"50GQulBd9U5EacFZ"}
-{"nom_medicament":"Acide salicylique","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"4tucKb54fuW6JGJg","_id":"542nQfzBigqxc21u"}
-{"nom_medicament":"Fils WIRE / HARD 1400 …1600N/gmm ? 0,7 mm /0,28? 30m","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"54pIMM3rzj47CxDE"}
-{"nom_medicament":"Chlorhéxidine 5%, 1Ltre","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"4C8YTtPptYxrNagQ","_id":"55UXYUOxQA116qqn"}
-{"nom_medicament":"Ibuprofène","id_categorie":"OHV6K951NElcfomT","id_forme":"awBmrah6f30wBz0E","_id":"56GTiDX2NI0pc6S9"}
-{"nom_medicament":"Mupirocine 2%, 15g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"58EMgADQZy9NMVUZ"}
-{"nom_medicament":"Ibuprofène 400mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"59NrpoYTcpnPqfeT"}
-{"nom_medicament":"Cloxacilline sp, 250mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"5BEBuC2DBVI5G3sa"}
-{"nom_medicament":"Lidocaine 2%","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"5FRyMg5HxQwW62Di"}
-{"nom_medicament":"Acide salicylique 6,54 % + diéthylamine 3,46 % (ALGESAL baume)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"5ba38Cw9nEi6rsc8"}
-{"nom_medicament":"Ranitidine","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"erVQpFbAYRRmVqEr","_id":"5mPxWeTq8spfSeFy"}
-{"nom_medicament":"Cefalexine sp, 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Rh1G93fLxyeB4k8A","_id":"5o1pQVTRDInVpb1a"}
-{"nom_medicament":"Indinavir 400mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"5wJOJF74d4m0Fjqd"}
-{"nom_medicament":"Néostigmine","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"5xR6QXlh3aiuTbsO"}
-{"nom_medicament":"Diclofenac, 25mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"5xuChBeXHBm7D4U8"}
-{"nom_medicament":"Indométhaciné 0.1% c","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"5yY4AOMD5SLGsGt9"}
-{"nom_medicament":"Ondansétron","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"5zGPRmJviwubMCY3"}
-{"nom_medicament":"Hexetidine 182mg + acide propionique 118mg + chlorobutanol 500mg + alcool ethylique 95? (ANGINOVAG)","id_categorie":"hsKlTEKjUHXBserp","id_forme":"IoIfIa5E1IYww6Sk","_id":"61CUuKp0Mn2rchg3"}
-{"nom_medicament":"TYPHOID RAPID TEST","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"63GdDGu9oPEaEFjV"}
-{"nom_medicament":"Tamoxifène (citrate), 10mg","id_categorie":"gF0Sz9Cy9nCEnS1l","id_forme":"PfcDBYH7WTAq94Vo","_id":"63ZhNyWyH2GdTuV0"}
-{"nom_medicament":"Formaldéhyde solution 35 38%, 1Ltre","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"b2LEdcKoz79CS2Kb","_id":"66pHj4xgVIPFzQCm"}
-{"nom_medicament":"Miconazole gel oral 40g","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"Igoex7AJvAVENVAr","_id":"67X1gKwy3kMFq24C"}
-{"nom_medicament":"Cotrimoxazole  480mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"67iy3WI0M8I2F50S"}
-{"nom_medicament":"Cotrimoxazole sp, 240mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Inn5WMw0T5YdGNCW","_id":"6DLRe4idvG22vfs4"}
-{"nom_medicament":"SODIUM","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"6JT97nszUf09eF1i"}
-{"nom_medicament":"Erythromycine 250mg, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"6LinzLTqpaYwlclT"}
-{"nom_medicament":"Banzalkonium 0,5g + digluconate de chlorhéxidine 0,2g (TOPICIDAL)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"6Nf51OdPEGUjKm7a"}
-{"nom_medicament":"HIV","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"6RnfaG9Iqfl0U2Ny"}
-{"nom_medicament":"Clindamycine","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"6UiBxAiDbtHf03Xu"}
-{"nom_medicament":"Artesunate 120mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"AzKeHdiCVSwbp8iU","_id":"6VGEqGxNxoA87juV"}
-{"nom_medicament":"Sac à colostomie, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"6b7ecxflp0uK49hx"}
-{"nom_medicament":"Acide ascorbique","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"gqZyKLBsr2gM4wqP","_id":"6dZT8vr28TQ7uk2f"}
-{"nom_medicament":"Sonde nasogastrique no 16","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"6foNvBSkBIvMRSHW"}
-{"nom_medicament":"Péthidine 100mcg","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"6mVDbIQXyJ4heQXg"}
-{"nom_medicament":"Lamivudine 300mg + didanosine 250mg + éfavirenz 600mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"6ofy6e3KN1I1fORS"}
-{"nom_medicament":"Naloxone 0,4mg/ml 1ml, amp","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"6rKC7Tnj459jbW6F"}
-{"nom_medicament":"Isosorbide dinitrate  5mg,","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"FYa7bdsS8XMrsk4L","_id":"6rMQYRqFjRXsC6op"}
-{"nom_medicament":"Cinnarizine (STUGERON) 25mg","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"PfcDBYH7WTAq94Vo","_id":"73pOBXw5y0GOAOg8"}
-{"nom_medicament":"Sulfadoxine/pyrimethamine 500mg/25mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"79iciOYHXuiNI1h9"}
-{"nom_medicament":"TEST D’OVULATION","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"7Bf3zbkva1qBV2lc"}
-{"nom_medicament":"Telmisartan 80mg + hydrochlorothiazide 12,5mg (TELESHAL)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"7EyW3XDAwAxbfrnk"}
-{"nom_medicament":"Ares d’immobilisation, pce","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"7Gajmk285eXeaqYf"}
-{"nom_medicament":"Misoprostol 200mcg (CYTOTEC)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"7IMO4YHytGnJSeQU"}
-{"nom_medicament":"Clorazepate (TRANXENE) 10mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"nBryIxSUjcHN4hso","_id":"7P3uaA6r8dogdENL"}
-{"nom_medicament":"Rosuvastatine 5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"7S11UTNRrxFeatcZ"}
-{"nom_medicament":"Alcool dénaturé 70%, 500ml","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"4C8YTtPptYxrNagQ","_id":"7Sa9QoYwC98gCNJg"}
-{"nom_medicament":"Vitamine B complex","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"PfcDBYH7WTAq94Vo","_id":"7T63VxIj7He9UzRW"}
-{"nom_medicament":"CRP","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"7TmgOzawTTIjMjrY"}
-{"nom_medicament":"Cefuroxime, 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"7VTzf22G9J409s1D"}
-{"nom_medicament":"Dextrose 5% IV, 250ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"7WDOcZ83WZnPI3V8"}
-{"nom_medicament":"Aiguille dentaire G27 et G 30","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"7eqhi5bYNJaaGkQC"}
-{"nom_medicament":"Clarythromycine, 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"7iOQyZInff77uED8"}
-{"nom_medicament":"Lopinavir 200mg + ritonavir 50mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"7s6w4OsRKbcy11aT"}
-{"nom_medicament":"Tensioplaste","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"7sJRiUT2hcZIUDqc"}
-{"nom_medicament":"Salbutamol","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"gqZyKLBsr2gM4wqP","_id":"7wsACE6lH1ofv8qR"}
-{"nom_medicament":"Oestradiol benzoate, amp","id_categorie":"sa99FvcpMPWLjum3","id_forme":"gqZyKLBsr2gM4wqP","_id":"7zy3UvvzI8OpFtfE"}
-{"nom_medicament":"Nitrate d’argent","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"R1e38GikmbQ9AbM7","_id":"84jBhWfIQBPRK3oF"}
-{"nom_medicament":"Rochler’4","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"87nGoSLX6EkdZwpE"}
-{"nom_medicament":"Perméthrine 5%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"89dnFwnFqtMmXGs2"}
-{"nom_medicament":"Lidocaine, tube","id_categorie":"hsKlTEKjUHXBserp","id_forme":"Igoex7AJvAVENVAr","_id":"89trPImAIs7bPsdC"}
-{"nom_medicament":"Fluoxétine 20mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"nBryIxSUjcHN4hso","_id":"8BbwK70NNh5UVve2"}
-{"nom_medicament":"Thiosulfate de sodium solution à 20%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"8FQhiYK7Pe6LkRFO"}
-{"nom_medicament":"Nystatine 5000000UI","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"oiqmeiSVXcIs25Jy","_id":"8Hz8pKnljpE2ji1E"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 0, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"8MGGo78ltzzb502p"}
-{"nom_medicament":"Kaolin, 100ml","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"8P0krP7eRykl0c4J"}
-{"nom_medicament":"ASLO","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"8QDiLltgWDCQunWc"}
-{"nom_medicament":"Lame de bistouri numéro 11","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"8Qt2xkcJEAr7iScS"}
-{"nom_medicament":"Terbinafine (TERBINOL)","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"PfcDBYH7WTAq94Vo","_id":"8RAnw2hFudiqe6ck"}
-{"nom_medicament":"Ketoprofène (PROFENID)","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"8V7CziHAiCjv6VoX"}
-{"nom_medicament":"Ofloxacin + ornidazole","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"8eLIOb9YtMDEK6lE"}
-{"nom_medicament":"Méyamicine (extraits totaux des plantes) (MTA) 200mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"8jtewv2Bws6BLP47"}
-{"nom_medicament":"MICROPIPETTE 5-100","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"8nBmUn7AOYXW4M6h"}
-{"nom_medicament":"Colchicine 1mg","id_categorie":"t09NDAZBpK1nujCG","id_forme":"PfcDBYH7WTAq94Vo","_id":"8nd9f8L5Rv7vEsvO"}
-{"nom_medicament":"Ficelle ombilicale","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"8pxvoolOrtShHpcK"}
-{"nom_medicament":"Peroxyde de benzoyle 5%, 40g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"8tk2OENRXDLJo7ID"}
-{"nom_medicament":"Indapamide 2,5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"8wtC7Fig2AASuQqh"}
-{"nom_medicament":"Fils d’immobilisation","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"93VJd2lpEsZBBOAz"}
-{"nom_medicament":"Salbutamol","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"j7oCn6J4HLhNnT0J","_id":"94WpiBqR7PvQSA7Z"}
-{"nom_medicament":"Suxaméthonium 50mg/ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"96Wihb2hh7vUfa0X"}
-{"nom_medicament":"Glibenclamide 2,5mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"99ve50hBtLSAGhjp"}
-{"nom_medicament":"Piroxicam","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"9AsH6ffEOC3ySuk6"}
-{"nom_medicament":"Aluminium + magnésium + siméthicone (MAALOX)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"qcur2AbcS8oI66mk","_id":"9ERmmowsNMkGXbCW"}
-{"nom_medicament":"Paracétamol, 120mg /5ml","id_categorie":"OHV6K951NElcfomT","id_forme":"Inn5WMw0T5YdGNCW","_id":"9FdpLkAhucxNoMl5"}
-{"nom_medicament":"Acide acétyle salicylique (ASPIRINE) 100mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"9Lj4phEvG4HvN7yx"}
-{"nom_medicament":"Sonde vésicale à deux voies 20","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"9OSoveJTOicJw75H"}
-{"nom_medicament":"Bande plâtrée 20 cm","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"9QKDowvxNTm15M8E"}
-{"nom_medicament":"HbsAg","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"9kwrSxewrLoCvh0y"}
-{"nom_medicament":"ALAT","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"9l92QGoy1vwYrCGi"}
-{"nom_medicament":"Créoline concentrée, 1ltre","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"b2LEdcKoz79CS2Kb","_id":"9reJVoy3ZY8RZ06s"}
-{"nom_medicament":"Cefuroxime sp, 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"gqZyKLBsr2gM4wqP","_id":"9vnUCgk0eJ0Z8IRt"}
-{"nom_medicament":"Oxyde de zinc 100g","id_categorie":"hsKlTEKjUHXBserp","id_forme":"MgvGr0aVyShJFjiO","_id":"A1N1hiR3vFyYx8BN"}
-{"nom_medicament":"Méthyle cellulose","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"A3FMNVVyayZMIc54"}
-{"nom_medicament":"Ofloxacin 200mg + ornidazole 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"lLKz5UtPaIMYgdwY","_id":"A5XC9fIk8aBVNHEk"}
-{"nom_medicament":"Atropine (Sulfate) 0.50%, 1%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"ANcHzQ16XCmxVg4Y"}
-{"nom_medicament":"Amiodarone 50mg/ml, amp","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"AYQh2ljS9Zwy5tYx"}
-{"nom_medicament":"Acyclovir 250mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"AzKeHdiCVSwbp8iU","_id":"AYaYsb2ex1tMElFx"}
-{"nom_medicament":"Tamoxifène (citrate), 20mg","id_categorie":"gF0Sz9Cy9nCEnS1l","id_forme":"PfcDBYH7WTAq94Vo","_id":"AitrpiE90cPau1R0"}
-{"nom_medicament":"Gliclazide 40mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"AjlKlTSzfu22OanS"}
-{"nom_medicament":"Digoxine gtte","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"NYXVtPibgCXdyvR6","_id":"AmVFCSc3y2mbyCJZ"}
-{"nom_medicament":"Dimethindene maléate + phénylephrine (VIBROCYL)","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"oJaB9Fa8WYb9AHbx","_id":"B28nsKWux345D2yo"}
-{"nom_medicament":"Clindamycine 150mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"B3fwUejnsGUg63YZ"}
-{"nom_medicament":"Testostérone + yohimbine (STIMULEX)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"nBryIxSUjcHN4hso","_id":"B4ZI64iEJQeYN8oA"}
-{"nom_medicament":"Sonde vésicale à trois voies 20","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"B57JIPGowTdUGjyJ"}
-{"nom_medicament":"Vancomycine 125mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"BHolidqjrloOxp2x"}
-{"nom_medicament":"Coton hydrophile 500g","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"BPDZMlozb5ZchKyh"}
-{"nom_medicament":"Dain lamellaire","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"BQjFr1ADpinIlKY6"}
-{"nom_medicament":"Erythromycine 125mg, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"BTtl3E8S3jEZRnPQ"}
-{"nom_medicament":"Néomycine 35000UI + polymixine B 35000UI + nystatine 100000UI (POLYGYNAX)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"u12kLoH49Phbt6VH","_id":"BhhGOsMnxIelL7JM"}
-{"nom_medicament":"Hexetidine 182mg + acide propionique 118mg + Chlorobutanol 500mg + alcool ethylique 95?, 30g (ANGINOVAG), 10 ml","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"BinMjF3V75PatTwY"}
-{"nom_medicament":"Ambroxol (SEKROL) 30mg/5ml, ad.","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"BkWlJehOjhTNi8ZR"}
-{"nom_medicament":"Sonde nasogasrique no 14","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"Bky5AgxhDZ3ek0fS"}
-{"nom_medicament":"Halopéridol 5mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"BmvYU4XT5ngVhAPA"}
-{"nom_medicament":"Fils inox pour immobilisation dentaire","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"Bp27RSlYhRCYEMRF"}
-{"nom_medicament":"Cefépime 1g + tazobactam 125mg, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Mc7ipi5el6uckQjj","_id":"BsPRi4tXRIlaw0p9"}
-{"nom_medicament":"Ciprofloxacin (0.3%) +dexamethasone (0.1%)","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"eQS8IeG4RxBs8Czn","_id":"C2c8tYgdR1glKVoK"}
-{"nom_medicament":"Amoxicilline 125mg +acide clavulanique 31.25 mg/5ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"C3JkEgnh46iTjUoh"}
-{"nom_medicament":"Povidone iodine 5%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"CKzmTchvDdArT49y"}
-{"nom_medicament":"TOXOPLASMOSE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"CMKqMOFd5G7rvR5N"}
-{"nom_medicament":"Acyclovir 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"CUVA4pSzmeYZp9w2"}
-{"nom_medicament":"Cefixime 200mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"CVUFzJ9C9n4C6rVx"}
-{"nom_medicament":"Ofloxacine 3%","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"eQS8IeG4RxBs8Czn","_id":"CYf4x2nu5x1nLbcY"}
-{"nom_medicament":"Emtricitabine 200mg + ténofovir 300mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"CZeyu9xNdnBz8bKH"}
-{"nom_medicament":"Pilocarpine nitrate 2%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"Cj16XJU0UAq0GdDn"}
-{"nom_medicament":"Efavirenz 50mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"nBryIxSUjcHN4hso","_id":"Com6OGnOe1J1hgSO"}
-{"nom_medicament":"Dextrose 10% IV, 500ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"CuZEbPPRKCGBXNKi"}
-{"nom_medicament":"Pyracetam (NOOTROPYL)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"Cubh2M8ySYXgvtR5"}
-{"nom_medicament":"Vitamine B complex","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"gqZyKLBsr2gM4wqP","_id":"CvCgyjQEo59wdJ2t"}
-{"nom_medicament":"Ornidazole, 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"DE6XF07n6kiBXZgW"}
-{"nom_medicament":"Citirizine","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"PfcDBYH7WTAq94Vo","_id":"DEuYl9fee44Ebj5u"}
-{"nom_medicament":"Doxicycline 200mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"DKSB5xeDE18NJdNe"}
-{"nom_medicament":"Flucloxacilline 125mg/5ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"DQvKrVrntxjxyOzc"}
-{"nom_medicament":"Boite d hystérosalpingographie, pce","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"DRFYkNw8OrJ8bZWy"}
-{"nom_medicament":"KOVAC’S","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"DhGoPlt3sQrMDYdo"}
-{"nom_medicament":"Gant d’examen latex, moyen","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"DmDNfAVfF9AU3bTn"}
-{"nom_medicament":"RUBEOLLA","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"Dt67Y4RuBb6PoDzO"}
-{"nom_medicament":"Finastéride","id_categorie":"sa99FvcpMPWLjum3","id_forme":"nBryIxSUjcHN4hso","_id":"Dzvwe3mHQji2wjsN"}
-{"nom_medicament":"Phytomenadione 200mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"E3661zcM5KjELHDU"}
-{"nom_medicament":"Acénocoumarol (SINTROM) 4mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"E4RgK2mHKIBTvJ6M"}
-{"nom_medicament":"Hydrocortizone butyrate 0,1%, 30g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"E9rHprYtpqj6ePSO"}
-{"nom_medicament":"Acide lactique + extraits naturels (GYNOKLEEN, LAVWASH)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"2WYOlYTmV3n0Il35","_id":"ECxS0Mp6nrXGTvCe"}
-{"nom_medicament":"Pulmine","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"EKNZH7PXo6zHy2sC"}
-{"nom_medicament":"Saquinavir 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"ERXst78U0JThMOXa"}
-{"nom_medicament":"Clonidine (CATAPRESSAN) 50mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"EV2ETcN7m7cWRzvI"}
-{"nom_medicament":"Clobetazole butyrate 0,05%, 15g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"EVNcWWays9n81j5u"}
-{"nom_medicament":"Paracétamol sp, 240mg/5ml, 100ml","id_categorie":"OHV6K951NElcfomT","id_forme":"ml94B7Z5vYUTBkQ8","_id":"EWmzXv36KjB4xlz3"}
-{"nom_medicament":"Sérum antirabique","id_categorie":"ubbz0sJLZYa39iHB","id_forme":"D2Weim65lthEYWSc","_id":"EcMc67h0WGCIxI2n"}
-{"nom_medicament":"Cloxacilline sp, 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"Ehb4pxlzzPL426SN"}
-{"nom_medicament":"Metformine 250mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"EiRxvh3sXrdZEPyO"}
-{"nom_medicament":"FSH","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"Ejhb2vGmU5i67z0O"}
-{"nom_medicament":"Sorbitol (MICROLAX)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"vxrSjEJrUQDZ647j","_id":"EpOVKwQJ3OEIPU1L"}
-{"nom_medicament":"Midazolam 1mg/ml, 5ml, amp","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"ErA6Qbig6GvTzhs2"}
-{"nom_medicament":"Omeprazole","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"gqZyKLBsr2gM4wqP","_id":"EvbOQ1zmsy0kZ20y"}
-{"nom_medicament":"Sulbutamol","id_categorie":"sa99FvcpMPWLjum3","id_forme":"awBmrah6f30wBz0E","_id":"F1YhfVMGjCNmpsRK"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 4/0, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"F1tTR0i2NHwpwDKg"}
-{"nom_medicament":"Testostérone + yohimbine (STIMULEX)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"Inn5WMw0T5YdGNCW","_id":"F2Ibes91G4BCTuo0"}
-{"nom_medicament":"Acide aminés essentiels + vitamines C et (ASTYMINE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"ml94B7Z5vYUTBkQ8","_id":"FKpNMh5SxJZzu2LB"}
-{"nom_medicament":"Glibenclamide, 5mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"FMd9YwnW9FzgBcUy"}
-{"nom_medicament":"Butyl hyoscine bromure (BUSCOPAM)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"gqZyKLBsr2gM4wqP","_id":"FR4rdNuS89623NC7"}
-{"nom_medicament":"Tritinoine 0,025% + erythromycine 4%, 25ml","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"FZA9loStAffNt9Ek"}
-{"nom_medicament":"Nystatine 1000000UI","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"oiqmeiSVXcIs25Jy","_id":"FfnQt2qVPeE9rQ0Q"}
-{"nom_medicament":"Amiodarone 400mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"FgzlapHjU34BZFUN"}
-{"nom_medicament":"Losartan+Hydroclorthiazide","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"Fo1dPrfP3d3MiPmr"}
-{"nom_medicament":"Dobutamine 250mg/50ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"Fpx9xhWNmTqM7I32"}
-{"nom_medicament":"Néomycine sulphate 5mg + bacitracine 500UI/g (NEOCIN)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"FqmwpKAdn6zMjVgU"}
-{"nom_medicament":"MAC CONKEY AGAR","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"FtD4o5D0UMnY2T1m"}
-{"nom_medicament":"Vaccin anti hépatite B","id_categorie":"ubbz0sJLZYa39iHB","id_forme":"gqZyKLBsr2gM4wqP","_id":"FtDlTzKWNedGiNVj"}
-{"nom_medicament":"Clindamycine, 600mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"FwTVCYcSRktcGqbB"}
-{"nom_medicament":"Betametasone  gouttes nasales","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"TibbyhL7eTZwuC79","_id":"G5KgUFPT4q1ijSEA"}
-{"nom_medicament":"Attapulgite (magnésium phyllosilicate),  ad","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"MgvGr0aVyShJFjiO","_id":"G7rO45rYXpY3jPqs"}
-{"nom_medicament":"Aphotéricine B 50mg, fl","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"AzKeHdiCVSwbp8iU","_id":"GETUwA6FA7KvYZPp"}
-{"nom_medicament":"Iode ioduré (LUGOL) 5%","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"eQS8IeG4RxBs8Czn","_id":"GEe7eVM0N1lgQIZA"}
-{"nom_medicament":"Montelukast","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"PfcDBYH7WTAq94Vo","_id":"GFPvHeLRO6uWyhf7"}
-{"nom_medicament":"PROTEINES TOTALES","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"GJyE2jRSqomMIoxy"}
-{"nom_medicament":"Clindamycine 100mg + clotrimazole 100mg + metronidazole 100mg (AROGYL)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"GN1Cac3rpLhgufRN"}
-{"nom_medicament":"Azythromycine sp 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Rh1G93fLxyeB4k8A","_id":"GThQ846I7dirWVts"}
-{"nom_medicament":"Dihydralazine 25mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"GVWD8BdOvh97kkXV"}
-{"nom_medicament":"Lactate de Ringer IV, 500ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"GcwnNQlIJEYNyhqZ"}
-{"nom_medicament":"Gélatine sponges (dentaire)(Eponges hémostatiques)","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"GteNmaf6GeOxMAYp"}
-{"nom_medicament":"Salbutamol 5mg/ml","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"uWCcfMwjpvpQQRM8","_id":"GzlCITTw59FbpBtO"}
-{"nom_medicament":"Cyanocobalamine (VITAMINE B12)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"gqZyKLBsr2gM4wqP","_id":"H3FUU0ygDwfqHS5p"}
-{"nom_medicament":"Fluconazole 150mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"nBryIxSUjcHN4hso","_id":"HJB6IR4UrTZxjidX"}
-{"nom_medicament":"Sparadrap","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"HJMOQnu2OByHnTY1"}
-{"nom_medicament":"Nitrofurantoine 100mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"HNGW80gsJbTpHkN3"}
-{"nom_medicament":"Drain tubulaire","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"HOhOVmA36EkvQ7uK"}
-{"nom_medicament":"Sac à urine","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"HRUK6b18g4z3fwgh"}
-{"nom_medicament":"Gant chirurgical stérile no 6","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"HRovnadlJwN5JK6c"}
-{"nom_medicament":"Cloxacilline 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"HUY1MPdyxwiRnopd"}
-{"nom_medicament":"UREE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"HW50EEX05XufkyTd"}
-{"nom_medicament":"Flucloxacilline 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"HaoYTmPyj1UlRnzf"}
-{"nom_medicament":"Lidocaine 2%, fl 20ml","id_categorie":"hsKlTEKjUHXBserp","id_forme":"gqZyKLBsr2gM4wqP","_id":"HmmYbcgTvsH3BolZ"}
-{"nom_medicament":"Lamivudine 300mg + abacavir 600 mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"HxxSW3BO97scA3km"}
-{"nom_medicament":"Timoptol maléate 0.25% et 0.5%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"Hy1HOVmf8lV1EXc5"}
-{"nom_medicament":"Methyl salicylate + mentol + camphre + essences (BAUME LEOPARD)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"I1hMbel45mikJkjh"}
-{"nom_medicament":"Giemsa mère","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"I6OrcApaKUJYTmVb"}
-{"nom_medicament":"Dexaméthazone 5mg/Néomycine 17500UI","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"IHu65ap1sW422XOr"}
-{"nom_medicament":"Acétazolamide","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"PfcDBYH7WTAq94Vo","_id":"INIFcAfEUtYXEq4Y"}
-{"nom_medicament":"Fucidique acide 2%, 15g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"INvrOMMb8GrZ9gsR"}
-{"nom_medicament":"Nomegestrol LUTENYL 10mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"IO5KPtFT1lDAjybF"}
-{"nom_medicament":"Isosorbide, dinitrates (CEDOCARD RETARD), 20mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"IOEgBUJ67V19a6OE"}
-{"nom_medicament":"Mebendazole sp 100mg /5ml","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"Inn5WMw0T5YdGNCW","_id":"IZa4vhkeCsZI0uTX"}
-{"nom_medicament":"Diclofenac","id_categorie":"OHV6K951NElcfomT","id_forme":"awBmrah6f30wBz0E","_id":"IaHbzfyiUd6BL5M5"}
-{"nom_medicament":"Film RX no 24X30cm, rame de 100","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"IbnLuf2sk2Llwnr6"}
-{"nom_medicament":"Huile essentielle d’eucalyptus","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"nKU2g3N6s5RVE8Nn","_id":"IgeH4j9BD5vak4RO"}
-{"nom_medicament":"Acyclovir 5%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"Ikiukimay6nUHLiZ"}
-{"nom_medicament":"Losartan 25mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"Iq26VxvniUFC1imB"}
-{"nom_medicament":"Sonde vésicale à deux voies 10","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"It2vJGp66m3ATzJW"}
-{"nom_medicament":"Métronidazole sp, 250mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"kvz0FuoRVaJJj9vr","_id":"ItQ6mxHRqBfUViSG"}
-{"nom_medicament":"Hydroxyde d’aluminium 250mg + tricilicate de magnésie 250mg + siméticone 125mg + oxethazaine 10mg (DIGEST)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"J39Kum7boF9BKIEw"}
-{"nom_medicament":"Amoxicilline SP 250mg/5ml, 100mL","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"JQmBbAKNDv66dH6d"}
-{"nom_medicament":"Bétaméthazone 2mg (CELESTENE)","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"JY6RdGIPuRqd7zVI"}
-{"nom_medicament":"Albendazole sp, pce","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"Inn5WMw0T5YdGNCW","_id":"Jf96QSSjYTmAzOCo"}
-{"nom_medicament":"Gentamycine 0.3%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"JnUxbwCbsbOYja2J"}
-{"nom_medicament":"Azithromycine sp, 250mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Rh1G93fLxyeB4k8A","_id":"JpyVcMi2q7otnBuy"}
-{"nom_medicament":"Solution physiologique (locale)","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"778wC1J1Y2hrH8rh","_id":"JssFCoi8lWD5M90s"}
-{"nom_medicament":"Sildénafil 50mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"JtJrKHZh4OpyU0aU"}
-{"nom_medicament":"Tamsulosine 400mcg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"nBryIxSUjcHN4hso","_id":"JtwLSnHuDeEFoMrP"}
-{"nom_medicament":"Développeur RX, 2kg","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"Jzjx7wJPw332AXHd"}
-{"nom_medicament":"CHOLESTEROL TOTAL","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"K0AW0cU7Mg9ykNVo"}
-{"nom_medicament":"Isoconazole + diflucortolone (DUOSKIN)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"KGqIx7jVuxTJEPtO"}
-{"nom_medicament":"Povidone iodine 10%, 1Ltre","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"4C8YTtPptYxrNagQ","_id":"KJm7VbweqwgDcr8V"}
-{"nom_medicament":"Selenium sulfure 2%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"UDWxErTYnAB5Ivrt","_id":"KKs9hbVwLXpV3ApQ"}
-{"nom_medicament":"Perméthrine 5%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"94yNieOz94Ne4uWW","_id":"KMT3dW1N2dULyfOt"}
-{"nom_medicament":"Saquinavir 500mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"nBryIxSUjcHN4hso","_id":"KTeGyaLaJrgIhD9B"}
-{"nom_medicament":"Zidovudine 50mg/ml","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"NYXVtPibgCXdyvR6","_id":"KZ69hXgP91Mfivri"}
-{"nom_medicament":"Trousse de perfusion","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"KaTxrnux33enerPm"}
-{"nom_medicament":"Omeprazole","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"KcO8KKQFlYyzu3aa"}
-{"nom_medicament":"Suture acide polyglycolique sertie avec aig ronde no 3/0, 36pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"KfXumTs2aWbWmbP8"}
-{"nom_medicament":"Griséofulvine 125mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"PfcDBYH7WTAq94Vo","_id":"KgxLYwTJlex8YiSq"}
-{"nom_medicament":"Betaméthazone sodium phosphate + néomycine sulfate (PROBETA n)","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"W6XddEfOWGgEfWuO","_id":"Kn2v0e6BhyuLfQrC"}
-{"nom_medicament":"COLUMBIA AGAR","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"KqCRQEpevEjQM70p"}
-{"nom_medicament":"Solution physiologique (STERIMAR BABY), 150doses","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"8DyzhYgV9pMOlEVP","_id":"KtigP187DtIrlSHN"}
-{"nom_medicament":"CREATININE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"KxLNw17Kr96F8V3X"}
-{"nom_medicament":"Kétoconazole  (NIZORAL) 200mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"PfcDBYH7WTAq94Vo","_id":"L2iduO3NdmIKZ4I3"}
-{"nom_medicament":"Erythromycine  500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"L5TyCFx8DtW5E98v"}
-{"nom_medicament":"Métronidazole + povidone iodine, 15g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"LBQFX1Y1852onyHk"}
-{"nom_medicament":"Lame de bistouri numéro 22","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"LBxiSQ78IJaDjFzM"}
-{"nom_medicament":"Amitriptyline 25mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"LCnYyQwUFDY7vXFJ"}
-{"nom_medicament":"Bande cambrique, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"LIZXM1xf1F2QXSuf"}
-{"nom_medicament":"Clotrimazole + betaméthazone + néomycine (MUCOSEMA ou FUNBACT)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"LdE96o4UcfhMuiAf"}
-{"nom_medicament":"Praziquentel 500mg","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"2DqrpPtZTA5iVmDF","_id":"LgFzInQlrPWCyuCe"}
-{"nom_medicament":"Niclozamide 500mg","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"PfcDBYH7WTAq94Vo","_id":"LrhfCx0hfNzeU99e"}
-{"nom_medicament":"Lyse 1 L","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"Lx25jk6FkJtMWmdm"}
-{"nom_medicament":"Artesunate 30mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"AzKeHdiCVSwbp8iU","_id":"M27DU4jzFhnddaoN"}
-{"nom_medicament":"Bêta-oestradiol 1mg+ dydrogestérone 5mg (CLIMASTON)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"WeMoOts0Z6LpST92","_id":"M2q1FXcIpzBgLzWx"}
-{"nom_medicament":"Butyl hyoscine bromure (BUSCOPAM)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"PfcDBYH7WTAq94Vo","_id":"M8suTgsddo2y2wJW"}
-{"nom_medicament":"POTASSIUM","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"MCEA0T62BjAEEOYX"}
-{"nom_medicament":"Acide ascorbique 500mg","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"kvaJC2fQQlPlt6la","_id":"MCXtCHOCzaLH9AZM"}
-{"nom_medicament":"Efavirenz 600mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"MCk1PAHNQIslkLxT"}
-{"nom_medicament":"Iopamigita, 370mg/ml","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"MKTej3wyqTNMOexZ"}
-{"nom_medicament":"Morphine 60mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"MLsLXYOPz0RdpbfS"}
-{"nom_medicament":"Acide folique 5mg","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"PfcDBYH7WTAq94Vo","_id":"MbdW68eGpLIBpKEq"}
-{"nom_medicament":"Indométhacine 0.1%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"MfxddKYINlN9grEQ"}
-{"nom_medicament":"Cônes à papier","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"MgLNUtAxiPY6jSpq"}
-{"nom_medicament":"CALCIUM","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"MgcLzhgECFesixXn"}
-{"nom_medicament":"Mebendazole 100mg","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"PfcDBYH7WTAq94Vo","_id":"MjFIo766P0uOCmUA"}
-{"nom_medicament":"Odensétron","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"awBmrah6f30wBz0E","_id":"MjuyaLK8sJ7qphvm"}
-{"nom_medicament":"Magnésium sulfate 50%, 10ml","id_categorie":"sa99FvcpMPWLjum3","id_forme":"gqZyKLBsr2gM4wqP","_id":"MrycyHUahfogqQy3"}
-{"nom_medicament":"Doxicycline 100mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"MtlsiO27vXOKN1wG"}
-{"nom_medicament":"17B-oestradiol 0.06% w/w (OESTROGEL), 30g","id_categorie":"sa99FvcpMPWLjum3","id_forme":"NJlL91cqiuZ2R5EV","_id":"N3OwNKLsSHcKxaAn"}
-{"nom_medicament":"PAPIER THERMAL","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"N3Qqy5RqKzgTr78K"}
-{"nom_medicament":"Lactulose (DUPHALAC) 200ml","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"NYXVtPibgCXdyvR6","_id":"NKGiYbiwjyxaNaTW"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 2, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"NNUWlPEk6v4xTODs"}
-{"nom_medicament":"Sonde nasogastrique no 8","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"NWyd6MZsueXAaYQ9"}
-{"nom_medicament":"N-acétylcystéine","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"PfcDBYH7WTAq94Vo","_id":"NaXRtToUULVDlARV"}
-{"nom_medicament":"Diazepam 2mg/ml","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"gqZyKLBsr2gM4wqP","_id":"NfmMmwck6ifFZ5xK"}
-{"nom_medicament":"Ibuprofène sp, 100mg/5ml","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"NgB3mK3v8s3ZV8Q4"}
-{"nom_medicament":"Vitamine B9 +  iode + vitamine D3 + omega DHA + vitamine E + vitamine B12 (VIVAGESTAN)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"nBryIxSUjcHN4hso","_id":"O3i0kvJtwTn46yyn"}
-{"nom_medicament":"Huile d’amande douce","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"asYU3dLiYFAQOJcT","_id":"O866IlELFKiKwVXP"}
-{"nom_medicament":"Calcium gluconate 10%, 10ml, amp","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"O8BkE9sJaNIZ5OPt"}
-{"nom_medicament":"Ephédrine 1mg/ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"O9TMO5ODRdvuO9dt"}
-{"nom_medicament":"Eau distillée stérile pour injection, 10ml, fl","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"","_id":"OBIr2hEML1CieZT0"}
-{"nom_medicament":"Nystatine 100000UI","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"Inn5WMw0T5YdGNCW","_id":"OEN63a8ONR9zsVct"}
-{"nom_medicament":"Amoxicilline 1g+acide clavulanique 200mg, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"OHMuOWazGMH9ctnW"}
-{"nom_medicament":"LDL-CHOLESTEROL","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"OQWaFaBDtQ8Pin0l"}
-{"nom_medicament":"Esomeprazole","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"OWxNWiE62I89lid0"}
-{"nom_medicament":"Lames porte Object","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"Og8jUMaKpIdtIl5o"}
-{"nom_medicament":"Aiguille cathéter G16, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"OjUpavFj8b70jMqd"}
-{"nom_medicament":"Cefalexine sp, 250mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Rh1G93fLxyeB4k8A","_id":"OniGYmhS1WPTtt8U"}
-{"nom_medicament":"Nystatine","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"OoXdI9QrMI8ZxIZy"}
-{"nom_medicament":"GLUCOSE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"OtpiIXP174iH6i63"}
-{"nom_medicament":"Cefotaxime, 1g, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"PEUZdT0k1ix6yvJz"}
-{"nom_medicament":"Evaprest (","id_categorie":"sa99FvcpMPWLjum3","id_forme":"","_id":"PF91Hjbki5sUihIJ"}
-{"nom_medicament":"Efavirenz 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"nBryIxSUjcHN4hso","_id":"PFAuo5Fm42WDtRTq"}
-{"nom_medicament":"BILIRUBIN T ET D","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"PKORlDoDYgv5gqMR"}
-{"nom_medicament":"Tenofovir 245mg base","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"PPeZ6F0gjGVf71t1"}
-{"nom_medicament":"Sac à urine 2L","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"PjMNcYCD6mYoV9hA"}
-{"nom_medicament":"Aiguille cathéter G18, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"PqsPtbysOE3JGYrb"}
-{"nom_medicament":"Simvastatine 5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"PucDTH3dh6Bd3S9d"}
-{"nom_medicament":"Acide salicylique 6,54 % + diéthylamine 3,46 % + myrtécaine 1 % crème (ALGESAL SURACTIVE), 40g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"PvbmcGmHLkG55Qoy"}
-{"nom_medicament":"Aiguilles dentaire","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"Q4Bk5zHMkzfTYZcX"}
-{"nom_medicament":"Résine acrylic  autopolymérisante","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"QZWAfwtnTlmBth7e"}
-{"nom_medicament":"Tinidazole 500mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"QZlQmLtMCRjBmzW0"}
-{"nom_medicament":"Hydralazine inj","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"Qch0YeLsWQ58wLOQ"}
-{"nom_medicament":"Pénicilline V,  phénoxyméthyle pénicilline  250mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"QhwIjXSFW3QeoRqq"}
-{"nom_medicament":"Cefixime 40mg/ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"Qr68GH9Cqre2Oiju"}
-{"nom_medicament":"Diluent de l’hémogramme 20L","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"QxxF42FWummR5bj5"}
-{"nom_medicament":"Halopéridol 5mg/ml, 1ml","id_categorie":"yLy3keUivI5KWIPv","id_forme":"gqZyKLBsr2gM4wqP","_id":"R7XumUou6ISAaKw3"}
-{"nom_medicament":"Efavirenz 100mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"nBryIxSUjcHN4hso","_id":"R98kjTIccvYglJLv"}
-{"nom_medicament":"Carbocystéine sp (FLUDITEC) Ad","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"RMhNUzkKgy9MnlXq"}
-{"nom_medicament":"Quinine 20%","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"sFDr9uR247e6zosi","_id":"RQQU4z0HqwjiaPZj"}
-{"nom_medicament":"Baume de nerf","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"RVFPBrMpXbSrS7r1"}
-{"nom_medicament":"Métronidazole 500mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"Rgm8JM49jcykK8LK"}
-{"nom_medicament":"Fraxiparine","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"Rk1OOXfcYZYsp6Dr"}
-{"nom_medicament":"Ergométrine 200mcg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"RkukYbgtNeyubYXq"}
-{"nom_medicament":"Néomycine + polimixine B + métronidazole + nitrate de miconazol + centella asiatica (OVUMIX)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"Rp8AjGCLuwxkfHrG"}
-{"nom_medicament":"Banzalkonium 0,5g + digluconate de chlorhéxidine 0,2g (DERMOBACTER)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"RuXv0GKqRscrLYyi"}
-{"nom_medicament":"ASAT","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"S6dCwpPChyGgFG2o"}
-{"nom_medicament":"Zidovudine 300mg + lamivudine 150mg + abacavir 300mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"SC3RoTHejFl9riR3"}
-{"nom_medicament":"Dextrose 50% IV, 100ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"SGBZEN4UCaWsuz2o"}
-{"nom_medicament":"Rabéprazole 40mg","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"gqZyKLBsr2gM4wqP","_id":"SH6fJIb8rWoThBqc"}
-{"nom_medicament":"Sérum antivenimeux, 10ml","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"SIK5WnabUhUNsnID"}
-{"nom_medicament":"Pénicilline G, benzyle pénicilline 500000UI, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"SPzIaAwSFn41vk9J"}
-{"nom_medicament":"Allopyrinol 200mg","id_categorie":"t09NDAZBpK1nujCG","id_forme":"PfcDBYH7WTAq94Vo","_id":"ST85I6nvMWtas5Au"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 2/0, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"STF7huJQ9zwzjxqr"}
-{"nom_medicament":"Norfloxacin 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"STghSW3ljF2vLU4U"}
-{"nom_medicament":"Efavirenz 300mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"SfEQMiiOJjFzj3F5"}
-{"nom_medicament":"Chloréxidine sol","id_categorie":"hsKlTEKjUHXBserp","id_forme":"jAz6XfDuhd4uBEst","_id":"SmgCNbuNcrpxdVrW"}
-{"nom_medicament":"Meropénème + cilastatine","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"Sn3V93bkeIxQc7MG"}
-{"nom_medicament":"Fluconazole 2mg/ml","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"lLKz5UtPaIMYgdwY","_id":"T10M3o343ORAkbcH"}
-{"nom_medicament":"CHLORE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"T1nBKiabIdkOoqNC"}
-{"nom_medicament":"Carbimazole 5mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"T5IwqnQ44f3BFpeB"}
-{"nom_medicament":"Cefixime 400mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"T897AB8qc5RcrDWg"}
-{"nom_medicament":"Ephédrine 30mg/ml, 1ml, amp","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"T9yuw4Cazhb4Qtn1"}
-{"nom_medicament":"Aiguille cathéter G22, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"TBERdC3Vx2dYE8RL"}
-{"nom_medicament":"Chlorure de sodium 0,9% IV, 500ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"lLKz5UtPaIMYgdwY","_id":"TEMjs8UQIRPhF9Bm"}
-{"nom_medicament":"Surfactan (Beractant 25mg/ml ou poractant alfa 80mg/ml)","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"OYd1XIgC18fUHY9A","_id":"TFrcDaS8XFISiSA5"}
-{"nom_medicament":"VDRL","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"TLrhw6LbLIHDfeby"}
-{"nom_medicament":"Erythromycine  30g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"TNQlQWYrmk91d6B7"}
-{"nom_medicament":"Méthotrexate, 50mg/2ml,  fl","id_categorie":"gF0Sz9Cy9nCEnS1l","id_forme":"AzKeHdiCVSwbp8iU","_id":"TW8cAicu4LGe32Og"}
-{"nom_medicament":"Erythromycine 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"TXKYkhAPYS8upo4l"}
-{"nom_medicament":"Carbamazépine 200mg","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"PfcDBYH7WTAq94Vo","_id":"TZ4gEHOkBLFyVoqY"}
-{"nom_medicament":"Celecoxib","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"TakKJ3UNFeb9GNyP"}
-{"nom_medicament":"Phloroglycinol 40mg+ trimethylphloroglycinol  0,04mg (SYMOSPAZ)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"gqZyKLBsr2gM4wqP","_id":"TbfafdXoKN8gKBZ0"}
-{"nom_medicament":"Suture acide polyglycolique sertie avec aig ronde no 4/0, 36pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"TfOPpy4f9rkN3OZP"}
-{"nom_medicament":"Amlodipine 5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"TvsAM4FaNp9bvYOw"}
-{"nom_medicament":"Pénicilline V,  phénoxyméthyle pénicilline  250 mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"Twq7EqzSZV64vmAe"}
-{"nom_medicament":"Gant chirurgical stérile no 7,5","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"TxZIJA55IaSiJZee"}
-{"nom_medicament":"Mometasone furoate (NASONEX) 50 mcg","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"TyQHbmmRe7BA9a20"}
-{"nom_medicament":"Clindamycine phosphate + clotrimazole BP (VAGID)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"TzNy9Jd34QEV39LE"}
-{"nom_medicament":"Ciment endométhasone","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"TzXDy07OoFVVFJhU"}
-{"nom_medicament":"Protéinate d’argent (ARGYROL) 1%","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"GsPsaoqwMwj7q1C1","_id":"UH4EmsOMFEu8DKng"}
-{"nom_medicament":"Névirapine 50mg/ml","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"NYXVtPibgCXdyvR6","_id":"UMDtX5WwivTPawoB"}
-{"nom_medicament":"Attèle métallique: de Brown","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"UMxGxAo3zTwBVAbY"}
-{"nom_medicament":"Digoxine sp","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"Inn5WMw0T5YdGNCW","_id":"UNQKIgUlc9HnksME"}
-{"nom_medicament":"Acide salicylique 2%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"UO7yax6EsPoRzAb6"}
-{"nom_medicament":"Rifamycine 1%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"US6OIoNG8A8UHtG8"}
-{"nom_medicament":"Sonde nasogastrique no 12","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"UT2Auegqo9tsHPxj"}
-{"nom_medicament":"Métronidazole 500mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"UWiNT7XGKAKUf7Cf"}
-{"nom_medicament":"Phénytoine","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"gqZyKLBsr2gM4wqP","_id":"UYfvPYCziq9AbNZx"}
-{"nom_medicament":"GROUPAGE SANGUIN","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"Ub8tj3ibQUkHqWiN"}
-{"nom_medicament":"Chlore 1g","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"KMWeEiOpN90CVuJp","_id":"UcOkh5R042i4EKuv"}
-{"nom_medicament":"Motilium","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"awBmrah6f30wBz0E","_id":"UidLvsERENh0q6tk"}
-{"nom_medicament":"Aiguille cathéter G20, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"Ujxy72jwvDMwhjw5"}
-{"nom_medicament":"Rosuvastatine 10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"UkmZACeMkbobxeIn"}
-{"nom_medicament":"Drain thoracique de Jolly","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"UwRRCaUrD7uZNaMt"}
-{"nom_medicament":"Cassette RX  avec écran no 35X43cm, pce","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"UymfNSeFxlqVoGgx"}
-{"nom_medicament":"Savon liquide","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"VGocsss551CsLwJD"}
-{"nom_medicament":"Ceftazidime 1g","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"VN7b8aLyYi0JnYnL"}
-{"nom_medicament":"Listérine sol","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"VScHHvfNz0gdSIGP"}
-{"nom_medicament":"Terbinafine (TERBINAFINE) 1% 30ml","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"VSemj32me1vuxKoI"}
-{"nom_medicament":"Etiléfrine chlorhydrate (EFFORTIL) 5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"VSvLmwEQmURY8MuN"}
-{"nom_medicament":"Ciprofloxacin","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Inn5WMw0T5YdGNCW","_id":"VUvkXrar9ajoxyHW"}
-{"nom_medicament":"Desloratadine","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"PfcDBYH7WTAq94Vo","_id":"Vk9bJquyyFY5trM7"}
-{"nom_medicament":"Fentanyl 100mcg/2ml","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"VkB7dSI0DyEkL78F"}
-{"nom_medicament":"Flucloxacilline 250mg/5ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"jD8gWSuKrocSgok0","_id":"Vll2TP0OfN3avPfl"}
-{"nom_medicament":"Amiodarone 100mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"VtcwgNBCCqAMpIsx"}
-{"nom_medicament":"Azythromycine 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"Vx4oRd2r5pnTPU8O"}
-{"nom_medicament":"Hydrocortizone 100mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"AzKeHdiCVSwbp8iU","_id":"VyfnSBq8azPHAx8y"}
-{"nom_medicament":"Métronidazole 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"Vz3v5WJb9e7ZawW5"}
-{"nom_medicament":"Gentamycine 40mg/ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"CLldFzSkX1cbcPBx","_id":"W7tJVMYw5KO2Svjv"}
-{"nom_medicament":"Metformine 500mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"W85moee0p5caQjs9"}
-{"nom_medicament":"Cefuroxime, 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"W9npgP8zKXPArm6T"}
-{"nom_medicament":"Drain tubulaire","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"WDEQVFXwdU2CbwLO"}
-{"nom_medicament":"Métronidazole sp, 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"WKBrPJobXBng0DCm"}
-{"nom_medicament":"Cotrimoxazole 96mg/ml, amp","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"CLldFzSkX1cbcPBx","_id":"WKyKpBGexb4EakMO"}
-{"nom_medicament":"Mulitivitamines + sels minéraux (OLIGOCARE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"nBryIxSUjcHN4hso","_id":"WOpBQUh5YCMyzCp4"}
-{"nom_medicament":"Diable vert","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"WU035Plp5ggu52rd"}
-{"nom_medicament":"Ciprofloxacine","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"WU7yoagL5b8Wk2WU"}
-{"nom_medicament":"Allopyrinol 100mg","id_categorie":"t09NDAZBpK1nujCG","id_forme":"PfcDBYH7WTAq94Vo","_id":"WUkPAP4naDVPtiqz"}
-{"nom_medicament":"Ergométrine 0 ,2mg/ml, 1 amp","id_categorie":"sa99FvcpMPWLjum3","id_forme":"gqZyKLBsr2gM4wqP","_id":"WcWHQlcWva8XqcjU"}
-{"nom_medicament":"Canule rectale","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"WdHOB0d9KJIjNxLL"}
-{"nom_medicament":"Ampicilline 500mg, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"WejRti0HhIPrmxva"}
-{"nom_medicament":"Tramadol 100mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"Wp0tsGmreWVDsflt"}
-{"nom_medicament":"Montelukast","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"j7oCn6J4HLhNnT0J","_id":"WpcoMKZbnYfR55V1"}
-{"nom_medicament":"Métoclopramide","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"Wq1oTqMd90TlTw5V"}
-{"nom_medicament":"Cefazoline 1g, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"Wq8C78fCP4ZH9foD"}
-{"nom_medicament":"Fucidate sodique 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"WtXW9J0HWKC5TjjO"}
-{"nom_medicament":"Loratadine 10mg","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"PfcDBYH7WTAq94Vo","_id":"WzLbrwJ4D6mkoEHs"}
-{"nom_medicament":"Indinavir 100mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"X310f9PnnaW3ZlV2"}
-{"nom_medicament":"Abacavir  300mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"X46vTEIoCxbKTKgy"}
-{"nom_medicament":"Pommade simba","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"1rEo39izy9MShZQA","_id":"X4j2TKtC0TTUeQUF"}
-{"nom_medicament":"Phosphate d’aluminium (PHOSPHALUGEL)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"XBmZE8AMD9vlO5c4"}
-{"nom_medicament":"Cefuroxime sp, 250mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"gqZyKLBsr2gM4wqP","_id":"XFQaMlIygGjaBm5z"}
-{"nom_medicament":"Cefépime 1g, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Mc7ipi5el6uckQjj","_id":"XH7FhOTi3Dc9fWQa"}
-{"nom_medicament":"Sonde vésicale à trois voies 18","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"XIsXuTQDnQQgCAeg"}
-{"nom_medicament":"Captopril 25mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"XTkI5De0dpg47kvF"}
-{"nom_medicament":"Amiodarone 200mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"XVSJvIjduS0jqwN7"}
-{"nom_medicament":"Oxacilline 250mg/5ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"XYyvkYqf4RauEwRA"}
-{"nom_medicament":"Clindamycine 300mg/ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"XZaI7elBPdUKTwNy"}
-{"nom_medicament":"Levofloxacin 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"XkjlTVJ90ieKkXdA"}
-{"nom_medicament":"Spéctinomycine 2g","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"XmX0eIHV5kbdYKxb"}
-{"nom_medicament":"Minerve","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"Y5WkgCEv9v1CGXow"}
-{"nom_medicament":"Carbocystéine + prométhazine (RINATHIOL) enf.","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"Y6DY8yHJbYwnLYCb"}
-{"nom_medicament":"Xalatan","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"YE81uxDJObazusZP"}
-{"nom_medicament":"Tretinoine 0,01%, 60g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"YOStprGVcqHGD8Cf"}
-{"nom_medicament":"Meropénème 1g","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"YUtzS3MW1vTi8NIZ"}
-{"nom_medicament":"Spironolactone 50mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"YWs1xRcPhegEFniR"}
-{"nom_medicament":"Cloxacilline 1g, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"YcbGzEsYSt0Fvl8y"}
-{"nom_medicament":"Kétamine 50mg/ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"YddlgOfAkGLvOMi4"}
-{"nom_medicament":"Acide polyglycolique sertie avec aig. ronde no 5/0, 36pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"YkJxelWs6v72VnQP"}
-{"nom_medicament":"Pyracetam (NOOTROPYL)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"YoSQAkyLSqbN1YiU"}
-{"nom_medicament":"Clotrimazole + lactobacilus spores + métronidazole (KLOVINAL)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"YoY2vihQZ1FMLDiO"}
-{"nom_medicament":"Arcs d’immobilisation","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"YqSFJhfmQMpDCx5O"}
-{"nom_medicament":"Vincristine, 1mg/ml, fl","id_categorie":"gF0Sz9Cy9nCEnS1l","id_forme":"AzKeHdiCVSwbp8iU","_id":"YqftLTe6G8fMsmF6"}
-{"nom_medicament":"Lévothyroxine 0,1mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"Yrlw2mPwZ2om3bbU"}
-{"nom_medicament":"Métronidazole 5%, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"lLKz5UtPaIMYgdwY","_id":"YtpekHiolIzvDlAc"}
-{"nom_medicament":"Citicoline (5'-Cytidine diphosphate choline) 500mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"Ytz8vzZitJrNqigt"}
-{"nom_medicament":"Sonde vésicale à trois voies 22","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"Yuetp1Tyo4RgdpPd"}
-{"nom_medicament":"Trimébutine (DEBRIDAT) ad","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"Inn5WMw0T5YdGNCW","_id":"Z0DTpYguXqNe1ETh"}
-{"nom_medicament":"Clindamycine 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"Z17rDXc81TLE6eja"}
-{"nom_medicament":"Propofol 10mg/ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"aEpYst82SVd8bbPF","_id":"ZGuZ1zdTjOmTGnIu"}
-{"nom_medicament":"Muconazole+hydrocortisone (DAKTACORT)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"ZJJzHsZ22KPJzoQ8"}
-{"nom_medicament":"Sonde vésicale à deux voies 12","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"ZKsVcMFbgWgWxewU"}
-{"nom_medicament":"Tropicamide 0,5%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"ZcHaNcbjjj5t6KLu"}
-{"nom_medicament":"Vancomycine 1g","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"Ze0Bpp8tVtTpvzsi"}
-{"nom_medicament":"Huile essentielle de lemon gras (citronelle)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"nKU2g3N6s5RVE8Nn","_id":"ZoZUCSUWCO04lnwa"}
-{"nom_medicament":"Hydroxyde d’aluminium 300mg + tricilicate de magnésie 250mg/5ml","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"ZwmykvKh6F5NDZiS"}
-{"nom_medicament":"Aiguille cathéter G24, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"Zxy0QWVotPHc5MR5"}
-{"nom_medicament":"Progestérone micronisé (UTROGESTAN) 100mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"q9YweyFXRM2dDYBx","_id":"a65jLjLpNBTCTviS"}
-{"nom_medicament":"SALMONELLA SHIGELA AGAR","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"aFr7TxK94cQCuyMG"}
-{"nom_medicament":"Disopyramide,(RYTHMODAN)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"aMTsJGiK4sPGl5mC"}
-{"nom_medicament":"Ceftriaxone, 1g, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"aQKkBI0qB80Vwf3c"}
-{"nom_medicament":"Erythromycine 2%, 30g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"Igoex7AJvAVENVAr","_id":"aRRJfbJ9L4UZr07B"}
-{"nom_medicament":"Carpule anesthésique sans  vaso dilatateur (lidocaine ou médicaire)","id_categorie":"hsKlTEKjUHXBserp","id_forme":"gqZyKLBsr2gM4wqP","_id":"agrVTPabbt3x1MpB"}
-{"nom_medicament":"Ciprofloxacine 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"amqLETBZyUAS24Zg"}
-{"nom_medicament":"Ampicilline  1g, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"apSErvNaaLp67Wwl"}
-{"nom_medicament":"Diclofenac","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"apkLKbXgjy9RjcSc"}
-{"nom_medicament":"Bisoprolol 1,5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"at5OkaS4w10KeBWb"}
-{"nom_medicament":"Paracétamol + ibuprofène","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"b1v8F8hXqP0dObHr"}
-{"nom_medicament":"Dydrogestérone (DUPHASTON)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"b5avogeEYDuYdq8B"}
-{"nom_medicament":"Métoclopramide","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"gqZyKLBsr2gM4wqP","_id":"b5peFb0ZwNQ6QVbZ"}
-{"nom_medicament":"Film RX no 35X35cm, rame de 100","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"b9emAv38ibm9lUBK"}
-{"nom_medicament":"Lidocaïre spray","id_categorie":"hsKlTEKjUHXBserp","id_forme":"j7oCn6J4HLhNnT0J","_id":"bAvBWhoZc1BcpUoT"}
-{"nom_medicament":"Clonidine (CATAPRESSAN) 150mcg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"bBSB4Q5U1dW7TAkk"}
-{"nom_medicament":"Dopamine 40mg/5ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"bFyR9GdpeboCL1kQ"}
-{"nom_medicament":"Trimetazidine (VASTEREL) 20mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"bKFhOdvpCoO2QSPs"}
-{"nom_medicament":"Progestérone","id_categorie":"sa99FvcpMPWLjum3","id_forme":"gqZyKLBsr2gM4wqP","_id":"bLq9X5bbHqQTyxV8"}
-{"nom_medicament":"Paracétamol 325mg + tramadol 37,5mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"bSjmoeFy0i18h6hh"}
-{"nom_medicament":"Cotrimoxazole 120mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"bTpLn9r9UjmNzhrD"}
-{"nom_medicament":"Bupivacaine pour rachianesthésie 0,5%","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"bZtEctFh1kh1xIUk"}
-{"nom_medicament":"MANITOL SOLT AGAR","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"bd1Kpmxq3MIJgXM2"}
-{"nom_medicament":"Indinavir 333mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"bf6PzeGc6Eip1Txi"}
-{"nom_medicament":"Ambroxol (SEKROL) 15mg/5ml, enf.","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"bnFQaPc0beThCPXM"}
-{"nom_medicament":"Betahistine (BETASERC) 8mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"bnUZacxrZjVUIj1b"}
-{"nom_medicament":"Isotrétinoine 5mg","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"nBryIxSUjcHN4hso","_id":"bsQm3XR8ICZzDjBI"}
-{"nom_medicament":"Artéméther 120mg+Lumefandrine 1080mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"bvYvAJtGyEHos7Zk"}
-{"nom_medicament":"Bethamétazone dipropionate 0,05%, 30g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"c3umCPJsK9kWbvl3"}
-{"nom_medicament":"Desloratadine","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"ml94B7Z5vYUTBkQ8","_id":"c6kbiZQSnyW2SQxk"}
-{"nom_medicament":"Bande plâtrée 15 cm","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"cDxL53qdmxJM12fm"}
-{"nom_medicament":"Muconazole (GYNODACTARIN) 2%","id_categorie":"sa99FvcpMPWLjum3","id_forme":"NJlL91cqiuZ2R5EV","_id":"cK1vlOZYAxm3Tksl"}
-{"nom_medicament":"Paracétamol 500mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"cOvzrU32xHZ6YLlp"}
-{"nom_medicament":"Piperaciline","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"cTRcTeMbiMbawFb1"}
-{"nom_medicament":"ACIDE URIQUE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"cTtvVIQv7taqF7cF"}
-{"nom_medicament":"Sels de réhydratation orale (SRO), sachet","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"MgvGr0aVyShJFjiO","_id":"cWXasMsiLNTYyb4U"}
-{"nom_medicament":"Lopéramide 2mg","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"cbhCB5Fxa4dpBAEx"}
-{"nom_medicament":"Paracétamol 125mg + acide mefénamique 50mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"cbsy8PvZzT4AAQzt"}
-{"nom_medicament":"Oxybutinine (DITROPAN) 2,5mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"ccPOX4TfOQlu73TC"}
-{"nom_medicament":"Prométhazine","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"cdeuUXfsbsaTXm7K"}
-{"nom_medicament":"Atropine 1mg /ml, 1ml, amp","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"cg0ES1FvbJ00qjhi"}
-{"nom_medicament":"Papavérine 40mg","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"PfcDBYH7WTAq94Vo","_id":"cjD3zFSDvD8jj2JC"}
-{"nom_medicament":"Simvastatine 20mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"cjjUjEQe8wYq2aGy"}
-{"nom_medicament":"Artemether  80mg/ml","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"03rz3YMqSym0tGpV","_id":"clayEJAe6XCAKiZl"}
-{"nom_medicament":"Cartil forte","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"cmx0wIhpt93DaPKW"}
-{"nom_medicament":"Flucytosine 250mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"nBryIxSUjcHN4hso","_id":"conhf6Fc5FF2LNOy"}
-{"nom_medicament":"Antihémorroidaire","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"NJlL91cqiuZ2R5EV","_id":"cpB1HsQIUSd50Guc"}
-{"nom_medicament":"Brochalene enf","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"crFIC8HPj34HNfc9"}
-{"nom_medicament":"Amoxicilline 250mg+acide clavulanique 62,5mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"cvdyxr0bUXzeMVlO"}
-{"nom_medicament":"Fucidate sodique 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"lLKz5UtPaIMYgdwY","_id":"cxcSHS4CrRo396RG"}
-{"nom_medicament":"Progestérone (PROGESTOGEL)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"NJlL91cqiuZ2R5EV","_id":"d4GO1bwxVndPHwSS"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 5/0, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"d7tJTCsqM31j2qg8"}
-{"nom_medicament":"Cefam","id_categorie":"sa99FvcpMPWLjum3","id_forme":"nBryIxSUjcHN4hso","_id":"dIU6nuVdgZS3DEiM"}
-{"nom_medicament":"Dexaméthazone 0,5mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"dOzKmFs3hu21smG0"}
-{"nom_medicament":"Indinavir 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"dRGFdcsdE4reZ2Xf"}
-{"nom_medicament":"Névirapine 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"dWfuHZBr8VtrMNoX"}
-{"nom_medicament":"Motilium","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"dYtIwe28nLTzxygb"}
-{"nom_medicament":"Spironolactone 100mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"dZoPnvHh3tqal0So"}
-{"nom_medicament":"Ketoconazole 15g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"ddRIxBcQQ5anyosX"}
-{"nom_medicament":"Codéine phosphate 30mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"deoxwjaHL93t990B"}
-{"nom_medicament":"Levofloxacin 500mg/100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"lLKz5UtPaIMYgdwY","_id":"dhcTRP3mHPhjrhmF"}
-{"nom_medicament":"Chromoglycate de sodium","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"djF7VZYvQtqVd6aK"}
-{"nom_medicament":"Diétylcarbamazine","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"PfcDBYH7WTAq94Vo","_id":"dkd5mV1v2RtUvYWo"}
-{"nom_medicament":"Acide acétyle salicylique + acide borique + oxide de zinc + stéarate de zinc + carbonate de calcium (ARODERME) 100g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"u8a5XzuG7RTQUols","_id":"dkxxF2l7ghdmmZzM"}
-{"nom_medicament":"HBCAg","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"dpgYH68JE1s6EjsN"}
-{"nom_medicament":"Térbinafine","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"dtQjESDWL2zlRDc5"}
-{"nom_medicament":"Atorvastatine 10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"eK0F6uGnf5N5WZ6h"}
-{"nom_medicament":"Montelukast","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"eNCoSY7Msjvhs8C8"}
-{"nom_medicament":"Sonde vésicale à  deux voies 14","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"eOSeDn6xIe088AcU"}
-{"nom_medicament":"Azythromycine 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"eZHAgpnZQZ1bxDT1"}
-{"nom_medicament":"PROGESTERNE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"eaHB6rju7f14X1ge"}
-{"nom_medicament":"Simvastatine 10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"eafbfGitiHcfOLyU"}
-{"nom_medicament":"Diazepam 5mg/ml, 2ml, ampoule","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"gqZyKLBsr2gM4wqP","_id":"eayGT7lJyZAAH63g"}
-{"nom_medicament":"Métronidazole 250mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"elc8miRAanf0JmTW"}
-{"nom_medicament":"Acide polyglycolique sertie avec aig. ronde no 0, 36pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"ell0WRVdmftVPDtW"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 1, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"eo2lnlJ9yoa9sXYh"}
-{"nom_medicament":"Oxytétracaine hydrochloride 0.5%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"GvppuWz9MiZTfASp","_id":"ewXyB52KY88Vxses"}
-{"nom_medicament":"HDL-CHOLESTEROL","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"exGNlAGO08nAgi7A"}
-{"nom_medicament":"Film RX  no 35X43cm, rame de 100","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"f33NAnau2NafJcOy"}
-{"nom_medicament":"Anhydrase carbonique","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"gqZyKLBsr2gM4wqP","_id":"f8mYL0fzzRqEevNQ"}
-{"nom_medicament":"Pénicilline benzathine  1.2 MUI, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"En6brFmdBiCaW2fN","_id":"fB0XxaK3xWOIqnrx"}
-{"nom_medicament":"Furosémide 40mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"fGnc05hNCD4AToAv"}
-{"nom_medicament":"Vit B12, collyre","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"fSFUd1jLhNUiOqpZ"}
-{"nom_medicament":"Clarythromycine, 250mg/5ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"fSLW8VOoLzaIymEN"}
-{"nom_medicament":"Alfuzosin (XATRAL), 10mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"fbRueCA9wxPGZrTD"}
-{"nom_medicament":"Sonde vésicale à deux voies 16","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"fc8rgEjnwdJw9qos"}
-{"nom_medicament":"Furosémide 10mg/ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"fhsx2ouhxM4Pf2Kv"}
-{"nom_medicament":"Carpule anesthésique 2% + Adrénaline","id_categorie":"hsKlTEKjUHXBserp","id_forme":"gqZyKLBsr2gM4wqP","_id":"fpPrsTUMxoHHsTpD"}
-{"nom_medicament":"Oxygène, cylindre","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"SzS9pVnncqCIgqRF","_id":"fpYr5xYOaD0Z1IkX"}
-{"nom_medicament":"Glucagon 1mg/ml","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"gqZyKLBsr2gM4wqP","_id":"fwpw3rUAndQ4Tv4v"}
-{"nom_medicament":"Furosémide","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"jLomYUCSpG85496t","_id":"g28r9shQsZEOLoJZ"}
-{"nom_medicament":"Acyclovir","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"PfcDBYH7WTAq94Vo","_id":"g3W5XQa1Cp8fqh0H"}
-{"nom_medicament":"Amikacine 1g","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"gqZyKLBsr2gM4wqP","_id":"gAr3Vw4wBp0bR5W4"}
-{"nom_medicament":"Noradrénaline 4mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"gBXu4l2Sat5CpIPS"}
-{"nom_medicament":"Progestérone micronisé (UTROGESTAN) 100mg,","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"gCUttblqhUYA9HqR"}
-{"nom_medicament":"Néomycine 35000UI + polymixine B 35000UI + nystatine 100000UI (POLYGYNAX VIRGO)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"u12kLoH49Phbt6VH","_id":"gEjVweGCUgplM9gW"}
-{"nom_medicament":"Valproate sodique (DEPAKINE)","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"NYXVtPibgCXdyvR6","_id":"gQeDcCOgEPEfoJlh"}
-{"nom_medicament":"Lamivudine 50mg/5ml","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"NYXVtPibgCXdyvR6","_id":"gf4ZDld43QpKtcP5"}
-{"nom_medicament":"Adrénaline 1mg/ml, IV/IM, amp","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"ghySFXQ1MSNpwfld"}
-{"nom_medicament":"Sérum antitétanique, amp","id_categorie":"ubbz0sJLZYa39iHB","id_forme":"gqZyKLBsr2gM4wqP","_id":"gm7oQz0JDHKyv4LB"}
-{"nom_medicament":"Noradrénaline 8mg/ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"gz9aisoXv4Xxixpj"}
-{"nom_medicament":"Paracétamol + vitamine C","id_categorie":"OHV6K951NElcfomT","id_forme":"XFxIS1TF5dtC8b9y","_id":"h3SHoPHL4omydTIj"}
-{"nom_medicament":"Macrogol (FORLAX) sachet","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"h7ZHw0TnHAp3rqwu"}
-{"nom_medicament":"Quinine 100ml","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"Inn5WMw0T5YdGNCW","_id":"h9yHAfvmyPIeOlHj"}
-{"nom_medicament":"Pommade camphrée","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"1rEo39izy9MShZQA","_id":"hAKOSs3kM1sDBivj"}
-{"nom_medicament":"Muconazole","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"hAQGfBh8Vhv3VGkt"}
-{"nom_medicament":"Acide aminés essentiels + multivitamines et oligoelements + azote + xylitol (ASTYMINE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"lLKz5UtPaIMYgdwY","_id":"hE8nYHVvjt9l739Z"}
-{"nom_medicament":"Bande de Velpeau, pce","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"hHRZLfIjqkH4AlUp"}
-{"nom_medicament":"Digoxine 0,125mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"hJ3WT22NP3EMb145"}
-{"nom_medicament":"Lidocaine","id_categorie":"hsKlTEKjUHXBserp","id_forme":"j7oCn6J4HLhNnT0J","_id":"hJzLzAAnCm7MlMhw"}
-{"nom_medicament":"Xylène (CERULYSE)","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"WbfuAkVtMJwQbvQe","_id":"hLaa418TEalowG1u"}
-{"nom_medicament":"Enalapril 2.5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"hPL5Axgmmu6bUROe"}
-{"nom_medicament":"GONORRHEA","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"hPLx2nhnyJyTuuqt"}
-{"nom_medicament":"Digoxine 0,5mg/2ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"lTfjosFDZTX3TLbT","_id":"hVti2f8NMAXMpcMH"}
-{"nom_medicament":"Flucytosine 2,5 g/ml","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"lLKz5UtPaIMYgdwY","_id":"hXGCeGahF4L0J6xo"}
-{"nom_medicament":"Dexaméthazone 5mg/Néomycine 17500UI,","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"hgy6bb8ZhsRRXXtd"}
-{"nom_medicament":"Podophilline à 1%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"hlkKeNs6Wx5rjib8"}
-{"nom_medicament":"Morphine 10mg/ml","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"hq0jiTwXwfNPbCq1"}
-{"nom_medicament":"PénicillineV,  phénoxyméthyle pénicilline 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"i242PTdetAoST6sf"}
-{"nom_medicament":"Oestradiol benzoate","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"i4Y1arDfMwGNZ30H"}
-{"nom_medicament":"Nitroglyérine 500cg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"FYa7bdsS8XMrsk4L","_id":"iDIKkRSfn9vVP1nL"}
-{"nom_medicament":"Amoxicilline SP 125mg/5ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"iGIUx0SjaTAB61ea"}
-{"nom_medicament":"Triamcinolone 0.055 mg spray","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"iHdLUmskd8hhrkxG"}
-{"nom_medicament":"Muconazole (GYNODACTARIN) 1200mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"u12kLoH49Phbt6VH","_id":"iHrzhLI8na3YW45D"}
-{"nom_medicament":"Valproate sodique (DEPAKINE) 200mg/ml","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"NYXVtPibgCXdyvR6","_id":"iLNYvGIT8MxTcPyy"}
-{"nom_medicament":"Sonde vésicale à trois voies 8","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"iRJjubrugDBLhnDF"}
-{"nom_medicament":"Zidovudine 100mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"iVZsN9Vik5pKhTMz"}
-{"nom_medicament":"Acide salicylique 2%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"1rEo39izy9MShZQA","_id":"iZwO6v5Qk1UealvW"}
-{"nom_medicament":"Sonde nasogastrique no 10","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"ifGohA8WTOTc9bg6"}
-{"nom_medicament":"Gastrographine sol, fl","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"imVgQtrkFJdRZC65"}
-{"nom_medicament":"Piperacilline + tozobactam","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"iuEHSzEQFBsuY3dQ"}
-{"nom_medicament":"Ornidazole 500mg, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"lLKz5UtPaIMYgdwY","_id":"ixAl1kCTTNV1Wx3I"}
-{"nom_medicament":"Fluticasone (AVAMYS) 27.5 µg spray","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"j7oCn6J4HLhNnT0J","_id":"j2E43SKpcSbe6rnF"}
-{"nom_medicament":"Sonde vésicale à deux voies 18","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"jBDAgN0kLzXeDdak"}
-{"nom_medicament":"LAMELLES","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"jEqHiYSdN94UCg2f"}
-{"nom_medicament":"MULLEIR HUNKTON","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"jGEgxWO05PaIqs7U"}
-{"nom_medicament":"Phénytoine 50mg","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"PfcDBYH7WTAq94Vo","_id":"jGxuaHxOZcyFdKdc"}
-{"nom_medicament":"Mulitivitamines + sels minéraux (OVACARE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"nBryIxSUjcHN4hso","_id":"jLQewjGgVjYiMYmk"}
-{"nom_medicament":"Insuline mixte","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"gqZyKLBsr2gM4wqP","_id":"jQhi9oZuTO5rJkWm"}
-{"nom_medicament":"Ondansétron","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"gqZyKLBsr2gM4wqP","_id":"jRt2ygEJvZapbop6"}
-{"nom_medicament":"Etamsylate (DYCINONE)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"jTCgkxgY5I7a7Vcs"}
-{"nom_medicament":"ESTRADIOL","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"jWth5UihgHJPSkaC"}
-{"nom_medicament":"Nystatine 500000UI","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"oiqmeiSVXcIs25Jy","_id":"jXVasWfI7sL0yh8e"}
-{"nom_medicament":"Mephénesine (DECONTRACTYL)","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"jZ6WvAF7fMqfijVU"}
-{"nom_medicament":"Raéprazole 40mg","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"jejHSO1EivXef6ec"}
-{"nom_medicament":"Niflumique acide","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"jkoaeNNWd56u3JpD"}
-{"nom_medicament":"Ibuprofène + codéine","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"jnmd340zIYwX4KtJ"}
-{"nom_medicament":"Enoxaparine sodium 100mg/ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"jqNsLdITxTddaspd"}
-{"nom_medicament":"Spastin","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"","_id":"jtXdlRcbULScz63h"}
-{"nom_medicament":"Acide tranexamique (KAIYOSAN) 500mg/5ml","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"jvplnu9AHq3MfvOI"}
-{"nom_medicament":"Film RX no 30X40cm, rame de 100","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"jxGVAVmZ3X0h22t9"}
-{"nom_medicament":"Amalgame capsules","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"jy5FNZ6Y0vDpZaJv"}
-{"nom_medicament":"Pyracetam (NOOTROPYL)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"RABQPjuGRzS3zlgh","_id":"k3eUyZp2clv9vVBO"}
-{"nom_medicament":"Didanosine 200mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"nBryIxSUjcHN4hso","_id":"k5I1n4QmHg00pMEh"}
-{"nom_medicament":"Fixateur RX, 2,5Kg","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"k7RRi3mEUZsJTcIc"}
-{"nom_medicament":"Paracétamol + codéine","id_categorie":"OHV6K951NElcfomT","id_forme":"XFxIS1TF5dtC8b9y","_id":"kA8scVsyRXTGF9yS"}
-{"nom_medicament":"Hémoglobine B12","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"Inn5WMw0T5YdGNCW","_id":"kEVyFMQJf0VkdrSp"}
-{"nom_medicament":"Arthéméther 180mg+ lumefantrine 1080mg/60ml","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"kGIIP20I7N5RwwIT"}
-{"nom_medicament":"Loratadine  1mg/ml","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"ml94B7Z5vYUTBkQ8","_id":"kR18WcCaa03QZqzj"}
-{"nom_medicament":"Ambroxol 30mg + salbutamol 20mg + guaifénisine (AMBROLYTE)","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"ml94B7Z5vYUTBkQ8","_id":"kSjfNxHSu3T8240j"}
-{"nom_medicament":"TESTOSTERONE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"kWTqbkzJDExUqxG0"}
-{"nom_medicament":"Amikacine 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"gqZyKLBsr2gM4wqP","_id":"kYxhupOUWV4pK4kJ"}
-{"nom_medicament":"Néocordion","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"kgII11CgS6JKdr6r"}
-{"nom_medicament":"Sels de réhydratation orale (SRO sachet)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"MgvGr0aVyShJFjiO","_id":"kgelpZKR9D2k84fx"}
-{"nom_medicament":"PROLACTINE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"khG6KjuIgzl6pPhC"}
-{"nom_medicament":"Chlorure de sodium sol IV amp, 10ml","id_categorie":"LS34UBbHzmnMNYpl","id_forme":"gqZyKLBsr2gM4wqP","_id":"kqZ2wT7IT9mEQ3j1"}
-{"nom_medicament":"Attèle métallique: de Kramer","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"kuHa9goDmfJPR0nr"}
-{"nom_medicament":"Ivermectine 6mcg","id_categorie":"4IbhfFdsCaaCFmhu","id_forme":"PfcDBYH7WTAq94Vo","_id":"kvcbRrZDQjTPPq03"}
-{"nom_medicament":"Formaldéhyde cp","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"SHZ9MnoO5teliLTk","_id":"l0Y76CKAptefz6bK"}
-{"nom_medicament":"Topicrème","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"94yNieOz94Ne4uWW","_id":"l2I86CHr1Mk46r3e"}
-{"nom_medicament":"Paracétamol suppo bébé","id_categorie":"OHV6K951NElcfomT","id_forme":"awBmrah6f30wBz0E","_id":"l53vL6kwbcQYfwhw"}
-{"nom_medicament":"Ciprofloxacin 0.2 %","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"eQS8IeG4RxBs8Czn","_id":"l8s7nhAeuvN2Vbag"}
-{"nom_medicament":"Sonde vésicale à trois voies 10","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"l9CoN2FcSrayhpLm"}
-{"nom_medicament":"Digoxine 62,5mcg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"lBn491qtkw8mswcx"}
-{"nom_medicament":"Amlodipine 10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"lCaNSg9rzMV4yKv4"}
-{"nom_medicament":"Spiramycine (ROVAMYCINE), 1,5MI, cp","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"WeMoOts0Z6LpST92","_id":"lNb3PLZLuwl32KsC"}
-{"nom_medicament":"Bromazepam (Lexotan ) 3mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"lQlJvJ0xWBOfeMhO"}
-{"nom_medicament":"Clarythromycine, 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"laawekeFICUqIR8I"}
-{"nom_medicament":"TUBES SEC","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"lf5DMjetwwwE3Ut7"}
-{"nom_medicament":"Sonde vésicale à trois voies 14","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"lgZQ7rf186fypXAd"}
-{"nom_medicament":"Cassette RX avec écran no 24X30cm, pce","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"lit3D5Ix9wkwmfTS"}
-{"nom_medicament":"Ibuprofène 200mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"lns604KiWorqM8ip"}
-{"nom_medicament":"Benzalkanium HCL 0,985g + chlorhéxidine digluconate 1,065g (TOPICIDAL)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"eQS8IeG4RxBs8Czn","_id":"lu5SLky81sdOu0Tm"}
-{"nom_medicament":"Alvéogyl","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"lw9udOTVU58qqjJe"}
-{"nom_medicament":"Hydrochlorothiazide 25mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"lxFFVMpkmaCI6pT9"}
-{"nom_medicament":"Acide acétyle salicylique (ASPIRINE) 75mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"m6yGJkoYdDHfJLTd"}
-{"nom_medicament":"Abaisse langue","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"mKIqRZJjxeLXEVZN"}
-{"nom_medicament":"Carbocystéine sp (FLUDITEC)  enf","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"mKXDA4DJihBrqErP"}
-{"nom_medicament":"Phénytoine 100mg","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"PfcDBYH7WTAq94Vo","_id":"mRqhsA0ZKWF5dhZo"}
-{"nom_medicament":"Paracétamol injectable","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"mTcOLrTLnTdQbUe9"}
-{"nom_medicament":"Hydroxyde de calcium","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"ma5CtOoJ3vW9oCUC"}
-{"nom_medicament":"Citirizine","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"ml94B7Z5vYUTBkQ8","_id":"mkqwKqi71arGXgTm"}
-{"nom_medicament":"Pulpéryl","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"mmHqpOjVc7gF3lRQ"}
-{"nom_medicament":"Nicardipine 10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"mzs7zEjFIlxgkxR3"}
-{"nom_medicament":"Proxicam","id_categorie":"OHV6K951NElcfomT","id_forme":"awBmrah6f30wBz0E","_id":"nAarnO95ydhSzVMs"}
-{"nom_medicament":"Morphine 100mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"nMi8NGYGG95dUZcn"}
-{"nom_medicament":"Clarythromycine 500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"nSsypRXXqGhIMlA4"}
-{"nom_medicament":"Attapulgite (magnésium phyllosilicate),  enf","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"MgvGr0aVyShJFjiO","_id":"nTU6MQwBdgATCNVt"}
-{"nom_medicament":"Omega 3 (FORTALINE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"jLomYUCSpG85496t","_id":"nTXxPDC3NQzcgSaY"}
-{"nom_medicament":"Composite photopolymérisante","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"nVYs2tg8smLmWRsv"}
-{"nom_medicament":"Cétrimide 15% + chlorhéxidine 1,5%, 1Ltre","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"4C8YTtPptYxrNagQ","_id":"nXBvKkoIVvYOgJqS"}
-{"nom_medicament":"Alpha et beta arteether","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"Iu4JNhprTOhIZ7QA","_id":"nZ9kBzXbGXtZPgDX"}
-{"nom_medicament":"Charbon actif","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"PfcDBYH7WTAq94Vo","_id":"nat5Jr5Br353x9EV"}
-{"nom_medicament":"Pentazocine 50mg","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"npgKD3wxbvEAeBXR"}
-{"nom_medicament":"Clorazepate (TRANXENE) 5mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"nBryIxSUjcHN4hso","_id":"nqSlknYcks9gxhjR"}
-{"nom_medicament":"Aténolol 50mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"nuggCsyGPM5csQwu"}
-{"nom_medicament":"Zinc sulfate 25mg/5ml","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"nwZfTxwcwowIfTK8"}
-{"nom_medicament":"Cotrimoxazole 960mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"o2pLQupDeyU27Q1a"}
-{"nom_medicament":"TESTS DE GROSSESSE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"o3P7yuUXjwwIs0m8"}
-{"nom_medicament":"Vitamines + sels minéraux + antioxydants (LYNEVIT)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"PfcDBYH7WTAq94Vo","_id":"o42QmSUIQ6vc6tiD"}
-{"nom_medicament":"Meladinine 1%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"eQS8IeG4RxBs8Czn","_id":"o5fPn9gtneftRwti"}
-{"nom_medicament":"Imipramine 25mg","id_categorie":"yLy3keUivI5KWIPv","id_forme":"PfcDBYH7WTAq94Vo","_id":"oBP0g0aEQP1jAtjx"}
-{"nom_medicament":"Cefixime 100mg/5ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"oDYZ16dwTGSkfEzE"}
-{"nom_medicament":"Vitex","id_categorie":"sa99FvcpMPWLjum3","id_forme":"nBryIxSUjcHN4hso","_id":"oDhRj5RjCJNH8ZEC"}
-{"nom_medicament":"Abacavir 20mg/5ml","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"NYXVtPibgCXdyvR6","_id":"oJRypvsXToK9D9Iu"}
-{"nom_medicament":"Acide benzoïque 6%  + acide salicylique 3%, 50g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"oSnPEBQtxaQEyCnc"}
-{"nom_medicament":"Cefalexine 250mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"oTgx78Dt39eWRtI3"}
-{"nom_medicament":"Fer + manganèse + cuivre (TOT’HEMA)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"ml94B7Z5vYUTBkQ8","_id":"oUDEjEX2fQAWTzHX"}
-{"nom_medicament":"Ténofovir 300mg + emtricitabine 200mg + éfavirenz 600mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"oUhdzo85CZTKmBEp"}
-{"nom_medicament":"Beclométhazone","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"j7oCn6J4HLhNnT0J","_id":"oZhl87qIAKFIdZv5"}
-{"nom_medicament":"Etamysylate (DYCINONE)","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"ocPBVcx8xaXePYjr"}
-{"nom_medicament":"Correctol, collyre","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"oeO32CTcyeaukAaq"}
-{"nom_medicament":"Gel échographique, 5litres","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"olmyA2XDMJfhUtB4"}
-{"nom_medicament":"Huile d’olive","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"nKU2g3N6s5RVE8Nn","_id":"p24m5STep7nOTo76"}
-{"nom_medicament":"Dexaméthasone + tobramycine collyre, pce","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"p5S6GYkzzrj0zMSR"}
-{"nom_medicament":"Mentril sol, 100ml","id_categorie":"hsKlTEKjUHXBserp","id_forme":"jAz6XfDuhd4uBEst","_id":"pA0A1Vb6V3tjvd8k"}
-{"nom_medicament":"Isoflurane 30mg/ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"pGkjUWxzpZ2uvpQG","_id":"pCBQDjqvQu0H0VmT"}
-{"nom_medicament":"Mephénesine (DECONTRACTY)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"pPZbNsoXt1Lotloq"}
-{"nom_medicament":"FACTEUR RHUMATOIDE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"pRVQ5mxRReMfdD27"}
-{"nom_medicament":"Ténofovir 10mg/ml","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"lLKz5UtPaIMYgdwY","_id":"pVJ5Pe5U9uhzaz2N"}
-{"nom_medicament":"Calamine lotion","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"94yNieOz94Ne4uWW","_id":"pYbRnjz2FdnGlsSW"}
-{"nom_medicament":"Insuline rapide 100UI/ml","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"gqZyKLBsr2gM4wqP","_id":"pac1MVLpCgadMWQ8"}
-{"nom_medicament":"LIPIDES TOTAUX","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"padq2Xl5DxqU3FN1"}
-{"nom_medicament":"Peroxyde d’hydrogène 6%, 200ml","id_categorie":"Pa3kWM7dqYToavyz","id_forme":"qBLANyAZzEcTxwE7","_id":"pi9xc5INFeVUxHvj"}
-{"nom_medicament":"Nicardipine 20mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"prOJcEG4CGGfbpXa"}
-{"nom_medicament":"Acide aminés essentiels + multivitamines et oligoélements (ASTYMINE)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"mUJtsdDXaA1WCPfe","_id":"ptwUBMdjRMM9iqIE"}
-{"nom_medicament":"Lopinavir 100mg + ritonavir 25mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"pv2cjYiFCIYU0mvO"}
-{"nom_medicament":"Spironolactone 25mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"pyr4BHq7hoo4EL97"}
-{"nom_medicament":"Ténofovir  300mg+ lamivudine 300mg + éfavirenz 600mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"q2bxYyOHNNhDEHHV"}
-{"nom_medicament":"Dapoxétine chlorhydrate (EJUTARD) 30mg","id_categorie":"sa99FvcpMPWLjum3","id_forme":"PfcDBYH7WTAq94Vo","_id":"q6yywCMB4xVkpMj8"}
-{"nom_medicament":"Péthidine 100mg","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"q7AopJYRIETHu7jO"}
-{"nom_medicament":"Ciprofloxacine 2mg/ml, 100ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"lLKz5UtPaIMYgdwY","_id":"q7GXeuDsTrw4LV5Q"}
-{"nom_medicament":"Trousse de perfusion","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"q8zYasfZhjeNhDtV"}
-{"nom_medicament":"Cassette RX avec écran no 30X40cm, pce","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"qGxhRhIAMrpzjvkI"}
-{"nom_medicament":"Bronchalene ad","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"Inn5WMw0T5YdGNCW","_id":"qIy9MuJDbJsp17yI"}
-{"nom_medicament":"Ramipril","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"qLzP81bAvrAQEf7U"}
-{"nom_medicament":"Motilium","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"NYXVtPibgCXdyvR6","_id":"qaqh3DYpvsltkx0b"}
-{"nom_medicament":"Tugerme","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"qilDPRbP2guPFyz7"}
-{"nom_medicament":"Protéinate d’argent (ARGYROL)  0,5 %","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"GsPsaoqwMwj7q1C1","_id":"qoPtuijaKsA5Avto"}
-{"nom_medicament":"Cleaner","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"qpByzYNeY4RfQZyr"}
-{"nom_medicament":"Clopidogrel","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"qrItsGdk6qzXUSL0"}
-{"nom_medicament":"Isosorbide dinitrate, 10mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"FYa7bdsS8XMrsk4L","_id":"rB2SqGXULOoH49KD"}
-{"nom_medicament":"Cimétidine","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"gqZyKLBsr2gM4wqP","_id":"rKMqKWNN6fekX9I6"}
-{"nom_medicament":"Griséofulvine 125mg/5mg","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"NYXVtPibgCXdyvR6","_id":"rWAcAT1DWIZTvulU"}
-{"nom_medicament":"Halothane 250ml","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"pGkjUWxzpZ2uvpQG","_id":"rbrWfdodj69mM0hY"}
-{"nom_medicament":"Propranolol 1mg, sol inj","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"gqZyKLBsr2gM4wqP","_id":"rcmYYImoqBnOL6M5"}
-{"nom_medicament":"Dimetindène maléate (FENISTIL)","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"NYXVtPibgCXdyvR6","_id":"re6RPyCsIhLyBNqk"}
-{"nom_medicament":"Sonde nasogastrique no 18","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"ri4OFCX50PVOOFvt"}
-{"nom_medicament":"Sonde vésicale à trois voies 16","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"ryEHfPVQXAoLQ3Cg"}
-{"nom_medicament":"Ceftriaxone 1g + tazobactam 125mg, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"rzMpNWMDCMbMU99h"}
-{"nom_medicament":"Meropeneme 500mg, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"s01oy2ggSAvKFFXK"}
-{"nom_medicament":"Acyclovir 3%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"sHSpqJWsmQSw7v5A"}
-{"nom_medicament":"Amoxicilline  500mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"nBryIxSUjcHN4hso","_id":"sIk1197mpx5ebTxk"}
-{"nom_medicament":"Dexaméthazone 4mg/ml, 2ml","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"gqZyKLBsr2gM4wqP","_id":"sKU7x6gtE0f6gpgC"}
-{"nom_medicament":"Sonde vésicale à deux voies 8","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"sLwdE053PRKFqUNQ"}
-{"nom_medicament":"TRIGLYCERIDE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"sOXhI2rGyhM0FQ3w"}
-{"nom_medicament":"Métronidazole 0,75%, 15g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"sQYQZTGixt5JPHv7"}
-{"nom_medicament":"NITRIENT AGAR","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"sToyv8NMDTueQ6jH"}
-{"nom_medicament":"Oxytétracycline 3%, 30g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"sVcz4yhBPEchql4X"}
-{"nom_medicament":"Enalapril 5mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"sYo3yc1fNSY1nNZn"}
-{"nom_medicament":"Omega 3 + fer + Acide folique + autres vitamines et minéraux (FOETASAFE)","id_categorie":"sa99FvcpMPWLjum3","id_forme":"QtYyNoYmCHoz5Udt","_id":"syIJdwIEHInHdBZz"}
-{"nom_medicament":"Lopinavir 80mg + ritonavir 20mg/5ml","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"NYXVtPibgCXdyvR6","_id":"t1kNI3Rz4uZF0zyO"}
-{"nom_medicament":"Spiramycine (ROVAMYCINE), 3MI, cp","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"WeMoOts0Z6LpST92","_id":"t41ImeD1NomdwytS"}
-{"nom_medicament":"Dimethindene (FENISTIL)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"t4RTFA1fslWskmsD"}
-{"nom_medicament":"Boulettes d’Ouate","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"tHKtU28HYWvSY9jx"}
-{"nom_medicament":"Hydroxyde d’aluminium 400mg + tricilicate de magnésie 400mg","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"tM7pVUC9bnTTk2dZ"}
-{"nom_medicament":"Artesunate 60mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"AzKeHdiCVSwbp8iU","_id":"tM8rNEnOnA09sB93"}
-{"nom_medicament":"Selenium sulfure 2%","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"8BTBcuku67FSa0lH","_id":"tN6Vgw2hHv8G4yRu"}
-{"nom_medicament":"Digoxine 0,25mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"tRgbh7kZLnCammrG"}
-{"nom_medicament":"Valve anti reflux pour drain thoracique","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"tWQi0OLrFSbnKaYl"}
-{"nom_medicament":"Lamivudine 60mg + abacavir 30mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"tY1dyrmnsUvSNGsQ"}
-{"nom_medicament":"Chlorpromazine 25mg/ml, 2ml","id_categorie":"yLy3keUivI5KWIPv","id_forme":"gqZyKLBsr2gM4wqP","_id":"tdwzjPWWMoJmMKev"}
-{"nom_medicament":"Prédnisolone 5mg","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"PfcDBYH7WTAq94Vo","_id":"tsqQrjQQDXO5AwBV"}
-{"nom_medicament":"Zinc sulfate 25mg","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"N6Tqn0mXRDyLjmFJ","_id":"tunEMO145Jhgt2Xj"}
-{"nom_medicament":"Amoxicilline 500mg + acide clavulanique 50mg, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Mc7ipi5el6uckQjj","_id":"twS0V71b1QtRca9t"}
-{"nom_medicament":"Phosphate d’aluminium (PHOSPHALUGEL)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"tzIJDD9dRra40gFi"}
-{"nom_medicament":"Bande plâtrée 10cm","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"u4ExfYgP4Srnh0aF"}
-{"nom_medicament":"Lanzoprazole","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"PfcDBYH7WTAq94Vo","_id":"uJq8MIuM3QDMkOK8"}
-{"nom_medicament":"Pénicilline G, benzyle pénicilline 1000000UI, fl","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Iu4JNhprTOhIZ7QA","_id":"uLJnMt5WEIB9TCKW"}
-{"nom_medicament":"Pentazocine 30mg/ml","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"uRMmblByNjWpE3Qq"}
-{"nom_medicament":"Triamcinolone (KENACORT)","id_categorie":"KKTyteVTYQ6N8DCg","id_forme":"XFQ2OuAziK87rskg","_id":"uXh4TTzHKC5FlYXQ"}
-{"nom_medicament":"Phénylephrine hydrochloride 2.5%","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"XzXIvN0ZguGqfs5m","_id":"uh7xV1XCRYbO2PN7"}
-{"nom_medicament":"Sonde vésicale à trois voies 12","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"uuu7NMNpsxMPjHMQ"}
-{"nom_medicament":"PHOSPHORE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"uw6KOeDdu56gRYE7"}
-{"nom_medicament":"Ketoconazole 30g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"uzqFARIf7tz3XFbw"}
-{"nom_medicament":"Quinine 500mg","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"PfcDBYH7WTAq94Vo","_id":"v1UzRuEQsyc0vJcm"}
-{"nom_medicament":"Lactulose (DUPHALAC) sol 15ml","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"NYXVtPibgCXdyvR6","_id":"v3cms1KgPyRK3Tr6"}
-{"nom_medicament":"Phloroglycinol 80mg+ trimethylphloroglycinol 80mg  (SPASFON)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"PfcDBYH7WTAq94Vo","_id":"v8cekxKWR4T8t3El"}
-{"nom_medicament":"Fer + acide folique + vitamine C (FERDROP)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"jLomYUCSpG85496t","_id":"vC6554R0XavFpyDt"}
-{"nom_medicament":"Atenolol 100mg","id_categorie":"eJJCjPiZ1Setz4b6","id_forme":"PfcDBYH7WTAq94Vo","_id":"vDwjvNnusbNp1zSy"}
-{"nom_medicament":"Methyle prédnisolone + néomycine (NEOMEDROL)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"94yNieOz94Ne4uWW","_id":"vEj6pevOaH17mQSU"}
-{"nom_medicament":"Trimébutine (DEBRIDAT) enf.","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"Inn5WMw0T5YdGNCW","_id":"vHF4KR26TzVtZ4nc"}
-{"nom_medicament":"Thiopental sodique 500mg et 1g","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"AzKeHdiCVSwbp8iU","_id":"vJUjf2mCpqx6UbsN"}
-{"nom_medicament":"Clonazepam  (RIVOTRIL)","id_categorie":"AlwiTAKkIn7XjGSe","id_forme":"gqZyKLBsr2gM4wqP","_id":"vYYBGKOo4bB8vson"}
-{"nom_medicament":"Salbutamol","id_categorie":"AB1wjZEZjcczCpoi","id_forme":"ml94B7Z5vYUTBkQ8","_id":"vgVF0bPioQjy0Bdk"}
-{"nom_medicament":"T.RAPIDE H.PYLORI","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"vr06Y8GCxlGULQxU"}
-{"nom_medicament":"Fer + manganèse + cuivre (TOT’HEMA)","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"gqZyKLBsr2gM4wqP","_id":"vz0RpYUtu8Z6mTnd"}
-{"nom_medicament":"Bicarbonate de sodium 100g","id_categorie":"hsKlTEKjUHXBserp","id_forme":"MgvGr0aVyShJFjiO","_id":"w7j7R9du2hz3uXFE"}
-{"nom_medicament":"Fluorescéine 2% bandelettes","id_categorie":"oEL9dkXTVdWLc8oE","id_forme":"","_id":"wPVe4djNlFwwe7wf"}
-{"nom_medicament":"Tramadol inj, 50mg/ml","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"wbOJjRITs4BpnyZ7"}
-{"nom_medicament":"Mannitol 20%, 100ml","id_categorie":"Jl8e7iM867jYgkG0","id_forme":"gqZyKLBsr2gM4wqP","_id":"wuyllkB1KUqke6wt"}
-{"nom_medicament":"Prométhazine","id_categorie":"UY6VGcxrj5lwFowU","id_forme":"Inn5WMw0T5YdGNCW","_id":"xGl7495Y7u2hXNSu"}
-{"nom_medicament":"Povidone iodine savoneuse","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"xH7xMP3f4q9tqks3"}
-{"nom_medicament":"Névirapine 50mg","id_categorie":"RiDOK8myt1GBw6aU","id_forme":"PfcDBYH7WTAq94Vo","_id":"xHqwpNL1qie0XUx8"}
-{"nom_medicament":"Méyamicine (extraits totaux des plantes) (MTA)","id_categorie":"iqDp9Coj80m9lbgb","id_forme":"Inn5WMw0T5YdGNCW","_id":"xLnvdBRqNl8J64Yb"}
-{"nom_medicament":"Ceftaroline 600mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"AzKeHdiCVSwbp8iU","_id":"xPE6ATYICewO3tRc"}
-{"nom_medicament":"Tramadol 50mg","id_categorie":"OHV6K951NElcfomT","id_forme":"PfcDBYH7WTAq94Vo","_id":"xPIuvTQQTqyq8lDo"}
-{"nom_medicament":"Lidocaine + adrénaline 2%","id_categorie":"e9Kyv7YV2YNlw9dO","id_forme":"gqZyKLBsr2gM4wqP","_id":"xSJRHfyv7RWNCrvh"}
-{"nom_medicament":"Paracétamol + ibuprofène, 100ml","id_categorie":"OHV6K951NElcfomT","id_forme":"Inn5WMw0T5YdGNCW","_id":"ximq16WbJlUPQKP8"}
-{"nom_medicament":"GAMMA GT","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"xlWXRGK7Aw8hMWNl"}
-{"nom_medicament":"Oximethazoline (CLARINEZ)","id_categorie":"5tbq6MsN52RrhiGE","id_forme":"GsPsaoqwMwj7q1C1","_id":"y0yeU8RwccyhjBXX"}
-{"nom_medicament":"Darbepoetin alfa 100mcg/ml ou epoetin alfa 6000 unites, ampoule seringue","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"gqZyKLBsr2gM4wqP","_id":"y9V8b4IGRSL7R4dR"}
-{"nom_medicament":"ANALYSE URINAIRE 10 PARAMETRE","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"yGeHYWxKgf9Mftt8"}
-{"nom_medicament":"GELOSE NUTRITIF","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"ySWpw6Ymeuv0Vwgd"}
-{"nom_medicament":"Fluconazole 50mg/5ml","id_categorie":"n9RBNkzVBDQvFCrq","id_forme":"NYXVtPibgCXdyvR6","_id":"yVZHQlNFyvs3Yxzd"}
-{"nom_medicament":"Diclofenac","id_categorie":"OHV6K951NElcfomT","id_forme":"gqZyKLBsr2gM4wqP","_id":"yZR3XFrzbIezeYis"}
-{"nom_medicament":"Papier thermal échographique (enveloppe rose), rouleau","id_categorie":"48kxyC4s3G5sTt8N","id_forme":"","_id":"yams5sJn5VuHU3ND"}
-{"nom_medicament":"Vitamine A (rétinol) 100000UI","id_categorie":"5sPbE3KLhNNNRmAm","id_forme":"JMnVZtIL0PkMJaqb","_id":"ybV798vfYr77Uf65"}
-{"nom_medicament":"Antihémorrhoidaire","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"awBmrah6f30wBz0E","_id":"yc1wKFvhHBRuTt1Z"}
-{"nom_medicament":"Vaséline blanche, 50g","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"1rEo39izy9MShZQA","_id":"ycYE94TVaTGFMlCb"}
-{"nom_medicament":"PSA","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"ycjiHXB2yadQxvpY"}
-{"nom_medicament":"Amoxicilline 500mg+acide clavulanique 125mg","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"PfcDBYH7WTAq94Vo","_id":"yn7s7DgHfxpsL1ks"}
-{"nom_medicament":"Huile essentiel de romarin","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"nKU2g3N6s5RVE8Nn","_id":"z74SBN1Eb5nljJE9"}
-{"nom_medicament":"MAGNESIUM","id_categorie":"1657qzLktZQS7ySY","id_forme":"","_id":"z8dzcVIK8tEBSOXd"}
-{"nom_medicament":"Macrogol (FORLAX) sp","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"z9FhBntkqhTzhPIS"}
-{"nom_medicament":"Suture nylon sertie avec aig tranchante no 3/0, 36pces","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"zEUYDAClRnAYf2Um"}
-{"nom_medicament":"Ciment polycarboxylate (liquide + poudre)","id_categorie":"hsKlTEKjUHXBserp","id_forme":"","_id":"zH7pif6hRgZ8Z1Fg"}
-{"nom_medicament":"Ofloxacin 200mg + ornidazole 500mg, 60ml","id_categorie":"qSTdYRoNteUf5s0F","id_forme":"Kw9i7B3xwlZ7EXLJ","_id":"zHRIKdNUI48olbk4"}
-{"nom_medicament":"Attèle métallique: de Zimmer","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"zOt82c0tUgUgDA8E"}
-{"nom_medicament":"Phloroglycinol 80mg+ trimethylphloroglycinol 80mg (SYMOSPAZ)","id_categorie":"KpdmbdmL73M95Z7S","id_forme":"PfcDBYH7WTAq94Vo","_id":"zYedocDipVReUqI9"}
-{"nom_medicament":"Sertaconazole 20g (DERMOFIX)","id_categorie":"VLSRDbvbfvMWqeaf","id_forme":"NJlL91cqiuZ2R5EV","_id":"zd9jxrVsp0qVJr8C"}
-{"nom_medicament":"Aluminium + magnésium + siméthicone (MAALOX)","id_categorie":"OQjGMjWeHsDzoMKm","id_forme":"Inn5WMw0T5YdGNCW","_id":"zlcXxlawxXySTVDW"}
-{"nom_medicament":"Sonde vésicale à deux voies 22","id_categorie":"g4653ZoMq6j4VoVd","id_forme":"","_id":"zsXZSRNSPfQ9HbLP"}
+{"nom_medicament":"Ofloxacin 200mg + ornidazole 500mg, 60ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"1AZqN7OonfBbzGop"}
+{"nom_medicament":"Cefalexine sp, 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"ps2WGTuOXEcv1dxz","_id":"1eld2j3RoKXrXPrS"}
+{"nom_medicament":"Meropénème + cilastatine","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"23M3A1u68wmnquhZ"}
+{"nom_medicament":"Cefuroxime sp, 250mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"MaN367YmQNlNji01","_id":"3Ka6xudxrtQjtWlq"}
+{"nom_medicament":"Ceftriaxone 1g + tazobactam 125mg, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"3urKMVnmX4Rn0BTj"}
+{"nom_medicament":"Cefixime 200mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"40Zhon94DTbkQukw"}
+{"nom_medicament":"Pénicilline benzathine  1.2 MUI, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"HnZFJatQ6GFSJiBm","_id":"41Ymwlz9wJ1NZObC"}
+{"nom_medicament":"Métronidazole sp, 250mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"yRfMXCquyjnsrC27","_id":"4SLHy9V77DsKCPaM"}
+{"nom_medicament":"Métronidazole sp, 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"4cUU7TMjoT1y0A2O"}
+{"nom_medicament":"Levofloxacin 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"4rSqxwc8aIUJDPjL"}
+{"nom_medicament":"Nitrofurantoine 100mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"6n3zUHBcFvBOn3F3"}
+{"nom_medicament":"Amoxicilline 125mg +acide clavulanique 31.25 mg/5ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"9f3LdJOwD59y27sB"}
+{"nom_medicament":"Métronidazole 5%, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"nxrBg4WTwNin4jnM","_id":"ABIUPFG1r6QOosGb"}
+{"nom_medicament":"Vancomycine 125mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"AEWvJmwTOkq0GCeh"}
+{"nom_medicament":"Cefalexine 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"AydvVUjStr6hZCG1"}
+{"nom_medicament":"Erythromycine  500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"B0tNm7s4G9OjIEaI"}
+{"nom_medicament":"Pénicilline V,  phénoxyméthyle pénicilline  250 mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"BX2CfCVyTqeEK1cQ"}
+{"nom_medicament":"Cloxacilline sp, 250mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"CAZ8fAFgho3J86UW"}
+{"nom_medicament":"Ceftazidime 1g","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"CXZAjoi1sCofObNn"}
+{"nom_medicament":"Spéctinomycine 2g","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"Ci6u48lcW7BwypUK"}
+{"nom_medicament":"Amikacine 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"MaN367YmQNlNji01","_id":"D3JmlAj62PhoOEEG"}
+{"nom_medicament":"Piperaciline","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"DLC36OUBQZ4YuUdi"}
+{"nom_medicament":"Cotrimoxazole  480mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"DPOXlFEmyXquVJxi"}
+{"nom_medicament":"Fucidate sodique 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"nxrBg4WTwNin4jnM","_id":"DdukrmCqxl6uP2Cr"}
+{"nom_medicament":"Pénicilline G, benzyle pénicilline 500000UI, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"E1iFLwF4dCuTEn0R"}
+{"nom_medicament":"Flucloxacilline 125mg/5ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"EDlIQg7jiJZL8mNM"}
+{"nom_medicament":"Cloxacilline 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"EhcTif3tmluppVZj"}
+{"nom_medicament":"Clindamycine, 600mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"Ek2gWpGfhGCzTW7b"}
+{"nom_medicament":"Pénicilline G, benzyle pénicilline 1000000UI, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"G3wnZor9GaGBNCqw"}
+{"nom_medicament":"Métronidazole 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"GJZ9IXyK5URVs7tx"}
+{"nom_medicament":"Ceftriaxone, 1g, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"GQmqqzAQupU3DQj4"}
+{"nom_medicament":"Amoxicilline SP 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"Gz5Vcpl7DgWg9Vix"}
+{"nom_medicament":"Amikacine 1g","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"MaN367YmQNlNji01","_id":"IBwJbYlOeQRmJ2OI"}
+{"nom_medicament":"Cefixime 400mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"Igk2saFIRQPHviEj"}
+{"nom_medicament":"Amoxicilline 500mg+acide clavulanique 125mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"IsaRdCatbuqRf3CG"}
+{"nom_medicament":"Cefépime 1g + tazobactam 125mg, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vGeFkTEYbscoGsCE","_id":"JNWTENpdRUZ4hbt4"}
+{"nom_medicament":"Azythromycine 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"JdJYDvmmQ4lmWBkU"}
+{"nom_medicament":"Cefuroxime sp, 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"MaN367YmQNlNji01","_id":"JfslvyTEDQfTP6rt"}
+{"nom_medicament":"Spiramycine (ROVAMYCINE), 3MI, cp","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"m3m5YSZqOirgZz5C","_id":"JxkWtJ8lMFE5Nvq8"}
+{"nom_medicament":"Cloxacilline 1g, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"Kye7XeJjR2xYOUa8"}
+{"nom_medicament":"Clindamycine 150mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"Kyq1BLM0j0DLuS9Z"}
+{"nom_medicament":"Piperacilline + tozobactam","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"Kz6VmwZCeUTB7bNE"}
+{"nom_medicament":"Ciprofloxacine 2mg/ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"nxrBg4WTwNin4jnM","_id":"MBiZhPKEVjHJWeS3"}
+{"nom_medicament":"Clarythromycine 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"MF56vnrfc2LZa9LR"}
+{"nom_medicament":"Erythromycine 125mg, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"NAMHWFKxtVLHO6kj"}
+{"nom_medicament":"Ampicilline  1g, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"NZ9uQ5eKcCD7PBcn"}
+{"nom_medicament":"Azythromycine sp 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"ps2WGTuOXEcv1dxz","_id":"OrzVVSCGKlOEo6dd"}
+{"nom_medicament":"Ornidazole 500mg, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"nxrBg4WTwNin4jnM","_id":"OuFDcMwY91gLizbQ"}
+{"nom_medicament":"Cotrimoxazole sp, 240mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"sipVm3zsxP8qlbmy","_id":"Rjwrxmpy9o6gGBP8"}
+{"nom_medicament":"Cotrimoxazole 960mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"Sv4vaveNBIysHHnX"}
+{"nom_medicament":"Amoxicilline 1g+acide clavulanique 200mg, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"UotE0wwpnK4zL8rf"}
+{"nom_medicament":"Amoxicilline  500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"VbsW95eV7cdI1oRe"}
+{"nom_medicament":"Spiramycine (ROVAMYCINE), 1,5MI, cp","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"m3m5YSZqOirgZz5C","_id":"Vc4C93oEzXaIAt0y"}
+{"nom_medicament":"Cefuroxime, 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"Vmsi8jSZ0f9jyr7a"}
+{"nom_medicament":"Meropénème 1g","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"Vzvfwx46119vLNrN"}
+{"nom_medicament":"Clindamycine 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"W4eIFAxJu0aQRA7f"}
+{"nom_medicament":"Clindamycine 300mg/ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"YRHJVkBWqENIkDD8"}
+{"nom_medicament":"Erythromycine 250mg, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"YXlOdGRT65khDE7r"}
+{"nom_medicament":"Azithromycine sp, 250mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"ps2WGTuOXEcv1dxz","_id":"Z4NEzrFtJXH27edS"}
+{"nom_medicament":"Flucloxacilline 250mg/5ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"pGN7C9LUZLbHxIRB","_id":"ZNMvmfOrLjJqW5Hd"}
+{"nom_medicament":"Cotrimoxazole 120mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"ZWmRgB27w2No7Uej"}
+{"nom_medicament":"Doxicycline 100mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"Ze4SFhR6CfXHjVP7"}
+{"nom_medicament":"Cefazoline 1g, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"ZxtLSsw1nf8iC9Aj"}
+{"nom_medicament":"Ciprofloxacine 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"a23dPRfjBsaUDzb3"}
+{"nom_medicament":"Clarythromycine, 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"aO3aMN5POTOqGx9A"}
+{"nom_medicament":"Cotrimoxazole 96mg/ml, amp","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"JUHGWq090UcQ3h07","_id":"aQItWa57VxFaqZQN"}
+{"nom_medicament":"Vancomycine 1g","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"bC1QurgH0c3QixMs"}
+{"nom_medicament":"Clarythromycine 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"ba5yKsFKvLlFS7eR"}
+{"nom_medicament":"Clarythromycine, 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"dEm0f19T6rTwnbxg"}
+{"nom_medicament":"Amoxicilline SP 250mg/5ml, 100mL","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"dkVuWo8Ie08HpgC6"}
+{"nom_medicament":"Gentamycine 40mg/ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"JUHGWq090UcQ3h07","_id":"e1qFw8NPdA0B3Ei1"}
+{"nom_medicament":"Norfloxacin 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"erHtQXb0tVnw3KiH"}
+{"nom_medicament":"Ampicilline 500mg, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"8g5RiLDpodin5p46","_id":"feAJY9ZmVSIJLKXf"}
+{"nom_medicament":"Amoxicilline 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"fv12oxdvZRTCEjm2"}
+{"nom_medicament":"Cefixime 40mg/ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"gI8Bynw3Vt09WXvu"}
+{"nom_medicament":"Levofloxacin 500mg/100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"nxrBg4WTwNin4jnM","_id":"hXPlqdmWi8AcevKA"}
+{"nom_medicament":"Amoxicilline 500mg + acide clavulanique 50mg, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vGeFkTEYbscoGsCE","_id":"i1j9hzKcTYzUK0Hu"}
+{"nom_medicament":"Pénicilline V,  phénoxyméthyle pénicilline  250mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"iJXu4E0gJivdWFCD"}
+{"nom_medicament":"Amoxicilline 250mg+acide clavulanique 62,5mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"iQHvMHsjMJSdsyxz"}
+{"nom_medicament":"Clarythromycine, 250mg/5ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"irxoSzcVmMWn594l"}
+{"nom_medicament":"Fucidate sodique 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"lhAY8KtvhiCUYZ2j"}
+{"nom_medicament":"Oxacilline 250mg/5ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"mgBjuURjANvDuVin"}
+{"nom_medicament":"Ornidazole, 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"mmNDVPm6Ums4U8ok"}
+{"nom_medicament":"Ofloxacin + ornidazole","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"mnssvfOdoEOZU7D2"}
+{"nom_medicament":"Ofloxacin 200mg + ornidazole 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"nxrBg4WTwNin4jnM","_id":"molSSKVd2TQylhoR"}
+{"nom_medicament":"Erythromycine 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"nOu1bSIehB9pUaRt"}
+{"nom_medicament":"Flucloxacilline 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"o4bLP61ZCkaZh8GK"}
+{"nom_medicament":"Amikacine 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"MaN367YmQNlNji01","_id":"oS92hcOz6bTkmoa6"}
+{"nom_medicament":"Azythromycine 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"oqygLizp2Wo8456M"}
+{"nom_medicament":"Cefotaxime, 1g, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"q60vKi93IapnHeIz"}
+{"nom_medicament":"Doxicycline 200mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"t42Jn6qY0AiTSVi6"}
+{"nom_medicament":"Cefixime 100mg/5ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"tX8hYersEhb8yZjp"}
+{"nom_medicament":"Oxacilline 500mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"vySulEcTAXQPnNMH","_id":"tysDEZgJYvf2NrT4"}
+{"nom_medicament":"PénicillineV,  phénoxyméthyle pénicilline 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"w4ZHHwY0VBtmphci"}
+{"nom_medicament":"Ciprofloxacin","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"sipVm3zsxP8qlbmy","_id":"wW7Bf2c72J0oYF6n"}
+{"nom_medicament":"Cefuroxime, 250mg","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"3pwyBUoibEYngM1W","_id":"yWzLHwywsE1kXJLW"}
+{"nom_medicament":"Meropeneme 500mg, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"0gjXsgkTW3OUcAy5","_id":"yoR9QJxwyzGVbOZL"}
+{"nom_medicament":"Cefalexine sp, 250mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"ps2WGTuOXEcv1dxz","_id":"ysFjv5188jEXl3IC"}
+{"nom_medicament":"Pénicilline benzathine  2,4 MUI, fl","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"HnZFJatQ6GFSJiBm","_id":"zNnFbQF4ugB3gGq5"}
+{"nom_medicament":"Cloxacilline sp, 125mg/5ml, 100ml","id_categorie":"OMVOYYZxkl1q0dvm","id_forme":"XIUnLMFolZpi3f52","_id":"zqi8JAjujBR2WjpK"}

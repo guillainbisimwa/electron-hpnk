@@ -22,12 +22,12 @@ function handleSectionTrigger (event) {
 
   // Save currently active button in localStorage
   const buttonId = event.target.getAttribute('id')
-  settings.set('activeSectionButtonId', buttonId)
+  //settings.set('activeSectionButtonId', buttonId)
 }
 
-function activateDefaultSection () {
-  document.getElementById('button-dashboard').click()
-}
+// function activateDefaultSection () {
+//   document.getElementById('button-dashboard').click()
+// }
 
 function showMainContent () {
   document.querySelector('.js-nav').classList.add('is-shown')
@@ -71,6 +71,6 @@ if (sectionId) {
   const section = document.getElementById(sectionId)
   if (section) section.click()
 } else {
-  activateDefaultSection()
+  //activateDefaultSection()
   displayAbout()
 }
