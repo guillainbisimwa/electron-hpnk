@@ -104,6 +104,18 @@
         "upload":"Importer un fichier CSV",
         "stock_init":"Stock initial"
     },
+    "fournisseur": {
+        "name": "Fournisseur",
+        "plurial": "Fournisseurs",
+        "add": "Ajouter un fournisseur",
+        "del": "Supprimer un fournisseur",
+        "edit": "Modifier un fournisseur",
+        "file_name":"Liste de fournisseurs",
+        "del_confirm_msg":"Voulez-vous vraiment supprimer le fournisseur : ",
+        "designation":"Nom du fournisseur",
+        "adress":"Adresse",
+        "phone":"Contact"
+    },
     "entree": {
         "name": "Entrée",
         "plurial": "Entrées",

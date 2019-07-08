@@ -45,6 +45,11 @@
                             Catégories
                           </a>
                         </li>
+                        <li class="nav-item ">
+                          <a class="nav-link nav-link-frnssr" href="#frnssr" data-toggle="tab">
+                            frnssr
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div> 
@@ -67,10 +72,6 @@
                         <tbody>
                         </tbody>
                       </table>
-                      <!-- <button id="add-med-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddMedModal">
-                        <i class="fa fa-plus"></i>
-                        <div class="ripple-container"></div>
-                      </button> -->
                     </div>
 
                     <div class="tab-pane" id="formes">
@@ -85,11 +86,6 @@
                         <tbody>
                         </tbody>
                       </table>
-
-                      <!-- <button id="add-forme-modal" class="btn btn-lg btn-round btn-rose btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddFormModal">
-                        <i class="fa fa-plus"></i>
-                        <div class="ripple-container"></div>
-                      </button> -->
                     </div>
 
                     <div class="tab-pane" id="categories">
@@ -102,10 +98,20 @@
                         <tbody>
                         </tbody>
                       </table>
-                      <!-- <button id="add-cat-modal" class="btn btn-rose btn-lg btn-round btn-fab" style="position: sticky;float:right;bottom: 20px;" data-toggle="modal" data-target="#AddCatModal">
-                        <i class="fa fa-plus"></i>
-                        <div class="ripple-container"></div>
-                      </button> -->
+                    </div>
+
+                    <div class="tab-pane" id="frnssr">
+                      <table class="table table-hover tab_left dataTable tab_frnssr table-striped" id="tab_frnssr" style="width:100%">
+                        <thead class="text-primary">
+                          <th class="1"></th>
+                          <th class="2"></th>
+                          <th class="3"></th>
+                          <th class="4"></th>
+                          <th>_id</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
                     </div>
 
                   </div>
@@ -406,4 +412,71 @@
             </div>
           </div>
         </div>
+
+        <!-- Modal add frnssr -->
+        <div class="modal fade" id="AddFrnssrModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title frnssr-modal-title"></h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="nom_fnssr" class="nom_fnssr bmd-label-floating">Fournisseur</label>
+                    <input type="text" class="form-control" id="nom_fnssr">
+                    <input type="hidden" class="form-control" id="_id_fnssr">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone_fnssr" class="phone_fnssr bmd-label-floating">Phone</label>
+                    <input type="phone" class="form-control" id="phone_fnssr">
+                  </div>
+                  <div class="form-group">
+                    <label for="adress_fnssr" class="adress_fnssr bmd-label-floating">Adress</label>
+                    <input type="text" class="form-control" id="adress_fnssr">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="save_frnssr" class="btn btn-primary">
+                      <i class=""></i>
+                      <span></span>
+                  </button>
+                  <button id="update_frnssr" class="btn btn-rose">
+                      <i class=""></i>
+                      <span></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- Modal delete medicament -->
+      <div class="modal fade" id="SuppFrnssrModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-danger"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <h3 class="text-center"> <span></span>
+                <b class="text-danger" id="del_nom_frnssr"></b>?</h3>
+                <input type="hidden" class="form-control" id="_id_del_frnssr">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="supp_frnssr" class="btn btn-rose">
+                  <i class=""></i>
+                  <span></span>
+              </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </template>

@@ -50,11 +50,13 @@ $(document).ready(function() {
     const Medicament =  require('../data/Medicament');
     const Entree =  require('../data/Entree');
     const Sortie =  require('../data/Sortie');
+    const Fournisseur =  require('../data/Fournisseur');
 
     //Init tables
     var _tab_forme = $("#tab_forme").DataTable();
     var _tab_cat = $("#tab_cat").DataTable();
     var _tab_med = $("#tab_med").DataTable();
+    var _tab_fournisseur = $("#tab_frnssr").DataTable();
 
     var tab_uploaded_med = $("#tab_uploaded_med").DataTable(
       {
@@ -97,6 +99,11 @@ $(document).ready(function() {
     //populateTabMed();
     $(".nav-link-med").click(function(){
       populateTabMed();
+    });
+
+    // Populate tab fournisseur
+    $(".nav-link-frnssr").click(function(){
+      populateTabFournisseur();
     });
 
     //Save forme
@@ -159,6 +166,33 @@ $(document).ready(function() {
       $("#design_med").val("");
     });
 
+    //save fournisseur
+    $("#save_frnssr").click(function(){
+      var _nom_fnssr = $("#nom_fnssr").val();
+      var _phone_fnssr = $("#phone_fnssr").val();
+      var _adress_fnssr = $("#adress_fnssr").val();
+
+      var frnssr = Fournisseur.create({
+        nom_fournisseur: _nom_fnssr,
+        adress: _phone_fnssr,
+        phone: _adress_fnssr
+      });
+
+      frnssr.save().then(function(addedfrnssr) {
+        console.log(addedfrnssr._id);
+        //Close programmaticaly the modal
+        $("#AddFrnssrModal .close").click();
+        $("#nom_fnssr").val("");
+        $("#phone_fnssr").val("");
+        $("#adress_fnssr").val("");
+        
+        populateTabFournisseur();
+      });
+      $("#nom_fnssr").val("");
+      $("#phone_fnssr").val("");
+      $("#adress_fnssr").val("");
+    });
+
     //Update forme
     /** 
      * https://github.com/scottwrobinson/camo#creating-and-saving
@@ -201,6 +235,20 @@ $(document).ready(function() {
       }); 
     });
 
+    //Update fournisseur
+    $("#update_frnssr").click(function(){
+      var _id_frnssr = $("#_id_fnssr").val();
+      var _nom_fnssr = $("#nom_fnssr").val();
+      var _phone_fnssr = $("#phone_fnssr").val();
+      var _adress_fnssr = $("#adress_fnssr").val();
+
+      Fournisseur.findOneAndUpdate({_id:_id_frnssr},{nom_fournisseur: _nom_fnssr,adress:_phone_fnssr,phone:_adress_fnssr},{upsert: true}).then(function(updatedFnssr) {
+        populateTabFournisseur();
+        console.log("_id = ", updatedFnssr._id)
+        $("#AddFrnssrModal .close").click();
+      }); 
+    });
+
     //Supprimer une forme
     $("#supp_forme").click(function(){
       var _id_del_design_forme = $("#_id_del_design_forme").val();
@@ -235,8 +283,8 @@ $(document).ready(function() {
       });
     });
 
-     //Supprimer un medicament
-     $("#supp_med").click(function(){
+    //Supprimer un medicament
+    $("#supp_med").click(function(){
       var _id_del_design_med = $("#_id_del_design_med").val();
       var del_design_med = $("#del_design_med").text();
       Medicament.deleteOne({_id:_id_del_design_med}).then(function(deletedMed) {
@@ -245,6 +293,17 @@ $(document).ready(function() {
         populateTabMed();
       });
     });
+
+    //Supprimer un fournisseur
+    $("#supp_frnssr").click(function(){
+      var _id_del_frnssr = $("#_id_del_frnssr").val();
+      var del_nom_frnssr = $("#del_nom_frnssr").text();
+      Fournisseur.deleteOne({_id:_id_del_frnssr}).then(function(deletedFrnssr) {
+        console.log('Deleted ', deletedFrnssr, ' fournisseur from the database.');
+        result_del(deletedFrnssr,del_nom_frnssr,"SuppFrnssrModal");
+        populateTabFournisseur();
+      });
+    });    
     
     //Function, update values before adding forme
     function updateValueModalForme(forme,_id){
@@ -309,6 +368,34 @@ $(document).ready(function() {
       //Find is-filled is-focused
       $("#AddMedModal").find(".form-group").addClass("has-danger is-filled is-focused");
     }
+    
+    //Function, update values before adding fournisseur
+    function updateValueModalFrnssr(frnssr, phone,addres,_id){
+      $("#update_frnssr").css("display","block");
+      $("#save_frnssr").css("display","none");
+      $(".frnssr-modal-title").text(json.fournisseur.edit);
+      $(".frnssr-modal-title").css("color","#a11");
+      //$("#design_forme").click();
+      $("#nom_fnssr").val(frnssr);
+      $("#phone_fnssr").val(phone);
+      $("#adress_fnssr").val(addres);
+      $("#_id_fnssr").val(_id);
+      
+      //Find is-filled is-focused
+      $("#AddFrnssrModal").find(".form-group").addClass("has-danger is-filled is-focused");
+    }
+    function addValueModalFrnssr(){
+      $("#update_frnssr").css("display","none");
+      $("#save_frnssr").css("display","block");
+      $(".frnssr-modal-title").text(json.fournisseur.add);
+      $(".frnssr-modal-title").css("color","#000");
+      $("#AddFrnssrModal").find(".form-group").removeClass("has-danger is-filled is-focused");
+      $("#nom_fnssr").val("");
+      $("#_id_fnssr").val("");
+      $("#phone_fnssr").val("");
+      $("#adress_fnssr").val("");
+    }
+
     function addValueModalMed(){
       $("#update_med").css("display","none");
       $("#save_med").css("display","block");
@@ -336,6 +423,12 @@ $(document).ready(function() {
     function delValueModalMed(med,_id){
       $("#del_design_med").text(med);
       $("#_id_del_design_med").val(_id);
+    }
+
+     //Function, update values before adding fournisseur
+     function delValueModalFrnssr(frnssr,_id){
+      $("#del_nom_frnssr").text(frnssr);
+      $("#_id_del_frnssr").val(_id);
     }
 
     //Function populate tab Forme
@@ -629,6 +722,96 @@ $(document).ready(function() {
           console.log("ok: "+selectedRows)
           _tab_med.button( 1 ).enable( selectedRows === 1 );
           _tab_med.button( 2 ).enable( selectedRows === 1 );
+        });
+      });
+    }
+
+     //Function populate tab fournisseur
+     function populateTabFournisseur(){
+      var tab_fournisseur = [];
+      _tab_fournisseur.destroy();
+      //$("#tab_fournisseur").empty();
+      Fournisseur.find({},{sort:'nom_fournisseur'}).then(function(foundFournisseur) {
+        i = 0;
+        foundFournisseur.forEach(function(foundSingleFournissr) {
+          i++;
+          var localSingleFournissr = [i, foundSingleFournissr.nom_fournisseur, foundSingleFournissr.adress, foundSingleFournissr.phone,foundSingleFournissr._id]; 
+          tab_fournisseur.push(Array.from(localSingleFournissr))
+        });
+
+        console.log(Array.from(tab_fournisseur))
+        //_tab_fournisseur.DataTable({
+        _tab_fournisseur =  $('#tab_frnssr').DataTable({
+          
+          dom: 'Blfrtip',
+          select: true,
+          buttons: [
+            {
+              text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
+              action: function ( e, dt, node, config ) {
+          //console.log("_id = ", foundSingleFournissr._id)
+                addValueModalFrnssr();
+                $("#AddFrnssrModal").modal();
+              }
+            },
+            {
+              text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
+              action: function ( e, dt, node, config ) {
+                  console.log(
+                      'Row data: '+
+                      JSON.stringify( dt.row( { selected: true } ).data() )
+                  ); 
+                  updateValueModalFrnssr(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2], dt.row( { selected: true } ).data()[3], dt.row( { selected: true } ).data()[4]);
+                  $("#AddFrnssrModal").modal();
+              },
+              enabled: false
+            },
+            {
+              text: '<li class=" '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
+              action: function ( e, dt, node, config ) {
+                  console.log(
+                      'Row data: '+
+                      JSON.stringify( dt.row( { selected: true } ).data() )
+                  );
+                  delValueModalFrnssr(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[4]);
+                  $("#SuppFrnssrModal").modal(); 
+              },
+              enabled: false
+            },
+            //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
+            {
+              extend:    'csv',
+              text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
+              titleAttr: 'CSV',
+              filename: json.fournisseur.file_name,
+              exportOptions: {
+                columns: [0, 1]
+              },
+            }                  
+          ],
+          // ICI on choisi la langue des details du tableau
+          language:{
+            url:'./assets/values/French.json'
+          },
+          "order": [[ 0, "asc" ]],
+          // Les donnees sont affichees dans le tableau HTML
+          data:tab_fournisseur,
+          // On affiche pas la troisieme colonne, elle reprend les _id
+          "columnDefs": [
+            {
+              "targets": [ 4 ],
+              "visible": false,
+              "searchable": false
+            },
+          ],
+          destroy:true
+        });
+        
+        _tab_fournisseur.on( 'select deselect', function () {
+          var selectedRows = _tab_fournisseur.rows( { selected: true } ).count();
+          console.log("ok: "+selectedRows)
+          _tab_fournisseur.button( 1 ).enable( selectedRows === 1 );
+          _tab_fournisseur.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
