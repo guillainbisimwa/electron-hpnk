@@ -39,6 +39,7 @@ $(".nav-link-med").text((json.med.plurial).toUpperCase());
 $(".nav-link-forme").text((json.forme.plurial).toUpperCase());
 $(".nav-link-cat").text((json.cat.plurial).toUpperCase());
 $(".nav-link-frnssr").text((json.fournisseur.plurial).toUpperCase());
+$(".nav-link-service").text((json.service.plurial).toUpperCase());
 
 //Tab med
 //Header of Table
@@ -61,6 +62,10 @@ $(".tab_frnssr thead tr .1").text(json.nbr);
 $(".tab_frnssr thead tr .2").text(json.fournisseur.designation);
 $(".tab_frnssr thead tr .3").text(json.fournisseur.phone);
 $(".tab_frnssr thead tr .4").text(json.fournisseur.adress);
+
+//Tab service
+$(".tab_service thead tr .1").text(json.nbr);
+$(".tab_service thead tr .2").text(json.service.designation);
 
 //Modals Med
 $(".med-modal-title").text(json.med.add);
@@ -91,6 +96,12 @@ $(".frnssr-modal-title").text(json.fournisseur.add);
 $("label.design_frnssr").text(json.fournisseur.designation);
 $("#SuppFrnssrModal").find("h3 span").text(json.fournisseur.del_confirm_msg);
 $("#SuppFrnssrModal").find("h4").text(json.fournisseur.del);
+
+//Modals service
+$(".service-modal-title").text(json.service.add);
+$("label.design_service").text(json.service.designation);
+$("#SuppServiceModal").find("h3 span").text(json.service.del_confirm_msg);
+$("#SuppServiceModal").find("h4").text(json.service.del);
 
 //Med
 $("#save_med span").text(json.buttons.add.name);
@@ -124,6 +135,13 @@ $("#update_frnssr").find("i").addClass(json.buttons.edit.icon);
 $("#supp_frnssr span").text(json.buttons.del.name);
 $("#supp_frnssr").find("i").addClass(json.buttons.del.icon);
 
+//service
+$("#save_service span").text(json.buttons.add.name);
+$("#save_service").find("i").addClass(json.buttons.add.icon);
+$("#update_service span").text(json.buttons.edit.name);
+$("#update_service").find("i").addClass(json.buttons.edit.icon);
+$("#supp_service span").text(json.buttons.del.name);
+$("#supp_service").find("i").addClass(json.buttons.del.icon);
 /**
  * ENTREES
  */

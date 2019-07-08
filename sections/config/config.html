@@ -50,6 +50,11 @@
                             frnssr
                           </a>
                         </li>
+                        <li class="nav-item ">
+                          <a class="nav-link nav-link-service" href="#service" data-toggle="tab">
+                            service
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div> 
@@ -107,6 +112,18 @@
                           <th class="2"></th>
                           <th class="3"></th>
                           <th class="4"></th>
+                          <th>_id</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="tab-pane" id="service">
+                      <table class="table table-hover tab_left dataTable tab_service table-striped" id="tab_service" style="width:100%">
+                        <thead class="text-primary">
+                          <th class="1"></th>
+                          <th class="2"></th>
                           <th>_id</th>
                         </thead>
                         <tbody>
@@ -452,6 +469,7 @@
               </div>
             </div>
           </div>
+
       <!-- Modal delete medicament -->
       <div class="modal fade" id="SuppFrnssrModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -479,4 +497,66 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal add service -->
+      <div class="modal fade" id="AddServiceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title service-modal-title"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="nom_service" class="nom_service bmd-label-floating">Service</label>
+                <input type="text" class="form-control" id="nom_service">
+                <input type="hidden" class="form-control" id="_id_service">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="save_service" class="btn btn-primary">
+                  <i class=""></i>
+                  <span></span>
+              </button>
+              <button id="update_service" class="btn btn-rose">
+                  <i class=""></i>
+                  <span></span>
+              </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal delete service -->
+      <div class="modal fade" id="SuppServiceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-danger"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <h3 class="text-center"> <span></span>
+                <b class="text-danger" id="del_nom_service"></b>?</h3>
+                <input type="hidden" class="form-control" id="_id_del_service">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="supp_service" class="btn btn-rose">
+                  <i class=""></i>
+                  <span></span>
+              </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
 </template>

@@ -116,6 +116,16 @@
         "adress":"Adresse",
         "phone":"Contact"
     },
+    "service": {
+        "name": "Service",
+        "plurial": "Services",
+        "add": "Ajouter un service",
+        "del": "Supprimer un service",
+        "edit": "Modifier un service",
+        "file_name":"Liste de services",
+        "del_confirm_msg":"Voulez-vous vraiment supprimer le service : ",
+        "designation":"Nom du service"
+    },
     "entree": {
         "name": "Entrée",
         "plurial": "Entrées",

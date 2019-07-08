@@ -51,12 +51,14 @@ $(document).ready(function() {
     const Entree =  require('../data/Entree');
     const Sortie =  require('../data/Sortie');
     const Fournisseur =  require('../data/Fournisseur');
+    const Service =  require('../data/Service');
 
     //Init tables
     var _tab_forme = $("#tab_forme").DataTable();
     var _tab_cat = $("#tab_cat").DataTable();
     var _tab_med = $("#tab_med").DataTable();
     var _tab_fournisseur = $("#tab_frnssr").DataTable();
+    var _tab_service = $("#tab_service").DataTable();
 
     var tab_uploaded_med = $("#tab_uploaded_med").DataTable(
       {
@@ -104,6 +106,11 @@ $(document).ready(function() {
     // Populate tab fournisseur
     $(".nav-link-frnssr").click(function(){
       populateTabFournisseur();
+    });
+
+     // Populate tab service
+     $(".nav-link-service").click(function(){
+      populateTabService();
     });
 
     //Save forme
@@ -193,6 +200,24 @@ $(document).ready(function() {
       $("#adress_fnssr").val("");
     });
 
+    //save service
+    $("#save_service").click(function(){
+      var _nom_service = $("#nom_service").val();
+     
+      var service = Service.create({
+        nom_service: _nom_service
+      });
+
+      service.save().then(function(addedService) {
+        console.log(addedService._id);
+        //Close programmaticaly the modal
+        $("#AddServiceModal .close").click();
+        $("#nom_service").val("");
+        populateTabService();
+      });
+      $("#nom_service").val("");
+    });
+
     //Update forme
     /** 
      * https://github.com/scottwrobinson/camo#creating-and-saving
@@ -246,6 +271,18 @@ $(document).ready(function() {
         populateTabFournisseur();
         console.log("_id = ", updatedFnssr._id)
         $("#AddFrnssrModal .close").click();
+      }); 
+    });
+
+    //Update fournisseur
+    $("#update_service").click(function(){
+      var _id_service = $("#_id_service").val();
+      var _nom_service = $("#nom_service").val();
+
+      Service.findOneAndUpdate({_id:_id_service},{nom_service: _nom_service},{upsert: true}).then(function(updatedService) {
+        populateTabService();
+        console.log("_id = ", updatedService._id)
+        $("#AddServiceModal .close").click();
       }); 
     });
 
@@ -303,7 +340,18 @@ $(document).ready(function() {
         result_del(deletedFrnssr,del_nom_frnssr,"SuppFrnssrModal");
         populateTabFournisseur();
       });
-    });    
+    });   
+    
+    //Supprimer un service
+    $("#supp_service").click(function(){
+      var _id_del_service = $("#_id_del_service").val();
+      var del_nom_service = $("#del_nom_service").text();
+      Service.deleteOne({_id:_id_del_service}).then(function(deletedService) {
+        console.log('Deleted ', deletedService, ' service from the database.');
+        result_del(deletedService,del_nom_service,"SuppServiceModal");
+        populateTabService();
+      });
+    });
     
     //Function, update values before adding forme
     function updateValueModalForme(forme,_id){
@@ -396,6 +444,29 @@ $(document).ready(function() {
       $("#adress_fnssr").val("");
     }
 
+    //Function, update values before adding fournisseur
+    function updateValueModalService(service,_id){
+      $("#update_service").css("display","block");
+      $("#save_service").css("display","none");
+      $(".service-modal-title").text(json.service.edit);
+      $(".service-modal-title").css("color","#a11");
+
+      $("#nom_service").val(service);
+      $("#_id_service").val(_id);
+      
+      //Find is-filled is-focused
+      $("#AddServiceModal").find(".form-group").addClass("has-danger is-filled is-focused");
+    }
+    function addValueModalService(){
+      $("#update_service").css("display","none");
+      $("#save_service").css("display","block");
+      $(".service-modal-title").text(json.service.add);
+      $(".service-modal-title").css("color","#000");
+      $("#AddServiceModal").find(".form-group").removeClass("has-danger is-filled is-focused");
+      $("#nom_service").val("");
+      $("#_id_service").val("");
+    }
+
     function addValueModalMed(){
       $("#update_med").css("display","none");
       $("#save_med").css("display","block");
@@ -425,10 +496,16 @@ $(document).ready(function() {
       $("#_id_del_design_med").val(_id);
     }
 
-     //Function, update values before adding fournisseur
-     function delValueModalFrnssr(frnssr,_id){
+    //Function, update values before adding fournisseur
+    function delValueModalFrnssr(frnssr,_id){
       $("#del_nom_frnssr").text(frnssr);
       $("#_id_del_frnssr").val(_id);
+    }
+
+    //Function, update values before adding service
+    function delValueModalService(service,_id){
+      $("#del_nom_service").text(service);
+      $("#_id_del_service").val(_id);
     }
 
     //Function populate tab Forme
@@ -727,7 +804,7 @@ $(document).ready(function() {
     }
 
      //Function populate tab fournisseur
-     function populateTabFournisseur(){
+    function populateTabFournisseur(){
       var tab_fournisseur = [];
       _tab_fournisseur.destroy();
       //$("#tab_fournisseur").empty();
@@ -812,6 +889,94 @@ $(document).ready(function() {
           console.log("ok: "+selectedRows)
           _tab_fournisseur.button( 1 ).enable( selectedRows === 1 );
           _tab_fournisseur.button( 2 ).enable( selectedRows === 1 );
+        });
+      });
+    }
+
+    function populateTabService(){
+      var tab_service = [];
+      _tab_service.destroy();
+      //$("#tab_service").empty();
+      Service.find({},{sort:'nom_service'}).then(function(foundService) {
+        i = 0;
+        foundService.forEach(function(foundSingleService) {
+          i++;
+          var localSingleService = [i, foundSingleService.nom_service,foundSingleService._id]; 
+          tab_service.push(Array.from(localSingleService))
+        });
+
+        console.log(Array.from(tab_service))
+        //_tab_service.DataTable({
+        _tab_service =  $('#tab_service').DataTable({
+          
+          dom: 'Blfrtip',
+          select: true,
+          buttons: [
+            {
+              text: '<li class="'+json.buttons.new.icon+'"></li> '+json.buttons.new.name,
+              action: function ( e, dt, node, config ) {
+                addValueModalService();
+                $("#AddServiceModal").modal();
+              }
+            },
+            {
+              text: '<li class="'+json.buttons.edit.icon+'"></li> '+json.buttons.edit.name,
+              action: function ( e, dt, node, config ) {
+                  console.log(
+                      'Row data: '+
+                      JSON.stringify( dt.row( { selected: true } ).data() )
+                  ); 
+                  updateValueModalService(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
+                  $("#AddServiceModal").modal();
+              },
+              enabled: false
+            },
+            {
+              text: '<li class=" '+json.buttons.del.icon+'"></li> '+json.buttons.del.name,
+              action: function ( e, dt, node, config ) {
+                  console.log(
+                      'Row data: '+
+                      JSON.stringify( dt.row( { selected: true } ).data() )
+                  );
+                  delValueModalService(dt.row( { selected: true } ).data()[1], dt.row( { selected: true } ).data()[2]);
+                  $("#SuppServiceModal").modal(); 
+              },
+              enabled: false
+            },
+            //'copy', 'csv', 'excel', 'pdf', 'print', "colvis"
+            {
+              extend:    'csv',
+              text:      '<i class="'+json.buttons.export.icon+'"></i> '+json.buttons.export.name,
+              titleAttr: 'CSV',
+              filename: json.service.file_name,
+              exportOptions: {
+                columns: [0, 1]
+              },
+            }                  
+          ],
+          // ICI on choisi la langue des details du tableau
+          language:{
+            url:'./assets/values/French.json'
+          },
+          "order": [[ 0, "asc" ]],
+          // Les donnees sont affichees dans le tableau HTML
+          data:tab_service,
+          // On affiche pas la troisieme colonne, elle reprend les _id
+          "columnDefs": [
+            {
+              "targets": [ 2 ],
+              "visible": false,
+              "searchable": false
+            },
+          ],
+          destroy:true
+        });
+        
+        _tab_service.on( 'select deselect', function () {
+          var selectedRows = _tab_service.rows( { selected: true } ).count();
+          console.log("ok: "+selectedRows)
+          _tab_service.button( 1 ).enable( selectedRows === 1 );
+          _tab_service.button( 2 ).enable( selectedRows === 1 );
         });
       });
     }
