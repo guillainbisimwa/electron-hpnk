@@ -5,7 +5,7 @@
 # Built with
  - Electronjs, 
  - Datatables, 
- - jQuery`, and `, 
+ - jQuery, 
  - Material-kit, 
  - nedb,
  - camo db.
