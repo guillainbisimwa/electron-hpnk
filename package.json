@@ -73,7 +73,7 @@
     "highlight.js": "^10.1.2",
     "jquery": "^3.4.0",
     "jquery-csv": "^0.8.12",
-    "jszip": "^3.2.1",
+    "jszip": "^3.7.0",
     "material-dashboard": "^2.1.0",
     "material-design-iconic-font": "^2.2.0",
     "material-kit": "^2.0.4",
